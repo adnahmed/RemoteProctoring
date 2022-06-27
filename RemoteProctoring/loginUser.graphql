@@ -1,0 +1,6 @@
+query Authentication($username: String!, $password: String!, $role: String!) {
+  loginUser(username: $username, password: $password, role: $role) {
+    code 
+    token
+  }
+}
