@@ -7,31 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BD794D4A30EAB90E198EBD /* Pods_RemoteProctoring_iPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CD34433E1EACA350787093 /* Pods_RemoteProctoring_iPad.framework */; };
+		06EACB142830594E946DECCF /* Pods_RemoteProctoring_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11FC9CD69FA33506A9DDA4A /* Pods_RemoteProctoring_macOS.framework */; };
 		49A8D3063B4393EB922DF7D1 /* Pods_RemoteProctoring_iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90275EA5393EFEB9C47077 /* Pods_RemoteProctoring_iPhone.framework */; };
 		5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827428695DA1001D0C93 /* ContentView.swift */; };
 		5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */; };
 		5C1A22EC286960D000AA2636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */; };
 		5C1A22ED286960D000AA2636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827628695DA6001D0C93 /* Assets.xcassets */; };
-		5C1A22F5286963BF00AA2636 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1A22F4286963BF00AA2636 /* Launch Screen.storyboard */; };
-		5C1A22F6286963BF00AA2636 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1A22F4286963BF00AA2636 /* Launch Screen.storyboard */; };
 		5C75827328695DA1001D0C93 /* RemoteProctoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */; };
 		5C75827528695DA1001D0C93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827428695DA1001D0C93 /* ContentView.swift */; };
 		5C75827728695DA6001D0C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827628695DA6001D0C93 /* Assets.xcassets */; };
 		5C75827B28695DA6001D0C93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */; };
-		5C9C0A322869722E0040C53C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9C0A312869722E0040C53C /* Apollo */; };
-		5C9C0A342869722E0040C53C /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9C0A332869722E0040C53C /* ApolloWebSocket */; };
 		5C9C0A3B286975BF0040C53C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A3A286975BE0040C53C /* API.swift */; };
 		5C9C0A3C286975BF0040C53C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A3A286975BE0040C53C /* API.swift */; };
 		5C9C0A3E286976160040C53C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A3D286976160040C53C /* Network.swift */; };
 		5C9C0A3F286976160040C53C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A3D286976160040C53C /* Network.swift */; };
-		C73DFE38FEE1B87BFF112918 /* Pods_RemoteProctoring_macOS_iPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0881FDF5F47D533CF237F0E4 /* Pods_RemoteProctoring_macOS_iPad.framework */; };
+		5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827428695DA1001D0C93 /* ContentView.swift */; };
+		5C9C0A4728697DD50040C53C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A3A286975BE0040C53C /* API.swift */; };
+		5C9C0A4828697DD50040C53C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A3D286976160040C53C /* Network.swift */; };
+		5C9C0A4928697DD50040C53C /* RemoteProctoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */; };
+		5C9C0A4C28697DD50040C53C /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9C0A4328697DD50040C53C /* ApolloWebSocket */; };
+		5C9C0A4D28697DD50040C53C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9C0A4128697DD50040C53C /* Apollo */; };
+		5C9C0A5028697DD50040C53C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */; };
+		5C9C0A5128697DD50040C53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827628695DA6001D0C93 /* Assets.xcassets */; };
+		5C9C0A58286981010040C53C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9C0A57286981010040C53C /* Launch Screen.storyboard */; };
+		5C9C0A59286981010040C53C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9C0A57286981010040C53C /* Launch Screen.storyboard */; };
+		5C9C0A5C2869AC6C0040C53C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9C0A5B2869AC6C0040C53C /* Apollo */; };
+		5C9C0A5E2869AC6C0040C53C /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9C0A5D2869AC6C0040C53C /* ApolloWebSocket */; };
+		5C9C0A602869DED70040C53C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A5F2869DED70040C53C /* MainView.swift */; };
+		5C9C0A612869DED70040C53C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A5F2869DED70040C53C /* MainView.swift */; };
+		5C9C0A622869DED70040C53C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A5F2869DED70040C53C /* MainView.swift */; };
+		5C9C0A642869DF700040C53C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A632869DF700040C53C /* StartView.swift */; };
+		5C9C0A652869DF700040C53C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A632869DF700040C53C /* StartView.swift */; };
+		5C9C0A662869DF700040C53C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A632869DF700040C53C /* StartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0881FDF5F47D533CF237F0E4 /* Pods_RemoteProctoring_macOS_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_macOS_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D77A5C1F9E5468DCD6DDF4 /* Pods-RemoteProctoring-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS.debug.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS/Pods-RemoteProctoring-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2BED6A88CBA9AD08FAA93F30 /* Pods-RemoteProctoring-iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPhone.debug.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPhone/Pods-RemoteProctoring-iPhone.debug.xcconfig"; sourceTree = "<group>"; };
-		5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-macOS-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C1A22F4286963BF00AA2636 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3163E275D6CFE04F5942663D /* Pods-RemoteProctoring-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS/Pods-RemoteProctoring-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		53CD34433E1EACA350787093 /* Pods_RemoteProctoring_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C75826F28695DA1001D0C93 /* RemoteProctoring-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProctoringApp.swift; sourceTree = "<group>"; };
 		5C75827428695DA1001D0C93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,7 +57,14 @@
 		5C9C0A39286975950040C53C /* loginUser.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginUser.graphql; sourceTree = "<group>"; };
 		5C9C0A3A286975BE0040C53C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5C9C0A3D286976160040C53C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5C9C0A5628697DD50040C53C /* RemoteProctoring-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9C0A57286981010040C53C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5C9C0A5F2869DED70040C53C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5C9C0A632869DF700040C53C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		A56727F05923F7FB4F6FC520 /* Pods-RemoteProctoring-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPhone.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPhone/Pods-RemoteProctoring-iPhone.release.xcconfig"; sourceTree = "<group>"; };
+		A84DFE17036E73BB8539BCFA /* Pods-RemoteProctoring-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPad.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad.release.xcconfig"; sourceTree = "<group>"; };
+		C11FC9CD69FA33506A9DDA4A /* Pods_RemoteProctoring_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AA6C9AEF848CA82B683258 /* Pods-RemoteProctoring-iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPad.debug.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad.debug.xcconfig"; sourceTree = "<group>"; };
 		E1A49785B007BAB252983537 /* Pods-RemoteProctoring-macOS-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS-iPad.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS-iPad/Pods-RemoteProctoring-macOS-iPad.release.xcconfig"; sourceTree = "<group>"; };
 		EC90275EA5393EFEB9C47077 /* Pods_RemoteProctoring_iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_iPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BCF2E1CD21A38F7486E535 /* Pods-RemoteProctoring-macOS-iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS-iPad.debug.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS-iPad/Pods-RemoteProctoring-macOS-iPad.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,9 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73DFE38FEE1B87BFF112918 /* Pods_RemoteProctoring_macOS_iPad.framework in Frameworks */,
-				5C9C0A342869722E0040C53C /* ApolloWebSocket in Frameworks */,
-				5C9C0A322869722E0040C53C /* Apollo in Frameworks */,
+				06EACB142830594E946DECCF /* Pods_RemoteProctoring_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A8D3063B4393EB922DF7D1 /* Pods_RemoteProctoring_iPhone.framework in Frameworks */,
+				5C9C0A5E2869AC6C0040C53C /* ApolloWebSocket in Frameworks */,
+				5C9C0A5C2869AC6C0040C53C /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9C0A4A28697DD50040C53C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9C0A4C28697DD50040C53C /* ApolloWebSocket in Frameworks */,
+				5C9C0A4D28697DD50040C53C /* Apollo in Frameworks */,
+				02BD794D4A30EAB90E198EBD /* Pods_RemoteProctoring_iPad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +105,7 @@
 		5C75826628695DA1001D0C93 = {
 			isa = PBXGroup;
 			children = (
+				5C9C0A632869DF700040C53C /* StartView.swift */,
 				5C75827128695DA1001D0C93 /* RemoteProctoring */,
 				5C75827028695DA1001D0C93 /* Products */,
 				CE57E6B514A7546B7A437F23 /* Pods */,
@@ -83,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				5C75826F28695DA1001D0C93 /* RemoteProctoring-iPhone.app */,
-				5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS-iPad.app */,
+				5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */,
+				5C9C0A5628697DD50040C53C /* RemoteProctoring-iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,11 +126,12 @@
 		5C75827128695DA1001D0C93 /* RemoteProctoring */ = {
 			isa = PBXGroup;
 			children = (
+				5C9C0A57286981010040C53C /* Launch Screen.storyboard */,
 				5C9C0A3A286975BE0040C53C /* API.swift */,
 				5C9C0A39286975950040C53C /* loginUser.graphql */,
 				5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */,
 				5C75827428695DA1001D0C93 /* ContentView.swift */,
-				5C1A22F4286963BF00AA2636 /* Launch Screen.storyboard */,
+				5C9C0A5F2869DED70040C53C /* MainView.swift */,
 				5C75827628695DA6001D0C93 /* Assets.xcassets */,
 				5C75827828695DA6001D0C93 /* RemoteProctoring.entitlements */,
 				5C75827928695DA6001D0C93 /* Preview Content */,
@@ -116,7 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				EC90275EA5393EFEB9C47077 /* Pods_RemoteProctoring_iPhone.framework */,
-				0881FDF5F47D533CF237F0E4 /* Pods_RemoteProctoring_macOS_iPad.framework */,
+				53CD34433E1EACA350787093 /* Pods_RemoteProctoring_iPad.framework */,
+				C11FC9CD69FA33506A9DDA4A /* Pods_RemoteProctoring_macOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +165,10 @@
 				A56727F05923F7FB4F6FC520 /* Pods-RemoteProctoring-iPhone.release.xcconfig */,
 				F5BCF2E1CD21A38F7486E535 /* Pods-RemoteProctoring-macOS-iPad.debug.xcconfig */,
 				E1A49785B007BAB252983537 /* Pods-RemoteProctoring-macOS-iPad.release.xcconfig */,
+				D0AA6C9AEF848CA82B683258 /* Pods-RemoteProctoring-iPad.debug.xcconfig */,
+				A84DFE17036E73BB8539BCFA /* Pods-RemoteProctoring-iPad.release.xcconfig */,
+				10D77A5C1F9E5468DCD6DDF4 /* Pods-RemoteProctoring-macOS.debug.xcconfig */,
+				3163E275D6CFE04F5942663D /* Pods-RemoteProctoring-macOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -135,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C1A22E6286960D000AA2636 /* RemoteProctoring-macOS-iPad */ = {
+		5C1A22E6286960D000AA2636 /* RemoteProctoring-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C1A22EE286960D000AA2636 /* Build configuration list for PBXNativeTarget "RemoteProctoring-macOS-iPad" */;
+			buildConfigurationList = 5C1A22EE286960D000AA2636 /* Build configuration list for PBXNativeTarget "RemoteProctoring-macOS" */;
 			buildPhases = (
 				3323DDACFB246163DABA9116 /* [CP] Check Pods Manifest.lock */,
 				5C1A22E7286960D000AA2636 /* Sources */,
@@ -149,21 +190,19 @@
 			);
 			dependencies = (
 			);
-			name = "RemoteProctoring-macOS-iPad";
+			name = "RemoteProctoring-macOS";
 			packageProductDependencies = (
-				5C9C0A312869722E0040C53C /* Apollo */,
-				5C9C0A332869722E0040C53C /* ApolloWebSocket */,
 			);
 			productName = RemoteProctoring;
-			productReference = 5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS-iPad.app */;
+			productReference = 5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5C75826E28695DA1001D0C93 /* RemoteProctoring-iPhone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C75827E28695DA6001D0C93 /* Build configuration list for PBXNativeTarget "RemoteProctoring-iPhone" */;
 			buildPhases = (
-				5C1A230E286967B100AA2636 /* Apollo */,
 				4DDC7F4DAD4148045F7BA97A /* [CP] Check Pods Manifest.lock */,
+				5C1A230E286967B100AA2636 /* Apollo */,
 				5C75826B28695DA1001D0C93 /* Sources */,
 				5C75826C28695DA1001D0C93 /* Frameworks */,
 				5C75826D28695DA1001D0C93 /* Resources */,
@@ -175,9 +214,34 @@
 			);
 			name = "RemoteProctoring-iPhone";
 			packageProductDependencies = (
+				5C9C0A5B2869AC6C0040C53C /* Apollo */,
+				5C9C0A5D2869AC6C0040C53C /* ApolloWebSocket */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C75826F28695DA1001D0C93 /* RemoteProctoring-iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C9C0A4028697DD50040C53C /* RemoteProctoring-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C9C0A5328697DD50040C53C /* Build configuration list for PBXNativeTarget "RemoteProctoring-iPad" */;
+			buildPhases = (
+				5C9C0A4428697DD50040C53C /* [CP] Check Pods Manifest.lock */,
+				5C9C0A4528697DD50040C53C /* Sources */,
+				5C9C0A4A28697DD50040C53C /* Frameworks */,
+				5C9C0A4E28697DD50040C53C /* Resources */,
+				5C9C0A5228697DD50040C53C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RemoteProctoring-iPad";
+			packageProductDependencies = (
+				5C9C0A4128697DD50040C53C /* Apollo */,
+				5C9C0A4328697DD50040C53C /* ApolloWebSocket */,
+			);
+			productName = RemoteProctoring;
+			productReference = 5C9C0A5628697DD50040C53C /* RemoteProctoring-iPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,14 +269,15 @@
 			);
 			mainGroup = 5C75826628695DA1001D0C93;
 			packageReferences = (
-				5C9C0A302869722E0040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				5C9C0A5A2869AC6C0040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 5C75827028695DA1001D0C93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5C75826E28695DA1001D0C93 /* RemoteProctoring-iPhone */,
-				5C1A22E6286960D000AA2636 /* RemoteProctoring-macOS-iPad */,
+				5C1A22E6286960D000AA2636 /* RemoteProctoring-macOS */,
+				5C9C0A4028697DD50040C53C /* RemoteProctoring-iPad */,
 			);
 		};
 /* End PBXProject section */
@@ -222,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1A22F6286963BF00AA2636 /* Launch Screen.storyboard in Resources */,
 				5C1A22EC286960D000AA2636 /* Preview Assets.xcassets in Resources */,
 				5C1A22ED286960D000AA2636 /* Assets.xcassets in Resources */,
 			);
@@ -232,9 +296,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1A22F5286963BF00AA2636 /* Launch Screen.storyboard in Resources */,
+				5C9C0A58286981010040C53C /* Launch Screen.storyboard in Resources */,
 				5C75827B28695DA6001D0C93 /* Preview Assets.xcassets in Resources */,
 				5C75827728695DA6001D0C93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9C0A4E28697DD50040C53C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9C0A59286981010040C53C /* Launch Screen.storyboard in Resources */,
+				5C9C0A5028697DD50040C53C /* Preview Assets.xcassets in Resources */,
+				5C9C0A5128697DD50040C53C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +347,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RemoteProctoring-macOS-iPad-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RemoteProctoring-macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -320,21 +394,60 @@
 			shellPath = /bin/sh;
 			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n\n# propagate the xcrun call's return code to Xcode\nexit $?\n";
 		};
+		5C9C0A4428697DD50040C53C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteProctoring-iPad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C9C0A5228697DD50040C53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8EA947DC69A0AB8C425B063B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-macOS-iPad/Pods-RemoteProctoring-macOS-iPad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-macOS/Pods-RemoteProctoring-macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-macOS-iPad/Pods-RemoteProctoring-macOS-iPad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-macOS/Pods-RemoteProctoring-macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-macOS-iPad/Pods-RemoteProctoring-macOS-iPad-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemoteProctoring-macOS/Pods-RemoteProctoring-macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -347,6 +460,8 @@
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
 				5C9C0A3C286975BF0040C53C /* API.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
+				5C9C0A652869DF700040C53C /* StartView.swift in Sources */,
+				5C9C0A612869DED70040C53C /* MainView.swift in Sources */,
 				5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +473,22 @@
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
 				5C9C0A3B286975BF0040C53C /* API.swift in Sources */,
 				5C9C0A3E286976160040C53C /* Network.swift in Sources */,
+				5C9C0A642869DF700040C53C /* StartView.swift in Sources */,
+				5C9C0A602869DED70040C53C /* MainView.swift in Sources */,
 				5C75827328695DA1001D0C93 /* RemoteProctoringApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9C0A4528697DD50040C53C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
+				5C9C0A4728697DD50040C53C /* API.swift in Sources */,
+				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,
+				5C9C0A662869DF700040C53C /* StartView.swift in Sources */,
+				5C9C0A622869DED70040C53C /* MainView.swift in Sources */,
+				5C9C0A4928697DD50040C53C /* RemoteProctoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +497,7 @@
 /* Begin XCBuildConfiguration section */
 		5C1A22EF286960D000AA2636 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5BCF2E1CD21A38F7486E535 /* Pods-RemoteProctoring-macOS-iPad.debug.xcconfig */;
+			baseConfigurationReference = 10D77A5C1F9E5468DCD6DDF4 /* Pods-RemoteProctoring-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,7 +514,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -395,18 +525,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.biit.RemoteProctoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		5C1A22F0286960D000AA2636 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1A49785B007BAB252983537 /* Pods-RemoteProctoring-macOS-iPad.release.xcconfig */;
+			baseConfigurationReference = 3163E275D6CFE04F5942663D /* Pods-RemoteProctoring-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -423,7 +552,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -434,12 +563,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.biit.RemoteProctoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -630,10 +758,88 @@
 			};
 			name = Release;
 		};
+		5C9C0A5428697DD50040C53C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0AA6C9AEF848CA82B683258 /* Pods-RemoteProctoring-iPad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = RemoteProctoring/RemoteProctoring.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteProctoring/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FY49AFFG7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Procted;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biit.RemoteProctoring;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5C9C0A5528697DD50040C53C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A84DFE17036E73BB8539BCFA /* Pods-RemoteProctoring-iPad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = RemoteProctoring/RemoteProctoring.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteProctoring/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FY49AFFG7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Procted;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biit.RemoteProctoring;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C1A22EE286960D000AA2636 /* Build configuration list for PBXNativeTarget "RemoteProctoring-macOS-iPad" */ = {
+		5C1A22EE286960D000AA2636 /* Build configuration list for PBXNativeTarget "RemoteProctoring-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C1A22EF286960D000AA2636 /* Debug */,
@@ -660,10 +866,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5C9C0A5328697DD50040C53C /* Build configuration list for PBXNativeTarget "RemoteProctoring-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9C0A5428697DD50040C53C /* Debug */,
+				5C9C0A5528697DD50040C53C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5C9C0A302869722E0040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+		5C9C0A4228697DD50040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.51.2;
+			};
+		};
+		5C9C0A5A2869AC6C0040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
 			requirement = {
@@ -674,14 +897,24 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C9C0A312869722E0040C53C /* Apollo */ = {
+		5C9C0A4128697DD50040C53C /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5C9C0A302869722E0040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			package = 5C9C0A4228697DD50040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
 		};
-		5C9C0A332869722E0040C53C /* ApolloWebSocket */ = {
+		5C9C0A4328697DD50040C53C /* ApolloWebSocket */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5C9C0A302869722E0040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			package = 5C9C0A4228697DD50040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		5C9C0A5B2869AC6C0040C53C /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C9C0A5A2869AC6C0040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		5C9C0A5D2869AC6C0040C53C /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C9C0A5A2869AC6C0040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloWebSocket;
 		};
 /* End XCSwiftPackageProductDependency section */
