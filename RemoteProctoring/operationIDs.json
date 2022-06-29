@@ -1,6 +1,6 @@
 {
-  "2763246ef4943c9482af2b8978681ada1d8761914ea240bf9558862bddd3f004": {
+  "4f3f95344dba0420a2793c4cc55652d87a0c7281f00cb0bab19a60a2c7dd3099": {
     "name": "Authentication",
-    "source": "query Authentication($username: String!, $password: String!, $role: String!) {\n  loginUser(username: $username, password: $password, role: $role) {\n    __typename\n    code\n    token\n  }\n}"
+    "source": "query Authentication($username: String!, $password: String!, $role: String!) {\n  loginUser(username: $username, password: $password, role: $role) {\n    __typename\n    code\n    token\n    message\n  }\n}"
   }
 }

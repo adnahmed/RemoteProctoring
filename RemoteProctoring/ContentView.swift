@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var user = User()
+    
     var body: some View {
-       Text("Content")
+        if user.isLoggedIn {
+                MainView()
+        }
+        else {
+            StartView(isLoggedIn: $user.isLoggedIn)
+        }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }

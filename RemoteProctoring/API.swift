@@ -13,13 +13,14 @@ public final class AuthenticationQuery: GraphQLQuery {
         __typename
         code
         token
+        message
       }
     }
     """
 
   public let operationName: String = "Authentication"
 
-  public let operationIdentifier: String? = "2763246ef4943c9482af2b8978681ada1d8761914ea240bf9558862bddd3f004"
+  public let operationIdentifier: String? = "4f3f95344dba0420a2793c4cc55652d87a0c7281f00cb0bab19a60a2c7dd3099"
 
   public var username: String
   public var password: String
@@ -71,6 +72,7 @@ public final class AuthenticationQuery: GraphQLQuery {
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("code", type: .nonNull(.scalar(Int.self))),
           GraphQLField("token", type: .scalar(String.self)),
+          GraphQLField("message", type: .nonNull(.scalar(String.self))),
         ]
       }
 
@@ -80,8 +82,8 @@ public final class AuthenticationQuery: GraphQLQuery {
         self.resultMap = unsafeResultMap
       }
 
-      public init(code: Int, token: String? = nil) {
-        self.init(unsafeResultMap: ["__typename": "LoginResponse", "code": code, "token": token])
+      public init(code: Int, token: String? = nil, message: String) {
+        self.init(unsafeResultMap: ["__typename": "LoginResponse", "code": code, "token": token, "message": message])
       }
 
       public var __typename: String {
@@ -108,6 +110,15 @@ public final class AuthenticationQuery: GraphQLQuery {
         }
         set {
           resultMap.updateValue(newValue, forKey: "token")
+        }
+      }
+
+      public var message: String {
+        get {
+          return resultMap["message"]! as! String
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "message")
         }
       }
     }
