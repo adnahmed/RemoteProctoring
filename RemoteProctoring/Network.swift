@@ -9,7 +9,7 @@ import Foundation
 import Apollo
 import KeychainAccess
 
-class Network : ObservableObject {
+class Network {
     static let shared = Network()
     private(set) lazy var basicApollo = ApolloClient(url: URL(string: "http://127.0.0.1:3001/graphql")!)
     var keychain = Keychain(service: "rps")

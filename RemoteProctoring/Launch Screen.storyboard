@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,51 +12,34 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Remote Proctoring System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFE-wK-AkU">
-                                <rect key="frame" x="35" y="557" width="305" height="33.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="Remote Proctoring System-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-Ym-ex9">
-                                <rect key="frame" x="35" y="110" width="305" height="447"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-Ym-ex9">
+                                <rect key="frame" x="362" y="535" width="300" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="CDc-mE-H9B"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="750" constant="320" id="EHh-Gl-CDY"/>
+                                    <constraint firstAttribute="width" constant="300" id="5wj-Lk-JRp"/>
+                                    <constraint firstAttribute="height" constant="300" id="iD8-uN-0og"/>
+                                    <constraint firstAttribute="width" secondItem="2dA-Ym-ex9" secondAttribute="height" multiplier="1:1" id="v8h-iY-54B"/>
                                 </constraints>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="2dA-Ym-ex9" secondAttribute="trailing" constant="35" id="0I5-51-HeF"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="SFE-wK-AkU" secondAttribute="trailing" constant="35" id="5KJ-KU-4fz"/>
-                            <constraint firstItem="2dA-Ym-ex9" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="35" id="GnQ-jS-PBJ"/>
-                            <constraint firstItem="SFE-wK-AkU" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="IUq-hA-Brm"/>
-                            <constraint firstItem="SFE-wK-AkU" firstAttribute="top" secondItem="2dA-Ym-ex9" secondAttribute="bottom" id="JSh-Se-Mci"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="2dA-Ym-ex9" secondAttribute="bottom" constant="110" id="PNf-Rj-NqP"/>
-                            <constraint firstItem="2dA-Ym-ex9" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" id="UfG-aC-olr"/>
-                            <constraint firstItem="2dA-Ym-ex9" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" priority="750" constant="110" id="bgP-4k-867"/>
-                            <constraint firstItem="2dA-Ym-ex9" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="o1s-zc-GdH"/>
-                            <constraint firstItem="SFE-wK-AkU" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="35" id="siO-3L-hGF"/>
+                            <constraint firstItem="2dA-Ym-ex9" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="7qM-am-aVa"/>
+                            <constraint firstItem="2dA-Ym-ex9" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" id="K2H-K1-KNF"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.200000000000003" y="371.06446776611699"/>
+            <point key="canvasLocation" x="46.326836581709152" y="370.39999999999998"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="Remote Proctoring System-Logo" width="1080" height="1080"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="logo" width="1024" height="1024"/>
     </resources>
 </document>
