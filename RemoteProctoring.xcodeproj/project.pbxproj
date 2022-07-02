@@ -11,6 +11,12 @@
 		5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */; };
 		5C1A22EC286960D000AA2636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */; };
 		5C1A22ED286960D000AA2636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827628695DA6001D0C93 /* Assets.xcassets */; };
+		5C31BE6A2870418300768DDD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE692870418300768DDD /* Group.swift */; };
+		5C31BE6B2870418300768DDD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE692870418300768DDD /* Group.swift */; };
+		5C31BE6C2870418300768DDD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE692870418300768DDD /* Group.swift */; };
+		5C31BE6E28704A8E00768DDD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE6D28704A8E00768DDD /* Store.swift */; };
+		5C31BE6F28704A8E00768DDD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE6D28704A8E00768DDD /* Store.swift */; };
+		5C31BE7028704A8F00768DDD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE6D28704A8E00768DDD /* Store.swift */; };
 		5C693FC22869EC9300E75B45 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC12869EC9300E75B45 /* Apollo */; };
 		5C693FC42869EC9300E75B45 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC32869EC9300E75B45 /* ApolloWebSocket */; };
 		5C693FC62869ECAC00E75B45 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC52869ECAC00E75B45 /* Apollo */; };
@@ -59,6 +65,8 @@
 		3163E275D6CFE04F5942663D /* Pods-RemoteProctoring-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS/Pods-RemoteProctoring-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		53CD34433E1EACA350787093 /* Pods_RemoteProctoring_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C31BE692870418300768DDD /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		5C31BE6D28704A8E00768DDD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		5C693FC9286A732D00E75B45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5C75826F28695DA1001D0C93 /* RemoteProctoring-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProctoringApp.swift; sourceTree = "<group>"; };
@@ -123,6 +131,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C31BE672870403E00768DDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C9C0A3D286976160040C53C /* Network.swift */,
+				5C693FC9286A732D00E75B45 /* User.swift */,
+				5C31BE692870418300768DDD /* Group.swift */,
+				5C31BE6D28704A8E00768DDD /* Store.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C31BE682870404B00768DDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C9C0A5F2869DED70040C53C /* MainView.swift */,
+				5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */,
+				5C9C0A632869DF700040C53C /* StartView.swift */,
+				5C75827428695DA1001D0C93 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5C75826628695DA1001D0C93 = {
 			isa = PBXGroup;
 			children = (
@@ -146,16 +176,12 @@
 		5C75827128695DA1001D0C93 /* RemoteProctoring */ = {
 			isa = PBXGroup;
 			children = (
-				5C9C0A57286981010040C53C /* Launch Screen.storyboard */,
-				5C9C0A3D286976160040C53C /* Network.swift */,
-				5C693FC9286A732D00E75B45 /* User.swift */,
 				5C9C0A3A286975BE0040C53C /* API.swift */,
+				5C31BE682870404B00768DDD /* Views */,
+				5C31BE672870403E00768DDD /* Models */,
+				5C9C0A57286981010040C53C /* Launch Screen.storyboard */,
 				5C9C0A39286975950040C53C /* loginUser.graphql */,
 				5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */,
-				5C75827428695DA1001D0C93 /* ContentView.swift */,
-				5C9C0A632869DF700040C53C /* StartView.swift */,
-				5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */,
-				5C9C0A5F2869DED70040C53C /* MainView.swift */,
 				5C75827628695DA6001D0C93 /* Assets.xcassets */,
 				5C75827828695DA6001D0C93 /* RemoteProctoring.entitlements */,
 				5C75827928695DA6001D0C93 /* Preview Content */,
@@ -477,10 +503,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C31BE6B2870418300768DDD /* Group.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
 				5C9C0A3C286975BF0040C53C /* API.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
 				5C9C0A652869DF700040C53C /* StartView.swift in Sources */,
+				5C31BE6F28704A8E00768DDD /* Store.swift in Sources */,
 				5C9C0A612869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BB0286D92BD005CCA92 /* RegisterView.swift in Sources */,
 				5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */,
@@ -492,10 +520,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C31BE6A2870418300768DDD /* Group.swift in Sources */,
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
 				5C9C0A3B286975BF0040C53C /* API.swift in Sources */,
 				5C9C0A3E286976160040C53C /* Network.swift in Sources */,
 				5C9C0A642869DF700040C53C /* StartView.swift in Sources */,
+				5C31BE6E28704A8E00768DDD /* Store.swift in Sources */,
 				5C9C0A602869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BAF286D92BD005CCA92 /* RegisterView.swift in Sources */,
 				5C75827328695DA1001D0C93 /* RemoteProctoringApp.swift in Sources */,
@@ -507,10 +537,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C31BE6C2870418300768DDD /* Group.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
 				5C9C0A4728697DD50040C53C /* API.swift in Sources */,
 				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,
 				5C9C0A662869DF700040C53C /* StartView.swift in Sources */,
+				5C31BE7028704A8F00768DDD /* Store.swift in Sources */,
 				5C9C0A622869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BB1286D92BD005CCA92 /* RegisterView.swift in Sources */,
 				5C9C0A4928697DD50040C53C /* RemoteProctoringApp.swift in Sources */,

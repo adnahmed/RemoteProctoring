@@ -9,15 +9,14 @@ import SwiftUI
 import Combine
 import Navajo_Swift
 
-enum RegisterationRole {
-    case proctor, administrator, examinee
-}
-
 struct RegisterView: View {
-    private var role: RegisterationRole
+    @EnvironmentObject private var store: Store;
     let passwordValdator = PasswordValidator(rules: [LengthRule(min: 8, max: 200), RequiredCharacterRule(preset: .lowercaseCharacter),
                                                      RequiredCharacterRule(preset: .uppercaseCharacter), RequiredCharacterRule(preset: .decimalDigitCharacter),
                                                      RequiredCharacterRule(preset: .symbolCharacter)])
+    private var role: Role
+    // group may not need to be state
+    @State private var group: Group
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var passwordStrength: PasswordStrength? = nil
@@ -33,7 +32,7 @@ struct RegisterView: View {
     @State private var passwordsMatch: Bool = true
     @State private var usernameTaken: Bool = false
     @State private var passwordValidationErrors: [String] = []
-    init(for role: RegisterationRole) {
+    init(for role: Role) {
         self.role = role
     }
     var body: some View {
@@ -164,7 +163,11 @@ struct RegisterView: View {
                         TextField("Middle Name",text: $middleName)
                         TextField("Last Name",text: $lastName)
                         TextField("Email Address",text: $emailAddress)
-                        TextField("Organization",text: $organization)
+                        if role == .administrator {
+                            TextField("Organization",text: $organization)
+                        }
+                        else {
+                        }
                     }
                     .frame(maxWidth: g.size.width * 0.45)
                     Button(action: handleRegisteration) {

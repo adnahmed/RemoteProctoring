@@ -7,10 +7,7 @@
 
 import SwiftUI
 
-enum Role: String, CaseIterable, Identifiable {
-    var id: Self { self }
-    case administrator, proctor, examinee
-}
+
 
 enum Field : Hashable {
     case usernameField, passwordField, administatorUsernameField

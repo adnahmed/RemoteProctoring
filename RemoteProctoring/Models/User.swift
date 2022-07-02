@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum Role: String, CaseIterable, Identifiable {
+    var id: Self { self }
+    case administrator, proctor, examinee
+}
+
 class User: ObservableObject {
     @Published var isLoggedIn: Bool = false
     init() {
