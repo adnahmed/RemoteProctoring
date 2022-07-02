@@ -146,12 +146,12 @@ struct RegisterView: View {
                         SecureField("Repeat Password",text: $repeatPassword)
                             .disableAutocorrection(true)
                             .textInputAutocapitalization(.never)
-                            .onReceive(Just(repeatPasword)) { newRepeatPassword
+                            .onReceive(Just(repeatPassword)) { newRepeatPassword in
                                 withAnimation {
-                                    if newRepeatPassword != password {
+                                if newRepeatPassword != password {
                                         passwordsMatch = false
-                                    }
-                                    else {
+                                }
+                                else {
                                         passwordsMatch = true
                                     }
                                 }
@@ -179,15 +179,15 @@ struct RegisterView: View {
         }
     }
     func handleRegisteration() {
-                         passwordValidationErrors.removeAll()
-                        if let failingRules = self.passwordValdator.validate(password) {
-                            for failingRule in failingRules {
-                                passwordValidationErrors.append(failingRule.localizedErrorDescription)
-                            }
-                        } else {
-                            
-                        }
-
+        passwordValidationErrors.removeAll()
+        if let failingRules = self.passwordValdator.validate(password) {
+            for failingRule in failingRules {
+                passwordValidationErrors.append(failingRule.localizedErrorDescription)
+            }
+        } else {
+            
+        }
+        
     }
 }
 
