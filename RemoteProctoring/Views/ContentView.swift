@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var user = User()
-    
+    @EnvironmentObject private var user: User;
     var body: some View {
         if user.isLoggedIn {
                 MainView()
         }
         else {
-            StartView(isLoggedIn: $user.isLoggedIn)
+            StartView()
         }
     }
     
