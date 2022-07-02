@@ -46,7 +46,9 @@ struct RegisterView: View {
                         Divider()
                         TextField("Username", text: $username)
                             .disableAutocorrection(true)
+                        #if os(iOS)
                             .textInputAutocapitalization(.never)
+                        #endif
                         if usernameTaken {
                             Label {
                                 Text("Username already taken. Please try another one")
@@ -64,7 +66,9 @@ struct RegisterView: View {
                         VStack {
                             SecureField("Password",text: $password)
                                 .disableAutocorrection(true)
+                            #if os(iOS)
                                 .textInputAutocapitalization(.never)
+                            #endif
                                 .onReceive(Just(password)){ newPassword in
                                     passwordStrength = Navajo.strength(ofPassword: newPassword)
                                     withAnimation {
@@ -143,7 +147,9 @@ struct RegisterView: View {
                     VStack {
                         SecureField("Repeat Password",text: $repeatPassword)
                             .disableAutocorrection(true)
+                        #if os(iOS)
                             .textInputAutocapitalization(.never)
+                        #endif
                             .onReceive(Just(repeatPassword)) { newRepeatPassword in
                                 withAnimation {
                                     if newRepeatPassword != password {
