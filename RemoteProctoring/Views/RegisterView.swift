@@ -16,7 +16,7 @@ struct RegisterView: View {
                                                      RequiredCharacterRule(preset: .symbolCharacter)])
     private var role: Role
     // group may not need to be state
-    @State private var group: Group
+    @State private var group: Group = Group()
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var passwordStrength: PasswordStrength? = nil
@@ -40,7 +40,7 @@ struct RegisterView: View {
             HStack {
                 Spacer()
                 VStack {
-                    Group {
+                    VStack {
                         Text("New Registeration")
                             .font(.title)
                         Divider()
@@ -61,7 +61,7 @@ struct RegisterView: View {
                     }
                     .frame(maxWidth: g.size.width * 0.45)
                     ZStack {
-                        Group {
+                        VStack {
                             SecureField("Password",text: $password)
                                 .disableAutocorrection(true)
                                 .textInputAutocapitalization(.never)
@@ -123,7 +123,6 @@ struct RegisterView: View {
                             .frame(maxWidth: g.size.width * 0.70)
                         }
                     }
-                    
                     ProgressView(value: passwordStrengthProgress, total: 80) {
                         Text("Password Strength")
                             .font(Font.caption2)
@@ -141,16 +140,16 @@ struct RegisterView: View {
                         }
                         .frame(maxWidth: g.size.width * 0.45)
                     }
-                    Group {
+                    VStack {
                         SecureField("Repeat Password",text: $repeatPassword)
                             .disableAutocorrection(true)
                             .textInputAutocapitalization(.never)
                             .onReceive(Just(repeatPassword)) { newRepeatPassword in
                                 withAnimation {
-                                if newRepeatPassword != password {
+                                    if newRepeatPassword != password {
                                         passwordsMatch = false
-                                }
-                                else {
+                                    }
+                                    else {
                                         passwordsMatch = true
                                     }
                                 }
@@ -179,6 +178,7 @@ struct RegisterView: View {
             }
         }
     }
+    
     func handleRegisteration() {
         passwordValidationErrors.removeAll()
         if let failingRules = self.passwordValdator.validate(password) {
