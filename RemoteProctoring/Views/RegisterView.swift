@@ -166,8 +166,6 @@ struct RegisterView: View {
                         if role == .administrator {
                             TextField("Organization",text: $organization)
                         }
-                        else {
-                        }
                     }
                     .frame(maxWidth: g.size.width * 0.45)
                     Button(action: handleRegisteration) {
