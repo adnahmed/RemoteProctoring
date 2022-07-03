@@ -60,6 +60,9 @@
 		5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C1286D655D00045E6E /* KeychainAccess */; };
 		5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C3286D656300045E6E /* KeychainAccess */; };
 		5CE900C6286D657700045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C5286D657700045E6E /* KeychainAccess */; };
+		5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
+		5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
+		5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,7 @@
 		5CEC11B7286EDE020066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEC11BB286EDE100066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEC11BF286EDE180066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagementInterceptor.swift; sourceTree = "<group>"; };
 		A56727F05923F7FB4F6FC520 /* Pods-RemoteProctoring-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPhone.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPhone/Pods-RemoteProctoring-iPhone.release.xcconfig"; sourceTree = "<group>"; };
 		A84DFE17036E73BB8539BCFA /* Pods-RemoteProctoring-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPad.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad.release.xcconfig"; sourceTree = "<group>"; };
 		C11FC9CD69FA33506A9DDA4A /* Pods_RemoteProctoring_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +144,7 @@
 		5C31BE672870403E00768DDD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5C9C0A3D286976160040C53C /* Network.swift */,
+				5CEE5A9828717673005A259A /* Apollo */,
 				5C693FC9286A732D00E75B45 /* User.swift */,
 				5C31BE692870418300768DDD /* Group.swift */,
 				5C31BE6D28704A8E00768DDD /* Store.swift */,
@@ -201,6 +205,15 @@
 				5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CEE5A9828717673005A259A /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				5C9C0A3D286976160040C53C /* Network.swift */,
+				5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */,
+			);
+			path = Apollo;
 			sourceTree = "<group>";
 		};
 		686B21DFC64F966058B0601D /* Frameworks */ = {
@@ -513,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C31BE6B2870418300768DDD /* Group.swift in Sources */,
+				5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
 				5C9C0A3C286975BF0040C53C /* API.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
@@ -530,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C31BE6A2870418300768DDD /* Group.swift in Sources */,
+				5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
 				5C9C0A3B286975BF0040C53C /* API.swift in Sources */,
 				5C9C0A3E286976160040C53C /* Network.swift in Sources */,
@@ -547,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C31BE6C2870418300768DDD /* Group.swift in Sources */,
+				5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
 				5C9C0A4728697DD50040C53C /* API.swift in Sources */,
 				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,

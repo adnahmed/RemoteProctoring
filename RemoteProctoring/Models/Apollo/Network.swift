@@ -79,7 +79,7 @@ class Network {
             return [
                 MaxRetryInterceptor(),
                 CacheReadInterceptor(store: self.store),
-                //                UserManagementInterceptor(),
+                                UserManagementInterceptor(),
                 //                RequestLoggingInterceptor,
                 NetworkFetchInterceptor(client: self.client),
                 //                RequestLoggingInterceptor(),
