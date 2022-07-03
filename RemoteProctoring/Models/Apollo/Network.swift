@@ -11,10 +11,10 @@ import Apollo
 import ApolloSQLite
 import KeychainAccess
 
+let NetworkLogger = Logger(subsystem: "Procted", category: "Network")
 class Network {
     static let shared = Network()
     
-    private let log = Logger(subsystem: "Procted", category: "Network")
     
     private let sqliteFileURL = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(
         .applicationSupportDirectory,
@@ -79,10 +79,10 @@ class Network {
             return [
                 MaxRetryInterceptor(),
                 CacheReadInterceptor(store: self.store),
-                                UserManagementInterceptor(),
-                //                RequestLoggingInterceptor,
+                UserManagementInterceptor(),
+                RequestLoggingInterceptor(),
                 NetworkFetchInterceptor(client: self.client),
-                //                RequestLoggingInterceptor(),
+                RequestLoggingInterceptor(),
                 ResponseCodeInterceptor(),
                 JSONResponseParsingInterceptor(cacheKeyForObject: self.store.cacheKeyForObject),
                 AutomaticPersistedQueryInterceptor(),

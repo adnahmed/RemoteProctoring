@@ -63,6 +63,9 @@
 		5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 		5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 		5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
+		5CEE5AA028717F50005A259A /* RequestLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */; };
+		5CEE5AA128717F50005A259A /* RequestLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */; };
+		5CEE5AA228717F50005A259A /* RequestLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +95,7 @@
 		5CEC11BB286EDE100066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEC11BF286EDE180066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagementInterceptor.swift; sourceTree = "<group>"; };
+		5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoggingInterceptor.swift; sourceTree = "<group>"; };
 		A56727F05923F7FB4F6FC520 /* Pods-RemoteProctoring-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPhone.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPhone/Pods-RemoteProctoring-iPhone.release.xcconfig"; sourceTree = "<group>"; };
 		A84DFE17036E73BB8539BCFA /* Pods-RemoteProctoring-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPad.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad.release.xcconfig"; sourceTree = "<group>"; };
 		C11FC9CD69FA33506A9DDA4A /* Pods_RemoteProctoring_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +216,7 @@
 			children = (
 				5C9C0A3D286976160040C53C /* Network.swift */,
 				5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */,
+				5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */,
 			);
 			path = Apollo;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C31BE6B2870418300768DDD /* Group.swift in Sources */,
+				5CEE5AA128717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
 				5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
 				5C9C0A3C286975BF0040C53C /* API.swift in Sources */,
@@ -544,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C31BE6A2870418300768DDD /* Group.swift in Sources */,
+				5CEE5AA028717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
 				5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
 				5C9C0A3B286975BF0040C53C /* API.swift in Sources */,
@@ -562,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C31BE6C2870418300768DDD /* Group.swift in Sources */,
+				5CEE5AA228717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
 				5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
 				5C9C0A4728697DD50040C53C /* API.swift in Sources */,
