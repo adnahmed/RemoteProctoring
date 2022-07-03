@@ -12,19 +12,28 @@ enum Field : Hashable {
 }
 
 struct StartView: View {
+    #if os(macOS)
+    @State private var showRegisterView: Bool = false
+    #endif
     var body: some View {
-        if #available(iOS 16.0, macOS 13.0, *) {
+        #if os(iOS)
             NavigationStack {
                 startView()
             }
-        } else {
-            NavigationView() {
-                startView()
-            }
+        #else
+        if showRegisterView {
+            RegisterView(for: .administrator)
         }
+        else {
+            startView(showRegisterView: $showRegisterView)
+        }
+        #endif
         
     }
     struct startView: View {
+        #if os(macOS)
+        @Binding var showRegisterView: Bool
+        #endif
         
         @EnvironmentObject private var user: User;
         @State private var username = ""
@@ -42,78 +51,90 @@ struct StartView: View {
                     Image("Banner-Logo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                    Spacer()
-                    VStack(spacing: 15) {
-                        HStack {
+                    HStack {
+                        Spacer()
+                        VStack(spacing: 15) {
+                            
                             TextField("Username", text: $username)
                                 .textFieldStyle(.roundedBorder)
                                 .disableAutocorrection(.none)
                                 .focused($focusedField, equals: .usernameField)
-                        }
-                        .frame(maxWidth: g.size.width * 0.40)
-                        HStack {
+                            
+                                .frame(maxWidth: g.size.width * 0.40)
+                            
                             SecureField("Password", text: $password)
                                 .textFieldStyle(.roundedBorder)
                                 .disableAutocorrection(.none)
                                 .focused($focusedField, equals: .passwordField)
-                        }
-                        .frame(maxWidth: g.size.width * 0.40)
-                        if role != .administrator {
-                            HStack {
-                                Spacer()
+                            
+                                .frame(maxWidth: g.size.width * 0.40)
+                            
+                            if role != .administrator {
+                                
                                 TextField("Administrator Username", text: $administratorUsername)
-                                    .textFieldStyle(.roundedBorder)
-                                    .disableAutocorrection(.none)
-                                    .focused($focusedField, equals: .administatorUsernameField)
-                                Spacer()
+                                        .textFieldStyle(.roundedBorder)
+                                        .disableAutocorrection(.none)
+                                        .focused($focusedField, equals: .administatorUsernameField)
+                                
+                                        .frame(maxWidth: g.size.width * 0.50)
                             }
-                            .frame(maxWidth: g.size.width * 0.50)
-                        }
-                        
-                        HStack {
-                            Spacer()
-                            Text("Role")
+                            
                             Picker("Choose a Role", selection: $role) {
                                 ForEach(Role.allCases) { role in
                                     Text(role.rawValue.capitalized).tag(role)
                                 }
                             }
-                            .controlSize(.large)
-                            Spacer()
-                        }
-                        .frame(maxWidth: g.size.width * 0.40)
-                        Button ("Sign In") {
-                            if username.isEmpty {
-                                focusedField = .usernameField
-                            } else if password.isEmpty {
-                                focusedField = .passwordField
-                            } else if role != .administrator && administratorUsername.isEmpty {
-                                focusedField = .administatorUsernameField
-                            } else {
-                                signInPressed = true
-                                Task {
-                                    handleSignIn()
+                            
+                            .frame(maxWidth: g.size.width * 0.40)
+                            
+                            Button ("Sign In") {
+                                if username.isEmpty {
+                                    focusedField = .usernameField
+                                } else if password.isEmpty {
+                                    focusedField = .passwordField
+                                } else if role != .administrator && administratorUsername.isEmpty {
+                                    focusedField = .administatorUsernameField
+                                } else {
+                                    signInPressed = true
+                                    Task {
+                                        handleSignIn()
+                                    }
                                 }
                             }
-                        }
-                        .buttonStyle(.borderedProminent)
-                        Divider()
-                            .frame(maxWidth: g.size.width * 0.60)
-                        NavigationLink("Register as Administrator") {
-                            RegisterView(for: .administrator)
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .controlSize(.large)
-                        if signInPressed {
-                            Spacer()
-                            ProgressView()
-                        }
-                        if recievedError {
-                            Spacer()
-                            ForEach(errorMessages, id: \.self) { error in
-                                ErrorView(message: error)
-                                    .animation(.easeInOut(duration: 3), value: recievedError)
-                                    .transition(.asymmetric(insertion: .slide, removal: .move(edge: .bottom)))
+                            .buttonStyle(.borderedProminent)
+                            
+                            Divider()
+                            
+                                .frame(maxWidth: g.size.width * 0.60)
+                            
+                            #if os(iOS)
+                            NavigationLink("Register as Administrator") {
+                                RegisterView(for: .administrator)
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .controlSize(.large)
+                            .padding(.bottom)
+                            #else
+                            Button("Register as Administrator") {
+                                withAnimation {
+                                    showRegisterView.toggle()
+                                }
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .controlSize(.large)
+                            .padding(.bottom)
+                            #endif
+
+                            if signInPressed {
+                                ProgressView()
+                            }
+                            
+                            if recievedError {
+                                ForEach(errorMessages, id: \.self) { error in
+                                    ErrorView(message: error)
+                                        .animation(.easeInOut(duration: 3), value: recievedError)
+                                        .transition(.asymmetric(insertion: .slide, removal: .move(edge: .bottom)))
+                                }
                             }
                         }
                         Spacer()
@@ -132,7 +153,7 @@ struct StartView: View {
                 recievedError = false
             }
             errorMessages.removeAll()
-            Network.shared.basicApollo.fetch(
+            Network.shared.client.fetch(
                 query: AuthenticationQuery(username: username,password: password,role: role.rawValue)) { res in
                     switch res {
                     case .success (let gqRes):
@@ -161,7 +182,7 @@ struct StartView: View {
                             }
                             else {
                                 errorMessages.append(data.loginUser.message)
-                            }
+                                }
                             withAnimation {
                                 recievedError = true
                             }
@@ -196,7 +217,6 @@ struct StartView: View {
                     
                 }
                 .transition(.asymmetric(insertion: .slide, removal: .move(edge: .bottom)))
-                
             }
         }
     }

@@ -17,6 +17,9 @@
 		5C31BE6E28704A8E00768DDD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE6D28704A8E00768DDD /* Store.swift */; };
 		5C31BE6F28704A8E00768DDD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE6D28704A8E00768DDD /* Store.swift */; };
 		5C31BE7028704A8F00768DDD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C31BE6D28704A8E00768DDD /* Store.swift */; };
+		5C31BE722870C40800768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE712870C40800768DDD /* ApolloSQLite */; };
+		5C31BE742870C41000768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE732870C41000768DDD /* ApolloSQLite */; };
+		5C31BE762870C41B00768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE752870C41B00768DDD /* ApolloSQLite */; };
 		5C693FC22869EC9300E75B45 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC12869EC9300E75B45 /* Apollo */; };
 		5C693FC42869EC9300E75B45 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC32869EC9300E75B45 /* ApolloWebSocket */; };
 		5C693FC62869ECAC00E75B45 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC52869ECAC00E75B45 /* Apollo */; };
@@ -101,6 +104,7 @@
 			files = (
 				5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */,
 				5CD6ECA2286F48540059BEB7 /* Navajo-Swift in Frameworks */,
+				5C31BE742870C41000768DDD /* ApolloSQLite in Frameworks */,
 				5C693FC82869ECAC00E75B45 /* ApolloWebSocket in Frameworks */,
 				5C693FC62869ECAC00E75B45 /* Apollo in Frameworks */,
 			);
@@ -112,6 +116,7 @@
 			files = (
 				5CE900C6286D657700045E6E /* KeychainAccess in Frameworks */,
 				5CD6EC9E286F47E20059BEB7 /* Navajo-Swift in Frameworks */,
+				5C31BE762870C41B00768DDD /* ApolloSQLite in Frameworks */,
 				5C693FC42869EC9300E75B45 /* ApolloWebSocket in Frameworks */,
 				5C693FC22869EC9300E75B45 /* Apollo in Frameworks */,
 			);
@@ -123,6 +128,7 @@
 			files = (
 				5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */,
 				5CD6ECA0286F48480059BEB7 /* Navajo-Swift in Frameworks */,
+				5C31BE722870C40800768DDD /* ApolloSQLite in Frameworks */,
 				5C9C0A4C28697DD50040C53C /* ApolloWebSocket in Frameworks */,
 				5C9C0A4D28697DD50040C53C /* Apollo in Frameworks */,
 			);
@@ -248,6 +254,7 @@
 				5C693FC72869ECAC00E75B45 /* ApolloWebSocket */,
 				5CE900C3286D656300045E6E /* KeychainAccess */,
 				5CD6ECA1286F48540059BEB7 /* Navajo-Swift */,
+				5C31BE732870C41000768DDD /* ApolloSQLite */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */;
@@ -273,6 +280,7 @@
 				5C693FC32869EC9300E75B45 /* ApolloWebSocket */,
 				5CE900C5286D657700045E6E /* KeychainAccess */,
 				5CD6EC9D286F47E20059BEB7 /* Navajo-Swift */,
+				5C31BE752870C41B00768DDD /* ApolloSQLite */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C75826F28695DA1001D0C93 /* RemoteProctoring-iPhone.app */;
@@ -298,6 +306,7 @@
 				5C9C0A4328697DD50040C53C /* ApolloWebSocket */,
 				5CE900C1286D655D00045E6E /* KeychainAccess */,
 				5CD6EC9F286F48480059BEB7 /* Navajo-Swift */,
+				5C31BE712870C40800768DDD /* ApolloSQLite */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C9C0A5628697DD50040C53C /* RemoteProctoring-iPad.app */;
@@ -476,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n\n# propagate the xcrun call's return code to Xcode\nexit $?\n";
+			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n\n# propagate the xcrun call's return code to Xcode\n# TODO: change exit code to $? when testing backend\nexit 0\n";
 		};
 		5C9C0A682869E7250040C53C /* Apollo */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -494,7 +503,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n\n# propagate the xcrun call's return code to Xcode\nexit $?\n";
+			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n\n# propagate the xcrun call's return code to Xcode\n# TODO: change exit code to $? when testing backend\nexit 0\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -990,6 +999,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5C31BE712870C40800768DDD /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		5C31BE732870C41000768DDD /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		5C31BE752870C41B00768DDD /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
 		5C693FC12869EC9300E75B45 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */;

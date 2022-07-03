@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-import Combine
 import Navajo_Swift
+
+
 
 struct RegisterView: View {
     @EnvironmentObject private var store: Store;
@@ -43,6 +44,7 @@ struct RegisterView: View {
                     VStack {
                         Text("New Registeration")
                             .font(.title)
+                            .padding(.top)
                         Divider()
                         TextField("Username", text: $username)
                             .disableAutocorrection(true)
@@ -66,10 +68,10 @@ struct RegisterView: View {
                         VStack {
                             SecureField("Password",text: $password)
                                 .disableAutocorrection(true)
-                            #if os(iOS)
+#if os(iOS)
                                 .textInputAutocapitalization(.never)
-                            #endif
-                                .onReceive(Just(password)){ newPassword in
+#endif
+                                .onChange(of:password){ newPassword in
                                     passwordStrength = Navajo.strength(ofPassword: newPassword)
                                     withAnimation {
                                         switch(passwordStrength) {
@@ -93,20 +95,24 @@ struct RegisterView: View {
                                         }
                                     }
                                 }
-                            HStack {
-                                Spacer()
-                                if password.isEmpty {
-                                    Image(systemName:"info.circle")
-                                        .onTapGesture {
-                                            withAnimation {
-                                                showPasswordRules.toggle()
-                                            }
+                                .overlay {
+                                    HStack {
+                                        Spacer()
+                                        if password.isEmpty {
+                                            Image(systemName:"info.circle")
+                                                .padding(.trailing)
+                                                .onTapGesture {
+                                                    withAnimation {
+                                                        showPasswordRules.toggle()
+                                                    }
+                                                }
+                                                .symbolRenderingMode(.multicolor)
                                         }
-                                        .symbolRenderingMode(.multicolor)
+                                    }
                                 }
-                            }
+                                .frame(maxWidth: g.size.width * 0.45)
                         }
-                        .frame(maxWidth: g.size.width * 0.45)
+                            
                         if showPasswordRules {
                             Label {
                                 Text("Password must contain atleast one uppercase letter, one lowercase letter, one digit and one symbol (i.e. %, @, $ etc.).")
@@ -114,8 +120,9 @@ struct RegisterView: View {
                                     .allowsTightening(true)
                                     .font(.body)
                             } icon: {
-                                Image(systemName: "xmark")
-                                    .symbolRenderingMode(.multicolor)
+                                Image(systemName: "x.circle.fill")
+                                    .symbolRenderingMode(.palette)
+                                    .foregroundStyle(.white, .red)
                                     .imageScale(.small)
                                     .onTapGesture {
                                         withAnimation {
@@ -124,7 +131,7 @@ struct RegisterView: View {
                                     }
                             }
                             .background(.white)
-                            .frame(maxWidth: g.size.width * 0.70)
+                            .frame(maxWidth: g.size.width * 0.50)
                         }
                     }
                     ProgressView(value: passwordStrengthProgress, total: 80) {
@@ -150,7 +157,7 @@ struct RegisterView: View {
                         #if os(iOS)
                             .textInputAutocapitalization(.never)
                         #endif
-                            .onReceive(Just(repeatPassword)) { newRepeatPassword in
+                            .onChange(of:repeatPassword) { newRepeatPassword in
                                 withAnimation {
                                     if newRepeatPassword != password {
                                         passwordsMatch = false
@@ -180,7 +187,6 @@ struct RegisterView: View {
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
                 }
-                Spacer()
             }
         }
     }
