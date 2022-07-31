@@ -1,6 +1,10 @@
 {
-  "4f3f95344dba0420a2793c4cc55652d87a0c7281f00cb0bab19a60a2c7dd3099": {
-    "name": "Authentication",
-    "source": "query Authentication($username: String!, $password: String!, $role: String!) {\n  loginUser(username: $username, password: $password, role: $role) {\n    __typename\n    code\n    token\n    message\n  }\n}"
+  "6924731d69286d00c479d181f39c5bc76249182aed83db11f67868d28d2abcc0": {
+    "name": "LogIn",
+    "source": "query LogIn($username: String!, $password: String!) {\n  logIn(username: $username, password: $password) {\n    __typename\n    code\n    token\n    message\n    success\n    user {\n      __typename\n      ...UserDetails\n    }\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  given_name\n  middle_name\n  last_name\n  role\n}"
+  },
+  "663f53c9814aef2f6c3fc6ccdca5cb00cbb77de1fa50434c422e5a190b3df70c": {
+    "name": "Register",
+    "source": "mutation Register($username: String!, $password: String!, $role: String!, $givenName: String!, $email: EmailAddress!) {\n  register(\n    username: $username\n    password: $password\n    role: $role\n    given_name: $givenName\n    email: $email\n  ) {\n    __typename\n    code\n    token\n    success\n    message\n    user {\n      __typename\n      ...UserDetails\n    }\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  given_name\n  middle_name\n  last_name\n  role\n}"
   }
 }

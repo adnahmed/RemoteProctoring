@@ -7,16 +7,22 @@
 
 import Foundation
 
-enum Role: String, CaseIterable, Identifiable {
-    var id: Self { self }
-    case administrator, proctor, examinee
-}
-
-class User: ObservableObject {
+class User : ObservableObject {
     @Published var isLoggedIn: Bool = false
-    init() {
-        if Network.shared.token != nil {
-            isLoggedIn = true
+    var userDetails: UserDetails? = nil
+    var name: String {
+        get {
+            PersonNameComponents(namePrefix: userDetails?.prefix ?? "",
+                                 givenName: userDetails?.givenName ?? "",
+                                 middleName: userDetails?.middleName ?? "",
+                                 familyName: userDetails?.lastName ?? "")
+            .formatted()
         }
     }
+    init() {
+        guard Network.shared.token != nil else { return }
+        isLoggedIn = true
+    }
 }
+
+

@@ -1,0 +1,11 @@
+query LogIn($username: String!, $password: String!) {
+  logIn(username: $username, password: $password) {
+    code
+    token
+    message
+    success
+    user {
+        ...UserDetails
+    }
+  }
+}

@@ -8,49 +8,62 @@
 import SwiftUI
 import Navajo_Swift
 
-
-
 struct RegisterView: View {
-    @EnvironmentObject private var store: Store;
     let passwordValdator = PasswordValidator(rules: [LengthRule(min: 8, max: 200), RequiredCharacterRule(preset: .lowercaseCharacter),
                                                      RequiredCharacterRule(preset: .uppercaseCharacter), RequiredCharacterRule(preset: .decimalDigitCharacter),
                                                      RequiredCharacterRule(preset: .symbolCharacter)])
-    private var role: Role
-    // group may not need to be state
-    @State private var group: Group = Group()
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var passwordStrength: PasswordStrength? = nil
     @State private var passwordStrengthProgress: Float = 0.0
     @State private var passwordStrengthColor: Color = .red
     @State private var repeatPassword: String = ""
+    @State private var prefix: String = ""
     @State private var givenName: String = ""
     @State private var middleName: String = ""
     @State private var lastName: String = ""
     @State private var emailAddress: String = ""
-    @State private var organization: String = ""
     @State private var showPasswordRules: Bool = false
     @State private var passwordsMatch: Bool = true
     @State private var usernameTaken: Bool = false
     @State private var passwordValidationErrors: [String] = []
-    init(for role: Role) {
-        self.role = role
+#if os(macOS)
+    @Binding var showRegisterView: Bool
+#endif
+    #if os(macOS)
+    init(showRegisterView: Binding<Bool>) {
+        self._showRegisterView = showRegisterView
     }
+    #endif
     var body: some View {
         GeometryReader { g in
             HStack {
                 Spacer()
                 VStack {
                     VStack {
+#if os(macOS)
+                        HStack {
+                            Button {
+                                withAnimation {
+                                    showRegisterView = false
+                                }
+                            } label: {
+                                Image(systemName: "chevron.backward.circle")
+                                    .imageScale(.large)
+                            }
+                            Spacer()
+                        }
+#endif
                         Text("New Registeration")
                             .font(.title)
                             .padding(.top)
                         Divider()
                         TextField("Username", text: $username)
+                            .textFieldStyle(.roundedBorder)
                             .disableAutocorrection(true)
-                        #if os(iOS)
+#if os(iOS)
                             .textInputAutocapitalization(.never)
-                        #endif
+#endif
                         if usernameTaken {
                             Label {
                                 Text("Username already taken. Please try another one")
@@ -68,6 +81,7 @@ struct RegisterView: View {
                         VStack {
                             SecureField("Password",text: $password)
                                 .disableAutocorrection(true)
+                                .textFieldStyle(.roundedBorder)
 #if os(iOS)
                                 .textInputAutocapitalization(.never)
 #endif
@@ -112,7 +126,7 @@ struct RegisterView: View {
                                 }
                                 .frame(maxWidth: g.size.width * 0.45)
                         }
-                            
+                        
                         if showPasswordRules {
                             Label {
                                 Text("Password must contain atleast one uppercase letter, one lowercase letter, one digit and one symbol (i.e. %, @, $ etc.).")
@@ -153,10 +167,11 @@ struct RegisterView: View {
                     }
                     VStack {
                         SecureField("Repeat Password",text: $repeatPassword)
+                            .textFieldStyle(.roundedBorder)
                             .disableAutocorrection(true)
-                        #if os(iOS)
+#if os(iOS)
                             .textInputAutocapitalization(.never)
-                        #endif
+#endif
                             .onChange(of:repeatPassword) { newRepeatPassword in
                                 withAnimation {
                                     if newRepeatPassword != password {
@@ -171,13 +186,16 @@ struct RegisterView: View {
                             Text("Password do not Match.")
                                 .foregroundColor(.red)
                         }
+                        TextField("Prefix", text: $prefix)
+                            .textFieldStyle(.roundedBorder)
                         TextField("Given Name",text: $givenName)
+                            .textFieldStyle(.roundedBorder)
                         TextField("Middle Name",text: $middleName)
+                            .textFieldStyle(.roundedBorder)
                         TextField("Last Name",text: $lastName)
+                            .textFieldStyle(.roundedBorder)
                         TextField("Email Address",text: $emailAddress)
-                        if role == .administrator {
-                            TextField("Organization",text: $organization)
-                        }
+                            .textFieldStyle(.roundedBorder)
                     }
                     .frame(maxWidth: g.size.width * 0.45)
                     Button(action: handleRegisteration) {
@@ -187,6 +205,7 @@ struct RegisterView: View {
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
                 }
+                Spacer()
             }
         }
     }
@@ -204,8 +223,14 @@ struct RegisterView: View {
     }
 }
 
+#if DEBUG
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterView(for: .administrator)
+        #if os(macOS)
+        RegisterView(showRegisterView: .constant(false))
+        #else
+        RegisterView()
+        #endif
     }
 }
+#endif

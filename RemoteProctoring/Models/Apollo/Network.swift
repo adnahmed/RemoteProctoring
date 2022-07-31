@@ -14,8 +14,6 @@ import KeychainAccess
 let NetworkLogger = Logger(subsystem: "Procted", category: "Network")
 class Network {
     static let shared = Network()
-    
-    
     private let sqliteFileURL = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(
         .applicationSupportDirectory,
         .userDomainMask,
@@ -25,13 +23,13 @@ class Network {
     private var keychain = Keychain(service: "rps")
     var token : String? {
         
-        set {
+        set(newToken) {
             do {
-                if newValue == nil {
+                if newToken == nil {
                     try keychain.remove("token")
                 }
                 else {
-                    try keychain.set(newValue!, key: "token")
+                    try keychain.set(newToken!, key: "token")
                 }
             } catch {
                 print("Keychain Value not modified")

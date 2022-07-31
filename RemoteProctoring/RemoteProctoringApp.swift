@@ -9,13 +9,12 @@ import SwiftUI
 
 @main
 struct RemoteProctoringApp: App {
-    @StateObject private var store = Store()
-    @StateObject private var user = User()
+    @StateObject var user: User = User()
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(store)
                 .environmentObject(user)
+            
         }
     }
 }

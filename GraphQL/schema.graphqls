@@ -27,7 +27,7 @@ type Query {
 }
 
 type Mutation {
-  register(username: String!, password: String!, role: String!, prefix: String, given_name: String!, middle_name: String, last_name: String, email: EmailAddress!, organization: String!): AuthenticationResponse!
+  register(username: String!, password: String!, role: String!, prefix: String, given_name: String!, middle_name: String, last_name: String, email: EmailAddress!, organization: String!): AuthenticationResponse
 }
 
 """
