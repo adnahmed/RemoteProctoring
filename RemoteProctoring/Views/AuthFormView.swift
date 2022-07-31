@@ -65,7 +65,7 @@ struct AuthFormView: View {
                         
 #if os(iOS)
                         NavigationLink("Register") {
-                            RegisterView(for: .administrator)
+                            RegisterView()
                         }
                         .registerButton()
 #else
