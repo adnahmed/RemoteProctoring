@@ -11,13 +11,13 @@ struct AuthFormView: View {
 #if os(macOS)
     @Binding var showRegisterView: Bool
 #endif
-    @EnvironmentObject private var user: User;
+    @EnvironmentObject private var user: User
     @State private var username = ""
     @State private var password = ""
     @State private var recievedError: Bool = false
     @State private var signInPressed: Bool = false
-    @State private var errorMessages = [String]()
-    @FocusState private var focusedField: Field?
+    @State private var errorMessages: [String] = []
+    @FocusState private var focusedField: AuthFormField?
     
     var body: some View {
         GeometryReader { g in
@@ -35,7 +35,6 @@ struct AuthFormView: View {
                                     errorMessages.removeAll()
                                 }
                             }
-                        
                         SecureField("Password", text: $password)
                             .authTextField()
                             .focused($focusedField, equals: .passwordField)
@@ -45,24 +44,12 @@ struct AuthFormView: View {
                                     errorMessages.removeAll()
                                 }
                             }
-                        
-                        Button ("Sign In") {
-                            if username.isEmpty {
-                                focusedField = .usernameField
-                            } else if password.isEmpty {
-                                focusedField = .passwordField
-                            } else {
-                                signInPressed = true
-                                Task {
-                                    handleSignIn()
-                                }
-                            }
+                        Button (action: handleSignIn) {
+                            Text("Sign In")
                         }
                         .buttonStyle(.borderedProminent)
-                        
                         Divider()
                             .frame(maxWidth: g.size.width * 0.60)
-                        
 #if os(iOS)
                         NavigationLink("Register") {
                             RegisterView()
@@ -76,17 +63,12 @@ struct AuthFormView: View {
                         }
                         .registerButton()
 #endif
-                        
                         if signInPressed {
                             ProgressView()
                         }
-                        
                         if recievedError {
                             ForEach(errorMessages, id: \.self) { error in
-                                ErrorView(message: error)
-                                    .animation(.easeInOut(duration: 3), value: recievedError)
-                                    .transition(.asymmetric(insertion: .slide, removal: .move(edge: .bottom)))
-                                    .padding(.bottom)
+                                AuthenticationErrorView(message: error, animateWhen: $recievedError)
                             }
                         }
                     }
@@ -100,8 +82,19 @@ struct AuthFormView: View {
         }
         .background(.white)
     }
+    
     func handleSignIn() {
+        guard !username.isEmpty else {
+            focusedField = .usernameField
+            return
+        }
+        guard !password.isEmpty else {
+            focusedField = .passwordField
+            return
+        }
+        
         withAnimation {
+            signInPressed = true
             recievedError = false
         }
         errorMessages.removeAll()

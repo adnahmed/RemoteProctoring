@@ -1,10 +1,10 @@
 {
-  "6924731d69286d00c479d181f39c5bc76249182aed83db11f67868d28d2abcc0": {
+  "7618005887c31daee3f98ecf6dd1a16006bd77d030acb0fcee71d27deb7bb6f3": {
     "name": "LogIn",
-    "source": "query LogIn($username: String!, $password: String!) {\n  logIn(username: $username, password: $password) {\n    __typename\n    code\n    token\n    message\n    success\n    user {\n      __typename\n      ...UserDetails\n    }\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  given_name\n  middle_name\n  last_name\n  role\n}"
+    "source": "query LogIn($username: String!, $password: String!) {\n  logIn(username: $username, password: $password) {\n    __typename\n    code\n    token\n    message\n    success\n    user {\n      __typename\n      ...UserDetails\n    }\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n}"
   },
-  "663f53c9814aef2f6c3fc6ccdca5cb00cbb77de1fa50434c422e5a190b3df70c": {
+  "bd89ae9b98e2f7a86645290c8aab54bfbc2b50e86d615e8f46daded8aa3cbfcf": {
     "name": "Register",
-    "source": "mutation Register($username: String!, $password: String!, $role: String!, $givenName: String!, $email: EmailAddress!) {\n  register(\n    username: $username\n    password: $password\n    role: $role\n    given_name: $givenName\n    email: $email\n  ) {\n    __typename\n    code\n    token\n    success\n    message\n    user {\n      __typename\n      ...UserDetails\n    }\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  given_name\n  middle_name\n  last_name\n  role\n}"
+    "source": "mutation Register($user: UserRegisterationInput!) {\n  register(user: $user) {\n    __typename\n    code\n    token\n    message\n    success\n    user {\n      __typename\n      ...UserDetails\n    }\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n}"
   }
 }

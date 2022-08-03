@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct ErrorView: View {
+struct AuthenticationErrorView: View {
     var message: String
+    @Binding var animateWhen: Bool
     var body: some View {
         Label {
             Text(message)
@@ -27,12 +28,15 @@ struct ErrorView: View {
                 .opacity(0.5)
             
         }
+        .animation(.easeInOut(duration: 3), value: animateWhen)
         .transition(.asymmetric(insertion: .slide, removal: .move(edge: .bottom)))
+        .padding(.bottom)
     }
+    
 }
 
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
-        ErrorView(message: "Error Occurred")
+        AuthenticationErrorView(message: "Error Occurred", animateWhen: .constant(true))
     }
 }

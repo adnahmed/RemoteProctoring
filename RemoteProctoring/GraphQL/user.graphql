@@ -1,7 +1,7 @@
 fragment UserDetails on User {
     prefix
-    given_name
-    middle_name
-    last_name
+    givenName
+    middleName
+    lastName
     role
 }

@@ -54,6 +54,9 @@
 		5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C1286D655D00045E6E /* KeychainAccess */; };
 		5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C3286D656300045E6E /* KeychainAccess */; };
 		5CE900C6286D657700045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C5286D657700045E6E /* KeychainAccess */; };
+		5CE95E3D2898066F0041BBCC /* RegisterViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */; };
+		5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */; };
+		5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */; };
 		5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 		5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 		5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
@@ -63,9 +66,9 @@
 		5CEEC17E28968A15001BD64C /* LogoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC17D28968A15001BD64C /* LogoBanner.swift */; };
 		5CEEC17F28968A15001BD64C /* LogoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC17D28968A15001BD64C /* LogoBanner.swift */; };
 		5CEEC18028968A15001BD64C /* LogoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC17D28968A15001BD64C /* LogoBanner.swift */; };
-		5CEEC18628968B0A001BD64C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18528968B0A001BD64C /* ErrorView.swift */; };
-		5CEEC18728968B0A001BD64C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18528968B0A001BD64C /* ErrorView.swift */; };
-		5CEEC18828968B0A001BD64C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18528968B0A001BD64C /* ErrorView.swift */; };
+		5CEEC18628968B0A001BD64C /* AuthenticationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */; };
+		5CEEC18728968B0A001BD64C /* AuthenticationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */; };
+		5CEEC18828968B0A001BD64C /* AuthenticationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */; };
 		5CEEC18E28968E7D001BD64C /* AuthFormSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */; };
 		5CEEC18F28968E7D001BD64C /* AuthFormSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */; };
 		5CEEC19028968E7D001BD64C /* AuthFormSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */; };
@@ -112,13 +115,14 @@
 		5C9C0A57286981010040C53C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5C9C0A5F2869DED70040C53C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewSupporting.swift; path = RemoteProctoring/Views/RegisterViewSupporting.swift; sourceTree = SOURCE_ROOT; };
 		5CEC11B7286EDE020066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEC11BB286EDE100066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEC11BF286EDE180066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagementInterceptor.swift; sourceTree = "<group>"; };
 		5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoggingInterceptor.swift; sourceTree = "<group>"; };
 		5CEEC17D28968A15001BD64C /* LogoBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoBanner.swift; sourceTree = SOURCE_ROOT; };
-		5CEEC18528968B0A001BD64C /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = SOURCE_ROOT; };
+		5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationErrorView.swift; sourceTree = SOURCE_ROOT; };
 		5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormSupporting.swift; sourceTree = "<group>"; };
 		5CEEC19128968F1B001BD64C /* AuthFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormView.swift; sourceTree = "<group>"; };
 		5CF2526D2895316C00D03358 /* user.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = user.graphql; sourceTree = "<group>"; };
@@ -266,8 +270,9 @@
 		5CF2A5C02893B1AE0080A8A4 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */,
 				5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */,
-				5CEEC18528968B0A001BD64C /* ErrorView.swift */,
+				5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */,
 				5CEEC17D28968A15001BD64C /* LogoBanner.swift */,
 			);
 			path = Supporting;
@@ -609,11 +614,12 @@
 				5CF2A5C92893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
+				5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC18F28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5C1DC75328760F1F00CBFC04 /* SidebarView.swift in Sources */,
 				5CF2A5D12893EDEC0080A8A4 /* API.swift in Sources */,
-				5CEEC18728968B0A001BD64C /* ErrorView.swift in Sources */,
+				5CEEC18728968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
 				5CF2A5C32893B3B50080A8A4 /* User.swift in Sources */,
 				5C9C0A612869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BB0286D92BD005CCA92 /* RegisterView.swift in Sources */,
@@ -633,11 +639,12 @@
 				5CF2A5C82893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
 				5C9C0A3E286976160040C53C /* Network.swift in Sources */,
+				5CE95E3D2898066F0041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19228968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC18E28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5C1DC75228760F1F00CBFC04 /* SidebarView.swift in Sources */,
 				5CF2A5D02893EDEC0080A8A4 /* API.swift in Sources */,
-				5CEEC18628968B0A001BD64C /* ErrorView.swift in Sources */,
+				5CEEC18628968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
 				5CF2A5C22893B3B50080A8A4 /* User.swift in Sources */,
 				5C9C0A602869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BAF286D92BD005CCA92 /* RegisterView.swift in Sources */,
@@ -657,11 +664,12 @@
 				5CF2A5CA2893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
 				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,
+				5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC19028968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5C1DC75428760F1F00CBFC04 /* SidebarView.swift in Sources */,
 				5CF2A5D22893EDEC0080A8A4 /* API.swift in Sources */,
-				5CEEC18828968B0A001BD64C /* ErrorView.swift in Sources */,
+				5CEEC18828968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
 				5CF2A5C42893B3B50080A8A4 /* User.swift in Sources */,
 				5C9C0A622869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BB1286D92BD005CCA92 /* RegisterView.swift in Sources */,

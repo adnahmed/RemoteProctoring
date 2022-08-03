@@ -1,11 +1,11 @@
-mutation Register($username: String!, $password: String!, $role: String!, $givenName: String!, $email: EmailAddress!) {
-  register(username: $username, password: $password, role: $role, given_name: $givenName, email: $email) {
+mutation Register($user: UserRegisterationInput!) {
+  register(user: $user) {
     code
     token
-    success
     message
+    success
     user {
-      ...UserDetails
+        ...UserDetails
     }
   }
 }

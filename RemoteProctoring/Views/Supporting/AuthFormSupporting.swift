@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-enum Field: Hashable {
+enum AuthFormField: Hashable {
     case usernameField, passwordField
 }
+
 
 struct RegisterButtonModifer: ViewModifier {
     func body(content: Content) -> some View {
@@ -32,6 +33,9 @@ struct AuthTextFieldModifier: ViewModifier {
         content
             .autocorrectionDisabled(true)
             .textFieldStyle(.roundedBorder)
+#if os(iOS)
+            .textInputAutocapitalization(.never)
+#endif
     }
 }
 
