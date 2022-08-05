@@ -7,6 +7,34 @@
 
 import SwiftUI
 import RegexBuilder
+#if os(iOS)
+let word = OneOrMore(.word)
+let emailPattern = Regex {
+    Capture {
+        ZeroOrMore {
+            word
+            "."
+        }
+        word
+    }
+    "@"
+    Capture {
+        word
+        OneOrMore {
+            "."
+            word
+        }
+    }
+}
+#else
+let emailPattern = {
+    do {
+        return try NSRegularExpression(pattern: "([^@]+)@([^@]+.[^@]+)", options: .caseInsensitive)
+    } catch {
+      return NSRegularExpression()
+    }
+}()
+#endif
 
 struct macOSBackButtonView: View {
     @Binding var showCurrentView: Bool
@@ -98,20 +126,3 @@ enum RegisterFormField: Hashable {
     case emailAddressField, organizationField, passwordField, repeatPasswordField, givenNameField, usernameField
 }
 
-let emailPattern = Regex {
-    Capture {
-        ZeroOrMore {
-            OneOrMore(.word)
-            "."
-        }
-        OneOrMore(.word)
-    }
-    "@"
-    Capture {
-        OneOrMore(.word)
-        OneOrMore {
-            "."
-            OneOrMore(.word)
-        }
-    }
-}

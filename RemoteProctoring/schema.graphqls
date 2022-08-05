@@ -14,7 +14,8 @@ type NewManagedUsersResponse {
 
 type Query {
   getProctors: GetManagedUsersResponse!
-  logIn(username: String!, password: String!): AuthenticationResponse!
+  logInEmail(email: EmailAddress!, password: String!): AuthenticationResponse!
+  logInUsername(username: String!, password: String!): AuthenticationResponse!
 }
 
 type User {

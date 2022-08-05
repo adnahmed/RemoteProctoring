@@ -8,9 +8,8 @@
 import SwiftUI
 
 enum AuthFormField: Hashable {
-    case usernameField, passwordField
+    case usernameOrEmailField, passwordField
 }
-
 
 struct RegisterButtonModifer: ViewModifier {
     func body(content: Content) -> some View {

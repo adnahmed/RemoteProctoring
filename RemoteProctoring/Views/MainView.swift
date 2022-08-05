@@ -8,73 +8,87 @@
 import SwiftUI
 
 struct MainView: View {
-    @EnvironmentObject var user: User
-    @State private var search: String = ""
-    @State private var topBarLabel: String = "Remote Proctoring System"
-    @State private var topBarImage: String = "logo"
+    fileprivate static let MainBannerLabel: String = "Remote Proctoring System"
+    fileprivate static let MainBannerImage: Image = Image("logo")
+    @EnvironmentObject private var user: User
+    @StateObject private var bannerData: BannerData = BannerData(label: MainView.MainBannerLabel, image: MainView.MainBannerImage)
     var body: some View {
-        GeometryReader { g in
-        ScrollView {
+        GeometryReader { geometryProxy in
             VStack {
-                    TopBarView(geometry: g,
-                               image: $topBarImage,
-                               label: $topBarLabel)
-                    Divider()
-                    Spacer()
+                BannerView(geometry: geometryProxy)
+                Divider()
+                Spacer()
+#if os(iOS)
+                NavigationStack {
+                    Grid {
+                        GridRow {
+                            ExamGridRow()
+                        }
+                        GridRow {
+                            SubjectGridRow()
+                        }
+                        GridRow {
+                            PreferencesGridRow()
+                        }
+                    }
+                    .onAppear {
+                        bannerData.BannerLabel = MainView.MainBannerLabel
+                        bannerData.BannerImage = MainView.MainBannerImage
+                    }
                 }
+#else
+                NavigationView {
+                    VStack {
+                        ExamGridRow()
+                        SubjectGridRow()
+                        PreferencesGridRow()
+                    }
+                    .frame(minWidth: geometryProxy.size.width * 0.40, idealWidth: geometryProxy.size.width * 0.40, maxWidth: geometryProxy.size.width * 0.40)
+                }
+#endif
+                Spacer()
             }
+#if os(iOS)
+            .overlay(
+                RoundedRectangle(cornerRadius: 15, style: .continuous)
+                    .stroke(Gradient(colors: [.red, .blue, .green, .yellow]))
+            )
+#else
+            .overlay(
+                RoundedRectangle(cornerRadius: 15, style: .continuous)
+                    .stroke(.blue)
+            )
+#endif
+            .padding()
+            .background(.white)
         }
-        .background(.white)
-        .onAppear {
-            
+        .environmentObject(self.bannerData)
+    }
+}
+
+struct PreferencesGridRow: View {
+    var body: some View {
+        HStack {
+            MainViewButton(Destination: PreferencesView(), Label: "Preferences", Background: Image("PreferencesButton"))
+            MainViewButton(Destination: RecentActivityView(), Label: "Recent Activity", Background: Image("RecentActivityButton"))
         }
     }
 }
 
-struct CompatibleThinTextFontWeightModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        if #available(iOS 16.0, macOS 13.0, *) {
-            content
-                .fontWeight(.thin)
-        } else {
-            content
+struct SubjectGridRow: View {
+    var body: some View {
+        HStack {
+            MainViewButton(Destination: ProctorsView(), Label: "Proctors", Background: Image("ProctorsButton"))
+            MainViewButton(Destination: ExamineesView(), Label: "Examinees" , Background: Image("ExamineesButton"))
         }
     }
 }
-extension View {
-    func compatibleThinFont() -> some View {
-        modifier(CompatibleThinTextFontWeightModifier())
-    }
-}
-struct TopBarView: View {
-    var geometry: GeometryProxy
-    @Binding var image: String
-    @Binding var label: String
+struct ExamGridRow: View {
     var body: some View {
-            HStack {
-                Spacer()
-                Image(image)
-                    .resizable()
-                    .interpolation(/*@START_MENU_TOKEN@*/.high/*@END_MENU_TOKEN@*/)
-                    .antialiased(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: geometry.size.width * 0.20,
-                           height: geometry.size.height * 0.10,
-                           alignment: .trailing)
-                Text(label)
-                    .font(Font.system(size: 40,
-                                      weight: .thin,
-                                      design: .rounded))
-                    .compatibleThinFont()
-                    .onTapGesture {
-                        
-                    }
-                    .onAppear {
-                        
-                    }
-                Spacer()
-            }
-            .padding(.top)
+        HStack {
+            MainViewButton(Destination: ExaminationsView(), Label: "Exams", Background: Image("ExaminationsButton"))
+            MainViewButton(Destination: QuestionPapersView(), Label: "Question Papers", Background: Image("QuestionPapersButton"))
+        }
     }
 }
 

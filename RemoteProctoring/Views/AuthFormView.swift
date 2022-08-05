@@ -6,18 +6,21 @@
 //
 
 import SwiftUI
+import RegexBuilder
+import Apollo
 
 struct AuthFormView: View {
 #if os(macOS)
     @Binding var showRegisterView: Bool
 #endif
     @EnvironmentObject private var user: User
-    @State private var username = ""
+    @State private var usernameOrEmail = ""
     @State private var password = ""
     @State private var recievedError: Bool = false
     @State private var signInPressed: Bool = false
     @State private var errorMessages: [String] = []
     @FocusState private var focusedField: AuthFormField?
+    @State var useEmail: Bool = false
     
     var body: some View {
         GeometryReader { g in
@@ -26,11 +29,12 @@ struct AuthFormView: View {
                 HStack {
                     Spacer()
                     VStack(spacing: 15) {
-                        TextField("Username", text: $username)
+                        TextField("Username/Email", text: $usernameOrEmail)
                             .authTextField()
-                            .focused($focusedField, equals: .usernameField)
+                            .focused($focusedField, equals: .usernameOrEmailField)
                             .frame(maxWidth: g.size.width * 0.40)
-                            .onChange(of: username) { username in
+                            .onChange(of: usernameOrEmail) { usernameOrEmail in
+                                
                                 withAnimation {
                                     errorMessages.removeAll()
                                 }
@@ -44,8 +48,28 @@ struct AuthFormView: View {
                                     errorMessages.removeAll()
                                 }
                             }
-                        Button (action: handleSignIn) {
-                            Text("Sign In")
+                        Button ("Sign In") {
+                            #if os(iOS)
+                            if let match = usernameOrEmail.firstMatch(of: emailPattern) {
+                                let (wholeMatch, _, _) = match.output
+                                self.usernameOrEmail = String(wholeMatch)
+                                useEmail = true
+                            }
+                            #else
+                            if emailPattern.firstMatch(in: usernameOrEmail, options: [], range: NSRange(location: 0, length: usernameOrEmail.count)) != nil {
+                                // TODO: Use matched value from NSTextCheckingResult
+                                useEmail = true
+                            }
+                            else {
+                                useEmail = false
+                            }
+                            #endif
+                            if useEmail {
+                                Task { handleSignIn(query: LogInEmailQuery(email: usernameOrEmail, password: password)) }
+                            }
+                            else {
+                                Task { handleSignIn(query: LogInUsernameQuery(username: usernameOrEmail, password: password)) }
+                            }
                         }
                         .buttonStyle(.borderedProminent)
                         Divider()
@@ -75,7 +99,7 @@ struct AuthFormView: View {
                     Spacer()
                 }
                 .onAppear {
-                    focusedField = .usernameField
+                    focusedField = .usernameOrEmailField
                 }
             }
             .frame(minHeight: g.size.height)
@@ -83,64 +107,75 @@ struct AuthFormView: View {
         .background(.white)
     }
     
-    func handleSignIn() {
-        guard !username.isEmpty else {
-            focusedField = .usernameField
+    func handleSignIn<AuthQueryType>(query: AuthQueryType) where AuthQueryType:GraphQLQuery {
+        guard !usernameOrEmail.isEmpty else {
+            focusedField = .usernameOrEmailField
             return
         }
         guard !password.isEmpty else {
             focusedField = .passwordField
             return
         }
-        
         withAnimation {
             signInPressed = true
             recievedError = false
+            errorMessages.removeAll()
         }
-        errorMessages.removeAll()
-        Network.shared.client.fetch(
-            query: LogInQuery(username: username,password: password)) { res in
-                switch res {
-                case .success (let gqRes):
-                    if let  errors = gqRes.errors {
-                        for error in errors {
-                            if let failureReason = error.failureReason {
-                                errorMessages.append(failureReason)
-                            }
-                            else {
-                                errorMessages.append(error.description)
-                            }
-                        }
-                        withAnimation {
-                            recievedError = true
-                        }
-                    }
-                    if let data = gqRes.data {
-                        Network.shared.token = data.logIn.token
-                        if data.logIn.code == 200 {
-                            user.userDetails = data.logIn.user?.fragments.userDetails
-                            withAnimation {
-                                user.isLoggedIn.toggle()
-                            }
-                        }
-                        else if data.logIn.code == 403 {
-                            errorMessages.append("Invalid Username or Password")
+        
+        Network.shared.client.fetch(query: query) {  res in
+            switch res {
+            case .success (let gqRes):
+                if let errors = gqRes.errors {
+                    for error in errors {
+                        if let failureReason = error.failureReason {
+                            errorMessages.append(failureReason)
                         }
                         else {
-                            errorMessages.append(data.logIn.message)
-                        }
-                        withAnimation {
-                            recievedError = true
+                            errorMessages.append(error.description)
                         }
                     }
-                case .failure(let error):
-                    errorMessages.append(error.localizedDescription)
                     withAnimation {
                         recievedError = true
                     }
                 }
-                signInPressed = false
+                if let data = gqRes.data {
+                    switch data {
+                    case let data as LogInEmailQuery.Data:
+                        handleAuthResponseData(data: data.logInEmail.fragments.loginResponse)
+                    case let data as LogInUsernameQuery.Data:
+                        handleAuthResponseData(data: data.logInUsername.fragments.loginResponse)
+                    default:
+                        NetworkLogger.error("Unknown Data Recieved")
+                    }
+                    withAnimation {
+                        recievedError = true
+                    }
+                }
+            case .failure(let error):
+                errorMessages.append(error.localizedDescription)
+                withAnimation {
+                    recievedError = true
+                }
             }
+            signInPressed = false
+        }
+    }
+    func handleAuthResponseData(data: LoginResponse) {
+        Network.shared.token = data.token
+        if data.code == 200 {
+            user.userDetails = data.user?.fragments.userDetails
+            withAnimation {
+                user.isLoggedIn.toggle()
+            }
+        }
+        else if data.code == 403 {
+            errorMessages.append("Invalid Username or Password")
+        }
+        else {
+            errorMessages.append(data.message)
+        }
+        
+        
     }
 }
 

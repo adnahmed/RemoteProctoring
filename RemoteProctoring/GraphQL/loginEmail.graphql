@@ -1,0 +1,5 @@
+query LogInEmail($email: EmailAddress!, $password: String!) {
+    logInEmail(email: $email, password: $password) {
+        ...LoginResponse
+    }
+}

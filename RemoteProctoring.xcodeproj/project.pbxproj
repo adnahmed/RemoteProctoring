@@ -23,6 +23,30 @@
 		5C31BE722870C40800768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE712870C40800768DDD /* ApolloSQLite */; };
 		5C31BE742870C41000768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE732870C41000768DDD /* ApolloSQLite */; };
 		5C31BE762870C41B00768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE752870C41B00768DDD /* ApolloSQLite */; };
+		5C5DDD5F289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
+		5C5DDD60289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
+		5C5DDD61289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
+		5C5DDD63289A921200A98073 /* loginUsername.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD62289A921200A98073 /* loginUsername.graphql */; };
+		5C5DDD64289A921200A98073 /* loginUsername.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD62289A921200A98073 /* loginUsername.graphql */; };
+		5C5DDD65289A921200A98073 /* loginUsername.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD62289A921200A98073 /* loginUsername.graphql */; };
+		5C5DDD67289A923D00A98073 /* loginResponse.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD66289A923D00A98073 /* loginResponse.graphql */; };
+		5C5DDD68289A923D00A98073 /* loginResponse.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD66289A923D00A98073 /* loginResponse.graphql */; };
+		5C5DDD69289A923D00A98073 /* loginResponse.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD66289A923D00A98073 /* loginResponse.graphql */; };
+		5C5F21E0289B351300E88CEB /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21DF289B351300E88CEB /* PreferencesView.swift */; };
+		5C5F21E1289B351300E88CEB /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21DF289B351300E88CEB /* PreferencesView.swift */; };
+		5C5F21E2289B351300E88CEB /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21DF289B351300E88CEB /* PreferencesView.swift */; };
+		5C5F21E4289B354F00E88CEB /* ProctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21E3289B354F00E88CEB /* ProctorsView.swift */; };
+		5C5F21E5289B354F00E88CEB /* ProctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21E3289B354F00E88CEB /* ProctorsView.swift */; };
+		5C5F21E6289B354F00E88CEB /* ProctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21E3289B354F00E88CEB /* ProctorsView.swift */; };
+		5C5F21E8289B35FE00E88CEB /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21E7289B35FE00E88CEB /* ExamineesView.swift */; };
+		5C5F21E9289B35FE00E88CEB /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21E7289B35FE00E88CEB /* ExamineesView.swift */; };
+		5C5F21EA289B35FE00E88CEB /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21E7289B35FE00E88CEB /* ExamineesView.swift */; };
+		5C5F21EC289B365300E88CEB /* QuestionPapersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21EB289B365300E88CEB /* QuestionPapersView.swift */; };
+		5C5F21ED289B365300E88CEB /* QuestionPapersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21EB289B365300E88CEB /* QuestionPapersView.swift */; };
+		5C5F21EE289B365300E88CEB /* QuestionPapersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21EB289B365300E88CEB /* QuestionPapersView.swift */; };
+		5C5F21F0289B377700E88CEB /* ExaminationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21EF289B377700E88CEB /* ExaminationsView.swift */; };
+		5C5F21F1289B377700E88CEB /* ExaminationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21EF289B377700E88CEB /* ExaminationsView.swift */; };
+		5C5F21F2289B377700E88CEB /* ExaminationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F21EF289B377700E88CEB /* ExaminationsView.swift */; };
 		5C693FC22869EC9300E75B45 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC12869EC9300E75B45 /* Apollo */; };
 		5C693FC42869EC9300E75B45 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC32869EC9300E75B45 /* ApolloWebSocket */; };
 		5C693FC62869ECAC00E75B45 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC52869ECAC00E75B45 /* Apollo */; };
@@ -51,12 +75,21 @@
 		5CD6EC9E286F47E20059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6EC9D286F47E20059BEB7 /* Navajo-Swift */; };
 		5CD6ECA0286F48480059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6EC9F286F48480059BEB7 /* Navajo-Swift */; };
 		5CD6ECA2286F48540059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6ECA1286F48540059BEB7 /* Navajo-Swift */; };
+		5CE33325289C00DF00BD6BA4 /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33324289C00DE00BD6BA4 /* MainViewButton.swift */; };
+		5CE33326289C00DF00BD6BA4 /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33324289C00DE00BD6BA4 /* MainViewButton.swift */; };
+		5CE33327289C00DF00BD6BA4 /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33324289C00DE00BD6BA4 /* MainViewButton.swift */; };
+		5CE33329289C211B00BD6BA4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33328289C211900BD6BA4 /* RecentActivityView.swift */; };
+		5CE3332A289C211B00BD6BA4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33328289C211900BD6BA4 /* RecentActivityView.swift */; };
+		5CE3332B289C211C00BD6BA4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33328289C211900BD6BA4 /* RecentActivityView.swift */; };
 		5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C1286D655D00045E6E /* KeychainAccess */; };
 		5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C3286D656300045E6E /* KeychainAccess */; };
 		5CE900C6286D657700045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C5286D657700045E6E /* KeychainAccess */; };
 		5CE95E3D2898066F0041BBCC /* RegisterViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */; };
 		5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */; };
 		5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */; };
+		5CECEEC3289AE71000F064E9 /* MainViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CECEEC2289AE71000F064E9 /* MainViewSupporting.swift */; };
+		5CECEEC4289AE71100F064E9 /* MainViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CECEEC2289AE71000F064E9 /* MainViewSupporting.swift */; };
+		5CECEEC5289AE71200F064E9 /* MainViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CECEEC2289AE71000F064E9 /* MainViewSupporting.swift */; };
 		5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 		5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 		5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
@@ -78,9 +111,6 @@
 		5CF2526E2895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
 		5CF2526F2895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
 		5CF252702895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
-		5CF2A5B42893A3340080A8A4 /* login.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2A5B32893A3340080A8A4 /* login.graphql */; };
-		5CF2A5B52893A3340080A8A4 /* login.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2A5B32893A3340080A8A4 /* login.graphql */; };
-		5CF2A5B62893A3340080A8A4 /* login.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2A5B32893A3340080A8A4 /* login.graphql */; };
 		5CF2A5C22893B3B50080A8A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C12893B3B50080A8A4 /* User.swift */; };
 		5CF2A5C32893B3B50080A8A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C12893B3B50080A8A4 /* User.swift */; };
 		5CF2A5C42893B3B50080A8A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C12893B3B50080A8A4 /* User.swift */; };
@@ -104,6 +134,14 @@
 		5C1DC75128760F1F00CBFC04 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		5C1DC75528760F3100CBFC04 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		5C1DC75928760F4700CBFC04 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginEmail.graphql; sourceTree = "<group>"; };
+		5C5DDD62289A921200A98073 /* loginUsername.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginUsername.graphql; sourceTree = "<group>"; };
+		5C5DDD66289A923D00A98073 /* loginResponse.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginResponse.graphql; sourceTree = "<group>"; };
+		5C5F21DF289B351300E88CEB /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreferencesView.swift; path = RemoteProctoring/Views/Main/PreferencesView.swift; sourceTree = SOURCE_ROOT; };
+		5C5F21E3289B354F00E88CEB /* ProctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProctorsView.swift; path = RemoteProctoring/Views/ProctorsView.swift; sourceTree = SOURCE_ROOT; };
+		5C5F21E7289B35FE00E88CEB /* ExamineesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamineesView.swift; sourceTree = "<group>"; };
+		5C5F21EB289B365300E88CEB /* QuestionPapersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPapersView.swift; sourceTree = "<group>"; };
+		5C5F21EF289B377700E88CEB /* ExaminationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExaminationsView.swift; sourceTree = SOURCE_ROOT; };
 		5C75826F28695DA1001D0C93 /* RemoteProctoring-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProctoringApp.swift; sourceTree = "<group>"; };
 		5C75827428695DA1001D0C93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,10 +153,13 @@
 		5C9C0A57286981010040C53C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5C9C0A5F2869DED70040C53C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		5CE33324289C00DE00BD6BA4 /* MainViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewButton.swift; sourceTree = SOURCE_ROOT; };
+		5CE33328289C211900BD6BA4 /* RecentActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivityView.swift; sourceTree = SOURCE_ROOT; };
 		5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewSupporting.swift; path = RemoteProctoring/Views/RegisterViewSupporting.swift; sourceTree = SOURCE_ROOT; };
 		5CEC11B7286EDE020066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEC11BB286EDE100066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEC11BF286EDE180066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CECEEC2289AE71000F064E9 /* MainViewSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSupporting.swift; sourceTree = SOURCE_ROOT; };
 		5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagementInterceptor.swift; sourceTree = "<group>"; };
 		5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoggingInterceptor.swift; sourceTree = "<group>"; };
 		5CEEC17D28968A15001BD64C /* LogoBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoBanner.swift; sourceTree = SOURCE_ROOT; };
@@ -126,7 +167,6 @@
 		5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormSupporting.swift; sourceTree = "<group>"; };
 		5CEEC19128968F1B001BD64C /* AuthFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormView.swift; sourceTree = "<group>"; };
 		5CF2526D2895316C00D03358 /* user.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = user.graphql; sourceTree = "<group>"; };
-		5CF2A5B32893A3340080A8A4 /* login.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = login.graphql; sourceTree = "<group>"; };
 		5CF2A5C12893B3B50080A8A4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5CF2A5C72893BAA60080A8A4 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		5CF2A5CB2893E42C0080A8A4 /* register.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = register.graphql; sourceTree = "<group>"; };
@@ -195,6 +235,8 @@
 				5CF2A5C62893B9BD0080A8A4 /* Main */,
 				5CF2A5C02893B1AE0080A8A4 /* Supporting */,
 				5C9C0A5F2869DED70040C53C /* MainView.swift */,
+				5C5F21EB289B365300E88CEB /* QuestionPapersView.swift */,
+				5C5F21E7289B35FE00E88CEB /* ExamineesView.swift */,
 				5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */,
 				5CF2A5C72893BAA60080A8A4 /* StartView.swift */,
 				5CEEC19128968F1B001BD64C /* AuthFormView.swift */,
@@ -260,9 +302,11 @@
 		5CF2A5BB2893B0990080A8A4 /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
-				5CF2A5B32893A3340080A8A4 /* login.graphql */,
+				5C5DDD62289A921200A98073 /* loginUsername.graphql */,
 				5CF2A5CB2893E42C0080A8A4 /* register.graphql */,
 				5CF2526D2895316C00D03358 /* user.graphql */,
+				5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */,
+				5C5DDD66289A923D00A98073 /* loginResponse.graphql */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -270,6 +314,8 @@
 		5CF2A5C02893B1AE0080A8A4 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				5CE33324289C00DE00BD6BA4 /* MainViewButton.swift */,
+				5CECEEC2289AE71000F064E9 /* MainViewSupporting.swift */,
 				5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */,
 				5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */,
 				5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */,
@@ -281,6 +327,10 @@
 		5CF2A5C62893B9BD0080A8A4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5CE33328289C211900BD6BA4 /* RecentActivityView.swift */,
+				5C5F21EF289B377700E88CEB /* ExaminationsView.swift */,
+				5C5F21E3289B354F00E88CEB /* ProctorsView.swift */,
+				5C5F21DF289B351300E88CEB /* PreferencesView.swift */,
 				5C1DC75128760F1F00CBFC04 /* SidebarView.swift */,
 				5C1DC75528760F3100CBFC04 /* MainContentView.swift */,
 				5C1DC75928760F4700CBFC04 /* DetailView.swift */,
@@ -443,7 +493,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CF2526F2895316C00D03358 /* user.graphql in Resources */,
-				5CF2A5B52893A3340080A8A4 /* login.graphql in Resources */,
+				5C5DDD64289A921200A98073 /* loginUsername.graphql in Resources */,
+				5C5DDD68289A923D00A98073 /* loginResponse.graphql in Resources */,
+				5C5DDD60289A91EC00A98073 /* loginEmail.graphql in Resources */,
 				5C1A22EC286960D000AA2636 /* Preview Assets.xcassets in Resources */,
 				5CF2A5CD2893E42C0080A8A4 /* register.graphql in Resources */,
 				5C1A22ED286960D000AA2636 /* Assets.xcassets in Resources */,
@@ -454,10 +506,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5DDD67289A923D00A98073 /* loginResponse.graphql in Resources */,
+				5C5DDD5F289A91EC00A98073 /* loginEmail.graphql in Resources */,
 				5C9C0A58286981010040C53C /* Launch Screen.storyboard in Resources */,
 				5C75827B28695DA6001D0C93 /* Preview Assets.xcassets in Resources */,
+				5C5DDD63289A921200A98073 /* loginUsername.graphql in Resources */,
 				5C75827728695DA6001D0C93 /* Assets.xcassets in Resources */,
-				5CF2A5B42893A3340080A8A4 /* login.graphql in Resources */,
 				5CF2526E2895316C00D03358 /* user.graphql in Resources */,
 				5CF2A5CC2893E42C0080A8A4 /* register.graphql in Resources */,
 			);
@@ -467,10 +521,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5DDD69289A923D00A98073 /* loginResponse.graphql in Resources */,
+				5C5DDD61289A91EC00A98073 /* loginEmail.graphql in Resources */,
 				5C9C0A59286981010040C53C /* Launch Screen.storyboard in Resources */,
 				5C9C0A5028697DD50040C53C /* Preview Assets.xcassets in Resources */,
+				5C5DDD65289A921200A98073 /* loginUsername.graphql in Resources */,
 				5C9C0A5128697DD50040C53C /* Assets.xcassets in Resources */,
-				5CF2A5B62893A3340080A8A4 /* login.graphql in Resources */,
 				5CF252702895316C00D03358 /* user.graphql in Resources */,
 				5CF2A5CE2893E42C0080A8A4 /* register.graphql in Resources */,
 			);
@@ -611,18 +667,26 @@
 				5C1DC75B28760F4800CBFC04 /* DetailView.swift in Sources */,
 				5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5CEEC17F28968A15001BD64C /* LogoBanner.swift in Sources */,
+				5C5F21E1289B351300E88CEB /* PreferencesView.swift in Sources */,
 				5CF2A5C92893BAA60080A8A4 /* StartView.swift in Sources */,
+				5CE33326289C00DF00BD6BA4 /* MainViewButton.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
+				5C5F21E5289B354F00E88CEB /* ProctorsView.swift in Sources */,
 				5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC18F28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
+				5CE3332A289C211B00BD6BA4 /* RecentActivityView.swift in Sources */,
 				5C1DC75328760F1F00CBFC04 /* SidebarView.swift in Sources */,
 				5CF2A5D12893EDEC0080A8A4 /* API.swift in Sources */,
+				5C5F21ED289B365300E88CEB /* QuestionPapersView.swift in Sources */,
 				5CEEC18728968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
+				5CECEEC4289AE71100F064E9 /* MainViewSupporting.swift in Sources */,
 				5CF2A5C32893B3B50080A8A4 /* User.swift in Sources */,
 				5C9C0A612869DED70040C53C /* MainView.swift in Sources */,
+				5C5F21F1289B377700E88CEB /* ExaminationsView.swift in Sources */,
 				5C9C3BB0286D92BD005CCA92 /* RegisterView.swift in Sources */,
+				5C5F21E9289B35FE00E88CEB /* ExamineesView.swift in Sources */,
 				5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,18 +700,26 @@
 				5C1DC75A28760F4700CBFC04 /* DetailView.swift in Sources */,
 				5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5CEEC17E28968A15001BD64C /* LogoBanner.swift in Sources */,
+				5C5F21E0289B351300E88CEB /* PreferencesView.swift in Sources */,
 				5CF2A5C82893BAA60080A8A4 /* StartView.swift in Sources */,
+				5CE33325289C00DF00BD6BA4 /* MainViewButton.swift in Sources */,
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
 				5C9C0A3E286976160040C53C /* Network.swift in Sources */,
+				5C5F21E4289B354F00E88CEB /* ProctorsView.swift in Sources */,
 				5CE95E3D2898066F0041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19228968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC18E28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
+				5CE33329289C211B00BD6BA4 /* RecentActivityView.swift in Sources */,
 				5C1DC75228760F1F00CBFC04 /* SidebarView.swift in Sources */,
 				5CF2A5D02893EDEC0080A8A4 /* API.swift in Sources */,
+				5C5F21EC289B365300E88CEB /* QuestionPapersView.swift in Sources */,
 				5CEEC18628968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
+				5CECEEC3289AE71000F064E9 /* MainViewSupporting.swift in Sources */,
 				5CF2A5C22893B3B50080A8A4 /* User.swift in Sources */,
 				5C9C0A602869DED70040C53C /* MainView.swift in Sources */,
+				5C5F21F0289B377700E88CEB /* ExaminationsView.swift in Sources */,
 				5C9C3BAF286D92BD005CCA92 /* RegisterView.swift in Sources */,
+				5C5F21E8289B35FE00E88CEB /* ExamineesView.swift in Sources */,
 				5C75827328695DA1001D0C93 /* RemoteProctoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,18 +733,26 @@
 				5C1DC75C28760F4800CBFC04 /* DetailView.swift in Sources */,
 				5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5CEEC18028968A15001BD64C /* LogoBanner.swift in Sources */,
+				5C5F21E2289B351300E88CEB /* PreferencesView.swift in Sources */,
 				5CF2A5CA2893BAA60080A8A4 /* StartView.swift in Sources */,
+				5CE33327289C00DF00BD6BA4 /* MainViewButton.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
 				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,
+				5C5F21E6289B354F00E88CEB /* ProctorsView.swift in Sources */,
 				5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC19028968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
+				5CE3332B289C211C00BD6BA4 /* RecentActivityView.swift in Sources */,
 				5C1DC75428760F1F00CBFC04 /* SidebarView.swift in Sources */,
 				5CF2A5D22893EDEC0080A8A4 /* API.swift in Sources */,
+				5C5F21EE289B365300E88CEB /* QuestionPapersView.swift in Sources */,
 				5CEEC18828968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
+				5CECEEC5289AE71200F064E9 /* MainViewSupporting.swift in Sources */,
 				5CF2A5C42893B3B50080A8A4 /* User.swift in Sources */,
 				5C9C0A622869DED70040C53C /* MainView.swift in Sources */,
+				5C5F21F2289B377700E88CEB /* ExaminationsView.swift in Sources */,
 				5C9C3BB1286D92BD005CCA92 /* RegisterView.swift in Sources */,
+				5C5F21EA289B35FE00E88CEB /* ExamineesView.swift in Sources */,
 				5C9C0A4928697DD50040C53C /* RemoteProctoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

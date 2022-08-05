@@ -1,0 +1,5 @@
+query LogInUsername($username: String!, $password: String!) {
+  logInUsername(username: $username, password: $password) {
+        ...LoginResponse
+    }
+}

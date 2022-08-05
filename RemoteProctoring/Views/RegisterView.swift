@@ -152,6 +152,7 @@ struct RegisterView: View {
                     }
                 }
             }
+            .background(.white)
             .onAppear {
                 focusedField = .usernameField
             }
@@ -160,6 +161,7 @@ struct RegisterView: View {
     
     func validateEmail(_ emailAddress: String) {
         withAnimation {
+            #if os(iOS)
             if let match = emailAddress.firstMatch(of: emailPattern) {
                 let (wholeMatch, _, _) = match.output
                 self.emailAddress = String(wholeMatch)
@@ -168,6 +170,15 @@ struct RegisterView: View {
             else {
                 self.emailAddressValid = false
             }
+            #else
+            if emailPattern.firstMatch(in: emailAddress, options: [], range: NSRange(location: 0, length: emailAddress.count)) != nil {
+                // TODO: Use matched value from NSTextCheckingResult
+                self.emailAddressValid = true
+            }
+            else {
+                self.emailAddressValid = false
+            }
+            #endif
         }
     }
     
