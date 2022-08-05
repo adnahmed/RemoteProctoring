@@ -28,7 +28,7 @@ struct MainView: View {
                             SubjectGridRow()
                         }
                         GridRow {
-                            PreferencesGridRow()
+                            OtherGridRow()
                         }
                     }
                     .onAppear {
@@ -38,12 +38,8 @@ struct MainView: View {
                 }
 #else
                 NavigationView {
-                    VStack {
-                        ExamGridRow()
-                        SubjectGridRow()
-                        PreferencesGridRow()
-                    }
-                    .frame(minWidth: geometryProxy.size.width * 0.40, idealWidth: geometryProxy.size.width * 0.40, maxWidth: geometryProxy.size.width * 0.40)
+                    NavGrid()
+                        .frame(minWidth: geometryProxy.size.width * 0.40, maxWidth: geometryProxy.size.width * 0.80)
                 }
 #endif
                 Spacer()
@@ -66,7 +62,17 @@ struct MainView: View {
     }
 }
 
-struct PreferencesGridRow: View {
+struct NavGrid: View {
+    var body: some View {
+        VStack {
+            ExamGridRow()
+            SubjectGridRow()
+            OtherGridRow()
+            
+        }
+    }
+}
+struct OtherGridRow: View {
     var body: some View {
         HStack {
             MainViewButton(Destination: PreferencesView(), Label: "Preferences", Background: Image("PreferencesButton"))

@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct MainViewButton<T> : View where T: View {
+    #if os(iOS)
     var Destination: T
+    #endif
     var Label: String
-    var Background: Image? = nil
+    var Background: T? = nil
     @State private var opacity: Double = 0.0
     var body : some View {
+#if os(iOS)
+        NavigationLink(destination: Destination) {
+            MainButtonLabel
+        }
+#else
+        MainButtonLabel
+#endif
+        
+    }
+    @ViewBuilder private var MainButtonLabel: some View {
         GeometryReader { g in
             ZStack {
                 Color.white
@@ -20,29 +32,32 @@ struct MainViewButton<T> : View where T: View {
                 if let Background = Background {
                     Background
                 }
-                NavigationLink {
-                    Destination
-                } label: {
-                    Text(Label)
-                        .tracking(3.0)
-                        .foregroundColor(.white)
-                        .menuButtonFont()
-                        .padding()
-                }
+                Text(Label)
+                    .tracking(3.0)
+                    .foregroundColor(.white)
+                    .menuButtonFont()
+            }
+            .modifier(MainButtonViewModifier(opacity: $opacity))
+            .frame(width: g.size.width * 0.9, height: g.size.height * 0.9, alignment: .center)
+        }
+    }
+    private struct MainButtonViewModifier : ViewModifier {
+        @Binding var opacity: Double
+        func body(content: Content) -> some View {
+            content
                 .buttonStyle(.borderless)
-            }
-            .onHover { inFrame in
-                withAnimation {
-                    if inFrame {
-                        opacity = 0.2
-                    }
-                    else {
-                        opacity = 0.0
+                .background(.black)
+                .padding()
+                .onHover { inFrame in
+                    withAnimation {
+                        if inFrame {
+                            opacity = 0.2
+                        }
+                        else {
+                            opacity = 0.0
+                        }
                     }
                 }
-            }
-            .frame(width: g.size.width, height: g.size.height, alignment: .center)
-            .background(.gray)
         }
     }
 }
