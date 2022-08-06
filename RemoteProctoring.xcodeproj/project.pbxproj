@@ -490,6 +490,7 @@
 				5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */,
 				5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
+				5C0A8515289E3FBA00914746 /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
 			);
 			productRefGroup = 5C75827028695DA1001D0C93 /* Products */;
 			projectDirPath = "";
@@ -1105,6 +1106,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5C0A8515289E3FBA00914746 /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios";
