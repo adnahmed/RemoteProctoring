@@ -2,14 +2,14 @@
 //  SidebarView.swift
 //  RemoteProctoring
 //
-//  Created by Adnan Ahmed Khan on 06/07/2022.
+//  Created by Adnan Ahmed Khan on 06/08/2022.
 //
 
 import SwiftUI
 
 struct SidebarView: View {
     var body: some View {
-     Text("SidebarView")
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
