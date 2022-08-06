@@ -62,9 +62,10 @@ struct MainViewButton<T> : View where T: View {
     }
 }
 
+#if DEBUG
 struct MainViewButton_Previews: PreviewProvider {
     static var previews: some View {
         MainViewButton(Destination: Text("Hello"), Label: "Destination")
     }
 }
-
+#endif

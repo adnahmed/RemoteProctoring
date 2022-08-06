@@ -14,7 +14,7 @@ struct RemoteProctoringApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(user)
-            
+                .frame(minWidth: 800, maxWidth: .infinity, minHeight: 800, maxHeight: .infinity)
         }
     }
 }

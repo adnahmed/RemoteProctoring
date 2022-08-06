@@ -81,6 +81,7 @@
 		5CE33329289C211B00BD6BA4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33328289C211900BD6BA4 /* RecentActivityView.swift */; };
 		5CE3332A289C211B00BD6BA4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33328289C211900BD6BA4 /* RecentActivityView.swift */; };
 		5CE3332B289C211C00BD6BA4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE33328289C211900BD6BA4 /* RecentActivityView.swift */; };
+		5CE3332E289D9B6C00BD6BA4 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE3332D289D9B6C00BD6BA4 /* SwiftUIX */; };
 		5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C1286D655D00045E6E /* KeychainAccess */; };
 		5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C3286D656300045E6E /* KeychainAccess */; };
 		5CE900C6286D657700045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C5286D657700045E6E /* KeychainAccess */; };
@@ -108,6 +109,20 @@
 		5CEEC19228968F1B001BD64C /* AuthFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* AuthFormView.swift */; };
 		5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* AuthFormView.swift */; };
 		5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* AuthFormView.swift */; };
+		5CEFBD20289DA70B00CD0839 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD1F289DA70B00CD0839 /* Defaults */; };
+		5CEFBD23289DAB8200CD0839 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD22289DAB8200CD0839 /* CocoaLumberjack */; };
+		5CEFBD25289DAB8200CD0839 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD24289DAB8200CD0839 /* CocoaLumberjackSwift */; };
+		5CEFBD27289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD26289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend */; };
+		5CEFBD29289DAB9A00CD0839 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD28289DAB9A00CD0839 /* Defaults */; };
+		5CEFBD2B289DABAA00CD0839 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD2A289DABAA00CD0839 /* CocoaLumberjack */; };
+		5CEFBD2D289DABAA00CD0839 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD2C289DABAA00CD0839 /* CocoaLumberjackSwift */; };
+		5CEFBD2F289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD2E289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend */; };
+		5CEFBD31289DABB100CD0839 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD30289DABB100CD0839 /* SwiftUIX */; };
+		5CEFBD33289DABE400CD0839 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD32289DABE400CD0839 /* CocoaLumberjack */; };
+		5CEFBD35289DABE400CD0839 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD34289DABE400CD0839 /* CocoaLumberjackSwift */; };
+		5CEFBD37289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD36289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend */; };
+		5CEFBD39289DABEE00CD0839 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD38289DABEE00CD0839 /* SwiftUIX */; };
+		5CEFBD3B289DABEE00CD0839 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD3A289DABEE00CD0839 /* Defaults */; };
 		5CF2526E2895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
 		5CF2526F2895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
 		5CF252702895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
@@ -126,10 +141,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10D77A5C1F9E5468DCD6DDF4 /* Pods-RemoteProctoring-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS.debug.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS/Pods-RemoteProctoring-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2BED6A88CBA9AD08FAA93F30 /* Pods-RemoteProctoring-iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPhone.debug.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPhone/Pods-RemoteProctoring-iPhone.debug.xcconfig"; sourceTree = "<group>"; };
-		3163E275D6CFE04F5942663D /* Pods-RemoteProctoring-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS/Pods-RemoteProctoring-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		53CD34433E1EACA350787093 /* Pods_RemoteProctoring_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1DC75128760F1F00CBFC04 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		5C1DC75528760F3100CBFC04 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -171,13 +182,6 @@
 		5CF2A5C72893BAA60080A8A4 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		5CF2A5CB2893E42C0080A8A4 /* register.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = register.graphql; sourceTree = "<group>"; };
 		5CF2A5CF2893EDEC0080A8A4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		A56727F05923F7FB4F6FC520 /* Pods-RemoteProctoring-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPhone.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPhone/Pods-RemoteProctoring-iPhone.release.xcconfig"; sourceTree = "<group>"; };
-		A84DFE17036E73BB8539BCFA /* Pods-RemoteProctoring-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPad.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad.release.xcconfig"; sourceTree = "<group>"; };
-		C11FC9CD69FA33506A9DDA4A /* Pods_RemoteProctoring_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0AA6C9AEF848CA82B683258 /* Pods-RemoteProctoring-iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-iPad.debug.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-iPad/Pods-RemoteProctoring-iPad.debug.xcconfig"; sourceTree = "<group>"; };
-		E1A49785B007BAB252983537 /* Pods-RemoteProctoring-macOS-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS-iPad.release.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS-iPad/Pods-RemoteProctoring-macOS-iPad.release.xcconfig"; sourceTree = "<group>"; };
-		EC90275EA5393EFEB9C47077 /* Pods_RemoteProctoring_iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteProctoring_iPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5BCF2E1CD21A38F7486E535 /* Pods-RemoteProctoring-macOS-iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteProctoring-macOS-iPad.debug.xcconfig"; path = "Target Support Files/Pods-RemoteProctoring-macOS-iPad/Pods-RemoteProctoring-macOS-iPad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,10 +189,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEFBD29289DAB9A00CD0839 /* Defaults in Frameworks */,
 				5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */,
+				5CEFBD2B289DABAA00CD0839 /* CocoaLumberjack in Frameworks */,
+				5CEFBD31289DABB100CD0839 /* SwiftUIX in Frameworks */,
 				5CD6ECA2286F48540059BEB7 /* Navajo-Swift in Frameworks */,
 				5C31BE742870C41000768DDD /* ApolloSQLite in Frameworks */,
 				5C693FC82869ECAC00E75B45 /* ApolloWebSocket in Frameworks */,
+				5CEFBD2D289DABAA00CD0839 /* CocoaLumberjackSwift in Frameworks */,
+				5CEFBD2F289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
 				5C693FC62869ECAC00E75B45 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,9 +208,14 @@
 			files = (
 				5CE900C6286D657700045E6E /* KeychainAccess in Frameworks */,
 				5CD6EC9E286F47E20059BEB7 /* Navajo-Swift in Frameworks */,
+				5CEFBD25289DAB8200CD0839 /* CocoaLumberjackSwift in Frameworks */,
 				5C31BE762870C41B00768DDD /* ApolloSQLite in Frameworks */,
+				5CE3332E289D9B6C00BD6BA4 /* SwiftUIX in Frameworks */,
+				5CEFBD23289DAB8200CD0839 /* CocoaLumberjack in Frameworks */,
 				5C693FC42869EC9300E75B45 /* ApolloWebSocket in Frameworks */,
 				5C693FC22869EC9300E75B45 /* Apollo in Frameworks */,
+				5CEFBD27289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
+				5CEFBD20289DA70B00CD0839 /* Defaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,9 +223,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEFBD39289DABEE00CD0839 /* SwiftUIX in Frameworks */,
+				5CEFBD33289DABE400CD0839 /* CocoaLumberjack in Frameworks */,
 				5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */,
+				5CEFBD37289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
+				5CEFBD3B289DABEE00CD0839 /* Defaults in Frameworks */,
 				5CD6ECA0286F48480059BEB7 /* Navajo-Swift in Frameworks */,
 				5C31BE722870C40800768DDD /* ApolloSQLite in Frameworks */,
+				5CEFBD35289DABE400CD0839 /* CocoaLumberjackSwift in Frameworks */,
 				5C9C0A4C28697DD50040C53C /* ApolloWebSocket in Frameworks */,
 				5C9C0A4D28697DD50040C53C /* Apollo in Frameworks */,
 			);
@@ -250,7 +269,6 @@
 			children = (
 				5C75827128695DA1001D0C93 /* RemoteProctoring */,
 				5C75827028695DA1001D0C93 /* Products */,
-				CE57E6B514A7546B7A437F23 /* Pods */,
 				686B21DFC64F966058B0601D /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -344,26 +362,8 @@
 				5CEC11BF286EDE180066CDA3 /* Navajo_Swift.framework */,
 				5CEC11BB286EDE100066CDA3 /* Navajo_Swift.framework */,
 				5CEC11B7286EDE020066CDA3 /* Navajo_Swift.framework */,
-				EC90275EA5393EFEB9C47077 /* Pods_RemoteProctoring_iPhone.framework */,
-				53CD34433E1EACA350787093 /* Pods_RemoteProctoring_iPad.framework */,
-				C11FC9CD69FA33506A9DDA4A /* Pods_RemoteProctoring_macOS.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE57E6B514A7546B7A437F23 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F5BCF2E1CD21A38F7486E535 /* Pods-RemoteProctoring-macOS-iPad.debug.xcconfig */,
-				D0AA6C9AEF848CA82B683258 /* Pods-RemoteProctoring-iPad.debug.xcconfig */,
-				10D77A5C1F9E5468DCD6DDF4 /* Pods-RemoteProctoring-macOS.debug.xcconfig */,
-				2BED6A88CBA9AD08FAA93F30 /* Pods-RemoteProctoring-iPhone.debug.xcconfig */,
-				A56727F05923F7FB4F6FC520 /* Pods-RemoteProctoring-iPhone.release.xcconfig */,
-				A84DFE17036E73BB8539BCFA /* Pods-RemoteProctoring-iPad.release.xcconfig */,
-				E1A49785B007BAB252983537 /* Pods-RemoteProctoring-macOS-iPad.release.xcconfig */,
-				3163E275D6CFE04F5942663D /* Pods-RemoteProctoring-macOS.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,7 +373,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C1A22EE286960D000AA2636 /* Build configuration list for PBXNativeTarget "RemoteProctoring-macOS" */;
 			buildPhases = (
-				3323DDACFB246163DABA9116 /* [CP] Check Pods Manifest.lock */,
 				5C9C0A672869E7000040C53C /* Apollo */,
 				5C1A22E7286960D000AA2636 /* Sources */,
 				5C1A22EA286960D000AA2636 /* Frameworks */,
@@ -390,6 +389,11 @@
 				5CE900C3286D656300045E6E /* KeychainAccess */,
 				5CD6ECA1286F48540059BEB7 /* Navajo-Swift */,
 				5C31BE732870C41000768DDD /* ApolloSQLite */,
+				5CEFBD28289DAB9A00CD0839 /* Defaults */,
+				5CEFBD2A289DABAA00CD0839 /* CocoaLumberjack */,
+				5CEFBD2C289DABAA00CD0839 /* CocoaLumberjackSwift */,
+				5CEFBD2E289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend */,
+				5CEFBD30289DABB100CD0839 /* SwiftUIX */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */;
@@ -399,7 +403,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C75827E28695DA6001D0C93 /* Build configuration list for PBXNativeTarget "RemoteProctoring-iPhone" */;
 			buildPhases = (
-				4DDC7F4DAD4148045F7BA97A /* [CP] Check Pods Manifest.lock */,
 				5C1A230E286967B100AA2636 /* Apollo */,
 				5C75826B28695DA1001D0C93 /* Sources */,
 				5C75826C28695DA1001D0C93 /* Frameworks */,
@@ -416,6 +419,11 @@
 				5CE900C5286D657700045E6E /* KeychainAccess */,
 				5CD6EC9D286F47E20059BEB7 /* Navajo-Swift */,
 				5C31BE752870C41B00768DDD /* ApolloSQLite */,
+				5CE3332D289D9B6C00BD6BA4 /* SwiftUIX */,
+				5CEFBD1F289DA70B00CD0839 /* Defaults */,
+				5CEFBD22289DAB8200CD0839 /* CocoaLumberjack */,
+				5CEFBD24289DAB8200CD0839 /* CocoaLumberjackSwift */,
+				5CEFBD26289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C75826F28695DA1001D0C93 /* RemoteProctoring-iPhone.app */;
@@ -425,7 +433,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C9C0A5328697DD50040C53C /* Build configuration list for PBXNativeTarget "RemoteProctoring-iPad" */;
 			buildPhases = (
-				5C9C0A4428697DD50040C53C /* [CP] Check Pods Manifest.lock */,
 				5C9C0A682869E7250040C53C /* Apollo */,
 				5C9C0A4528697DD50040C53C /* Sources */,
 				5C9C0A4A28697DD50040C53C /* Frameworks */,
@@ -442,6 +449,11 @@
 				5CE900C1286D655D00045E6E /* KeychainAccess */,
 				5CD6EC9F286F48480059BEB7 /* Navajo-Swift */,
 				5C31BE712870C40800768DDD /* ApolloSQLite */,
+				5CEFBD32289DABE400CD0839 /* CocoaLumberjack */,
+				5CEFBD34289DABE400CD0839 /* CocoaLumberjackSwift */,
+				5CEFBD36289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend */,
+				5CEFBD38289DABEE00CD0839 /* SwiftUIX */,
+				5CEFBD3A289DABEE00CD0839 /* Defaults */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C9C0A5628697DD50040C53C /* RemoteProctoring-iPad.app */;
@@ -475,6 +487,9 @@
 				5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				5CE900BE286D655300045E6E /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				5CD6EC9C286F47E10059BEB7 /* XCRemoteSwiftPackageReference "Navajo-Swift" */,
+				5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */,
+				5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 			);
 			productRefGroup = 5C75827028695DA1001D0C93 /* Products */;
 			projectDirPath = "";
@@ -535,50 +550,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3323DDACFB246163DABA9116 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RemoteProctoring-macOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4DDC7F4DAD4148045F7BA97A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RemoteProctoring-iPhone-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5C1A230E286967B100AA2636 /* Apollo */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,28 +567,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n# propagate the xcrun call's return code to Xcode\nexit $?\n";
-		};
-		5C9C0A4428697DD50040C53C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RemoteProctoring-iPad-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		5C9C0A672869E7000040C53C /* Apollo */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -762,7 +711,6 @@
 /* Begin XCBuildConfiguration section */
 		5C1A22EF286960D000AA2636 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10D77A5C1F9E5468DCD6DDF4 /* Pods-RemoteProctoring-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -802,7 +750,6 @@
 		};
 		5C1A22F0286960D000AA2636 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3163E275D6CFE04F5942663D /* Pods-RemoteProctoring-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -958,7 +905,6 @@
 		};
 		5C75827F28695DA6001D0C93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BED6A88CBA9AD08FAA93F30 /* Pods-RemoteProctoring-iPhone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -998,7 +944,6 @@
 		};
 		5C75828028695DA6001D0C93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A56727F05923F7FB4F6FC520 /* Pods-RemoteProctoring-iPhone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1038,7 +983,6 @@
 		};
 		5C9C0A5428697DD50040C53C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0AA6C9AEF848CA82B683258 /* Pods-RemoteProctoring-iPad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1080,7 +1024,6 @@
 		};
 		5C9C0A5528697DD50040C53C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A84DFE17036E73BB8539BCFA /* Pods-RemoteProctoring-iPad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1186,9 +1129,33 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
 		5CE900BE286D655300045E6E /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.0.0;
@@ -1257,6 +1224,11 @@
 			package = 5CD6EC9C286F47E10059BEB7 /* XCRemoteSwiftPackageReference "Navajo-Swift" */;
 			productName = "Navajo-Swift";
 		};
+		5CE3332D289D9B6C00BD6BA4 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
 		5CE900C1286D655D00045E6E /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5CE900BE286D655300045E6E /* XCRemoteSwiftPackageReference "KeychainAccess" */;
@@ -1271,6 +1243,76 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5CE900BE286D655300045E6E /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		5CEFBD1F289DA70B00CD0839 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		5CEFBD22289DAB8200CD0839 /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		5CEFBD24289DAB8200CD0839 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		5CEFBD26289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwiftLogBackend;
+		};
+		5CEFBD28289DAB9A00CD0839 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		5CEFBD2A289DABAA00CD0839 /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		5CEFBD2C289DABAA00CD0839 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		5CEFBD2E289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwiftLogBackend;
+		};
+		5CEFBD30289DABB100CD0839 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		5CEFBD32289DABE400CD0839 /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		5CEFBD34289DABE400CD0839 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		5CEFBD36289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwiftLogBackend;
+		};
+		5CEFBD38289DABEE00CD0839 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		5CEFBD3A289DABEE00CD0839 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
