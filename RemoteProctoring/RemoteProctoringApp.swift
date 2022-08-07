@@ -16,5 +16,11 @@ struct RemoteProctoringApp: App {
                 .environmentObject(user)
                 .frame(minWidth: 800, maxWidth: .infinity, minHeight: 800, maxHeight: .infinity)
         }
+        #if os(macOS)
+        .windowStyle(.hiddenTitleBar)
+        .commands {
+            SidebarCommands()
+        }
+        #endif
     }
 }

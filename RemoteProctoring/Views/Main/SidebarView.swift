@@ -9,7 +9,39 @@ import SwiftUI
 
 struct SidebarView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            NavigationLink {
+                MainContentView()
+                    .navigationTitle("Home")
+            } label: {
+                Label {
+                    Text("Home")
+                        .allowsTightening(true)
+                } icon: {
+                    Image(systemName: "house")
+                        .symbolVariant(.fill)
+                        .symbolRenderingMode(.multicolor)
+                }
+            }
+            Section("People") {
+                NavigationLink {
+                    ExamineesView()
+                        .navigationTitle("Examinees")
+                } label: {
+                    Label {
+                        Text("Examinees")
+                            .allowsTightening(true)
+                    } icon: {
+                        Image(systemName: "person")
+                            .symbolVariant(.fill)
+                            .symbolRenderingMode(.multicolor)
+                    }
+                }
+            }
+        }
+        .listStyle(.sidebar)
+        .padding([.top, .bottom])
+        Spacer()
     }
 }
 

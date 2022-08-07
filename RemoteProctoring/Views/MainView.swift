@@ -8,23 +8,27 @@
 import SwiftUI
 
 struct MainView: View {
-    
-    var body: some View {
-#if os(macOS)
-        NavigationView {
-            SidebarView()
-            MainContentView()
-            DetailView()
-        }
-#else
-        NavigationSplitView {
-            SidebarView()
-        } content: {
-            MainContentView()
-        } detail: {
-            DetailView()
-        }
+#if os(iOS)
+    @State private var columnVisibility: NavigationSplitViewVisibility = .automatic
 #endif
+    var body: some View {
+        GeometryReader { g in
+#if os(macOS)
+            NavigationView {
+                SidebarView()
+                MainContentView()
+            }
+#else
+            NavigationSplitView(columnVisibility: $columnVisibility) {
+                SidebarView()
+                    .navigationSplitViewColumnWidth(g.size.width * 0.40)
+            } detail: {
+                MainContentView()
+                    .navigationSplitViewColumnWidth(
+                        ideal: g.size.width * 0.50)
+            }
+#endif
+        }
     }
 }
 
@@ -34,3 +38,4 @@ struct MainView_Previews: PreviewProvider {
         MainView()
     }
 }
+    

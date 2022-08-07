@@ -10,9 +10,6 @@
 		5C0A8517289E4A4400914746 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8516289E4A4400914746 /* SidebarView.swift */; };
 		5C0A8518289E4A4400914746 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8516289E4A4400914746 /* SidebarView.swift */; };
 		5C0A8519289E4A4400914746 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8516289E4A4400914746 /* SidebarView.swift */; };
-		5C0A851B289E4C1A00914746 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A851A289E4C1A00914746 /* DetailView.swift */; };
-		5C0A851C289E4C1A00914746 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A851A289E4C1A00914746 /* DetailView.swift */; };
-		5C0A851D289E4C1A00914746 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A851A289E4C1A00914746 /* DetailView.swift */; };
 		5C0A8523289E4C6200914746 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8522289E4C6200914746 /* MainContentView.swift */; };
 		5C0A8524289E4C6200914746 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8522289E4C6200914746 /* MainContentView.swift */; };
 		5C0A8525289E4C6200914746 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8522289E4C6200914746 /* MainContentView.swift */; };
@@ -60,6 +57,9 @@
 		5C9C3BAF286D92BD005CCA92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */; };
 		5C9C3BB0286D92BD005CCA92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */; };
 		5C9C3BB1286D92BD005CCA92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */; };
+		5CADAB90289ED8B200120268 /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* ExamineesView.swift */; };
+		5CADAB91289ED8B200120268 /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* ExamineesView.swift */; };
+		5CADAB92289ED8B200120268 /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* ExamineesView.swift */; };
 		5CD6EC9E286F47E20059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6EC9D286F47E20059BEB7 /* Navajo-Swift */; };
 		5CD6ECA0286F48480059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6EC9F286F48480059BEB7 /* Navajo-Swift */; };
 		5CD6ECA2286F48540059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6ECA1286F48540059BEB7 /* Navajo-Swift */; };
@@ -118,7 +118,6 @@
 
 /* Begin PBXFileReference section */
 		5C0A8516289E4A4400914746 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
-		5C0A851A289E4C1A00914746 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5C0A8522289E4C6200914746 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		5C0A8526289E4DC800914746 /* LogoBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoBanner.swift; sourceTree = "<group>"; };
 		5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +135,7 @@
 		5C9C0A57286981010040C53C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5C9C0A5F2869DED70040C53C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		5CADAB8F289ED8B200120268 /* ExamineesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamineesView.swift; sourceTree = "<group>"; };
 		5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewSupporting.swift; path = RemoteProctoring/Views/RegisterViewSupporting.swift; sourceTree = SOURCE_ROOT; };
 		5CEC11B7286EDE020066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEC11BB286EDE100066CDA3 /* Navajo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Navajo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -310,8 +310,8 @@
 			isa = PBXGroup;
 			children = (
 				5C0A8516289E4A4400914746 /* SidebarView.swift */,
-				5C0A851A289E4C1A00914746 /* DetailView.swift */,
 				5C0A8522289E4C6200914746 /* MainContentView.swift */,
+				5CADAB8F289ED8B200120268 /* ExamineesView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -578,11 +578,11 @@
 				5C0A8518289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5C92893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
+				5CADAB91289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
 				5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC18F28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
-				5C0A851C289E4C1A00914746 /* DetailView.swift in Sources */,
 				5CF2A5D12893EDEC0080A8A4 /* API.swift in Sources */,
 				5CEEC18728968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
 				5C0A8524289E4C6200914746 /* MainContentView.swift in Sources */,
@@ -603,11 +603,11 @@
 				5C0A8517289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5C82893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
+				5CADAB90289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A3E286976160040C53C /* Network.swift in Sources */,
 				5CE95E3D2898066F0041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19228968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC18E28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
-				5C0A851B289E4C1A00914746 /* DetailView.swift in Sources */,
 				5CF2A5D02893EDEC0080A8A4 /* API.swift in Sources */,
 				5CEEC18628968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
 				5C0A8523289E4C6200914746 /* MainContentView.swift in Sources */,
@@ -628,11 +628,11 @@
 				5C0A8519289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5CA2893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
+				5CADAB92289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,
 				5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC19028968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
-				5C0A851D289E4C1A00914746 /* DetailView.swift in Sources */,
 				5CF2A5D22893EDEC0080A8A4 /* API.swift in Sources */,
 				5CEEC18828968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
 				5C0A8525289E4C6200914746 /* MainContentView.swift in Sources */,
@@ -925,7 +925,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = RemoteProctoring/RemoteProctoring.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -949,6 +949,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.biit.RemoteProctoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -966,7 +967,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = RemoteProctoring/RemoteProctoring.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -990,6 +991,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.biit.RemoteProctoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
