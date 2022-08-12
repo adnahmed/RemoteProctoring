@@ -16,6 +16,8 @@
 		5C0A8527289E4DC800914746 /* LogoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8526289E4DC800914746 /* LogoBanner.swift */; };
 		5C0A8528289E4DC800914746 /* LogoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8526289E4DC800914746 /* LogoBanner.swift */; };
 		5C0A8529289E4DC800914746 /* LogoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8526289E4DC800914746 /* LogoBanner.swift */; };
+		5C0C7E9E28A54F2F00DC62EF /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 5C0C7E9D28A54F2F00DC62EF /* Collections */; };
+		5C0C7EA028A54F2F00DC62EF /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5C0C7E9F28A54F2F00DC62EF /* OrderedCollections */; };
 		5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827428695DA1001D0C93 /* ContentView.swift */; };
 		5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */; };
 		5C1A22EC286960D000AA2636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */; };
@@ -23,6 +25,37 @@
 		5C31BE722870C40800768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE712870C40800768DDD /* ApolloSQLite */; };
 		5C31BE742870C41000768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE732870C41000768DDD /* ApolloSQLite */; };
 		5C31BE762870C41B00768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE752870C41B00768DDD /* ApolloSQLite */; };
+		5C4DBC8128A4D3AC007E72D4 /* ProctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8028A4D3AC007E72D4 /* ProctorView.swift */; };
+		5C4DBC8228A4D3AC007E72D4 /* ProctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8028A4D3AC007E72D4 /* ProctorView.swift */; };
+		5C4DBC8328A4D3AC007E72D4 /* ProctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8028A4D3AC007E72D4 /* ProctorView.swift */; };
+		5C4DBC8528A4D403007E72D4 /* ProctorViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8428A4D403007E72D4 /* ProctorViewSupporting.swift */; };
+		5C4DBC8628A4D403007E72D4 /* ProctorViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8428A4D403007E72D4 /* ProctorViewSupporting.swift */; };
+		5C4DBC8728A4D403007E72D4 /* ProctorViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8428A4D403007E72D4 /* ProctorViewSupporting.swift */; };
+		5C4DBC8A28A4D572007E72D4 /* ExamRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8928A4D572007E72D4 /* ExamRoomView.swift */; };
+		5C4DBC8C28A4D572007E72D4 /* ExamRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8928A4D572007E72D4 /* ExamRoomView.swift */; };
+		5C4DBC9028A4D645007E72D4 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8F28A4D645007E72D4 /* Preferences.swift */; };
+		5C4DBC9128A4D645007E72D4 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8F28A4D645007E72D4 /* Preferences.swift */; };
+		5C4DBC9228A4D645007E72D4 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC8F28A4D645007E72D4 /* Preferences.swift */; };
+		5C4DBC9828A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC9728A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift */; };
+		5C4DBC9928A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC9728A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift */; };
+		5C4DBC9A28A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBC9728A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift */; };
+		5C4DBCA228A4D9C3007E72D4 /* ObservableParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA128A4D9C3007E72D4 /* ObservableParticipant.swift */; };
+		5C4DBCA328A4D9C3007E72D4 /* ObservableParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA128A4D9C3007E72D4 /* ObservableParticipant.swift */; };
+		5C4DBCA428A4D9C3007E72D4 /* ObservableParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA128A4D9C3007E72D4 /* ObservableParticipant.swift */; };
+		5C4DBCA628A4DA09007E72D4 /* RoomMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA528A4DA09007E72D4 /* RoomMessage.swift */; };
+		5C4DBCA728A4DA09007E72D4 /* RoomMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA528A4DA09007E72D4 /* RoomMessage.swift */; };
+		5C4DBCA828A4DA09007E72D4 /* RoomMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA528A4DA09007E72D4 /* RoomMessage.swift */; };
+		5C4DBCAA28A4E382007E72D4 /* ExamObservableRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA928A4E382007E72D4 /* ExamObservableRoom.swift */; };
+		5C4DBCAB28A4E382007E72D4 /* ExamObservableRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA928A4E382007E72D4 /* ExamObservableRoom.swift */; };
+		5C4DBCAC28A4E382007E72D4 /* ExamObservableRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCA928A4E382007E72D4 /* ExamObservableRoom.swift */; };
+		5C4DBCAE28A4E715007E72D4 /* ExamParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCAD28A4E715007E72D4 /* ExamParticipantView.swift */; };
+		5C4DBCB028A4E715007E72D4 /* ExamParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCAD28A4E715007E72D4 /* ExamParticipantView.swift */; };
+		5C4DBCB728A4EAF4007E72D4 /* RoomContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCB628A4EAF4007E72D4 /* RoomContext.swift */; };
+		5C4DBCB828A4EAF4007E72D4 /* RoomContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCB628A4EAF4007E72D4 /* RoomContext.swift */; };
+		5C4DBCB928A4EAF4007E72D4 /* RoomContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DBCB628A4EAF4007E72D4 /* RoomContext.swift */; };
+		5C4DBCBF28A4FE8C007E72D4 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C4DBCBE28A4FE8C007E72D4 /* LiveKit */; };
+		5C4DBCC128A4FE98007E72D4 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C4DBCC028A4FE98007E72D4 /* LiveKit */; };
+		5C4DBCC328A4FEA4007E72D4 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C4DBCC228A4FEA4007E72D4 /* LiveKit */; };
 		5C5DDD5F289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
 		5C5DDD60289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
 		5C5DDD61289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
@@ -36,6 +69,8 @@
 		5C693FC42869EC9300E75B45 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC32869EC9300E75B45 /* ApolloWebSocket */; };
 		5C693FC62869ECAC00E75B45 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC52869ECAC00E75B45 /* Apollo */; };
 		5C693FC82869ECAC00E75B45 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5C693FC72869ECAC00E75B45 /* ApolloWebSocket */; };
+		5C695A0228A58F9200CE8541 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 5C695A0128A58F9200CE8541 /* Collections */; };
+		5C695A0428A58F9200CE8541 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5C695A0328A58F9200CE8541 /* OrderedCollections */; };
 		5C75827328695DA1001D0C93 /* RemoteProctoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */; };
 		5C75827528695DA1001D0C93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827428695DA1001D0C93 /* ContentView.swift */; };
 		5C75827728695DA6001D0C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827628695DA6001D0C93 /* Assets.xcassets */; };
@@ -60,10 +95,12 @@
 		5CADAB90289ED8B200120268 /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* ExamineesView.swift */; };
 		5CADAB91289ED8B200120268 /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* ExamineesView.swift */; };
 		5CADAB92289ED8B200120268 /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* ExamineesView.swift */; };
+		5CAE631828A516E4006B33DF /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 5CAE631728A516E4006B33DF /* Promises */; };
+		5CAE631A28A51700006B33DF /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 5CAE631928A51700006B33DF /* Promises */; };
+		5CAE631C28A51709006B33DF /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 5CAE631B28A51709006B33DF /* Promises */; };
 		5CD6EC9E286F47E20059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6EC9D286F47E20059BEB7 /* Navajo-Swift */; };
 		5CD6ECA0286F48480059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6EC9F286F48480059BEB7 /* Navajo-Swift */; };
 		5CD6ECA2286F48540059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6ECA1286F48540059BEB7 /* Navajo-Swift */; };
-		5CE3332E289D9B6C00BD6BA4 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE3332D289D9B6C00BD6BA4 /* SwiftUIX */; };
 		5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C1286D655D00045E6E /* KeychainAccess */; };
 		5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C3286D656300045E6E /* KeychainAccess */; };
 		5CE900C6286D657700045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C5286D657700045E6E /* KeychainAccess */; };
@@ -86,18 +123,7 @@
 		5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* AuthFormView.swift */; };
 		5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* AuthFormView.swift */; };
 		5CEFBD20289DA70B00CD0839 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD1F289DA70B00CD0839 /* Defaults */; };
-		5CEFBD23289DAB8200CD0839 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD22289DAB8200CD0839 /* CocoaLumberjack */; };
-		5CEFBD25289DAB8200CD0839 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD24289DAB8200CD0839 /* CocoaLumberjackSwift */; };
-		5CEFBD27289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD26289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend */; };
 		5CEFBD29289DAB9A00CD0839 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD28289DAB9A00CD0839 /* Defaults */; };
-		5CEFBD2B289DABAA00CD0839 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD2A289DABAA00CD0839 /* CocoaLumberjack */; };
-		5CEFBD2D289DABAA00CD0839 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD2C289DABAA00CD0839 /* CocoaLumberjackSwift */; };
-		5CEFBD2F289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD2E289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend */; };
-		5CEFBD31289DABB100CD0839 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD30289DABB100CD0839 /* SwiftUIX */; };
-		5CEFBD33289DABE400CD0839 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD32289DABE400CD0839 /* CocoaLumberjack */; };
-		5CEFBD35289DABE400CD0839 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD34289DABE400CD0839 /* CocoaLumberjackSwift */; };
-		5CEFBD37289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD36289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend */; };
-		5CEFBD39289DABEE00CD0839 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD38289DABEE00CD0839 /* SwiftUIX */; };
 		5CEFBD3B289DABEE00CD0839 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 5CEFBD3A289DABEE00CD0839 /* Defaults */; };
 		5CF2526E2895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
 		5CF2526F2895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
@@ -121,6 +147,16 @@
 		5C0A8522289E4C6200914746 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		5C0A8526289E4DC800914746 /* LogoBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoBanner.swift; sourceTree = "<group>"; };
 		5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4DBC8028A4D3AC007E72D4 /* ProctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProctorView.swift; sourceTree = "<group>"; };
+		5C4DBC8428A4D403007E72D4 /* ProctorViewSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProctorViewSupporting.swift; sourceTree = "<group>"; };
+		5C4DBC8928A4D572007E72D4 /* ExamRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamRoomView.swift; sourceTree = "<group>"; };
+		5C4DBC8F28A4D645007E72D4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		5C4DBC9728A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProctorViewSupporting+ParticipantLayout.swift"; sourceTree = "<group>"; };
+		5C4DBCA128A4D9C3007E72D4 /* ObservableParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableParticipant.swift; sourceTree = "<group>"; };
+		5C4DBCA528A4DA09007E72D4 /* RoomMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomMessage.swift; sourceTree = "<group>"; };
+		5C4DBCA928A4E382007E72D4 /* ExamObservableRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamObservableRoom.swift; sourceTree = "<group>"; };
+		5C4DBCAD28A4E715007E72D4 /* ExamParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamParticipantView.swift; sourceTree = "<group>"; };
+		5C4DBCB628A4EAF4007E72D4 /* RoomContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomContext.swift; sourceTree = "<group>"; };
 		5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginEmail.graphql; sourceTree = "<group>"; };
 		5C5DDD62289A921200A98073 /* loginUsername.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginUsername.graphql; sourceTree = "<group>"; };
 		5C5DDD66289A923D00A98073 /* loginResponse.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginResponse.graphql; sourceTree = "<group>"; };
@@ -159,14 +195,12 @@
 			files = (
 				5CEFBD29289DAB9A00CD0839 /* Defaults in Frameworks */,
 				5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */,
-				5CEFBD2B289DABAA00CD0839 /* CocoaLumberjack in Frameworks */,
-				5CEFBD31289DABB100CD0839 /* SwiftUIX in Frameworks */,
 				5CD6ECA2286F48540059BEB7 /* Navajo-Swift in Frameworks */,
 				5C31BE742870C41000768DDD /* ApolloSQLite in Frameworks */,
 				5C693FC82869ECAC00E75B45 /* ApolloWebSocket in Frameworks */,
-				5CEFBD2D289DABAA00CD0839 /* CocoaLumberjackSwift in Frameworks */,
-				5CEFBD2F289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
+				5CAE631A28A51700006B33DF /* Promises in Frameworks */,
 				5C693FC62869ECAC00E75B45 /* Apollo in Frameworks */,
+				5C4DBCC128A4FE98007E72D4 /* LiveKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,16 +208,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C695A0428A58F9200CE8541 /* OrderedCollections in Frameworks */,
 				5CE900C6286D657700045E6E /* KeychainAccess in Frameworks */,
 				5CD6EC9E286F47E20059BEB7 /* Navajo-Swift in Frameworks */,
-				5CEFBD25289DAB8200CD0839 /* CocoaLumberjackSwift in Frameworks */,
 				5C31BE762870C41B00768DDD /* ApolloSQLite in Frameworks */,
-				5CE3332E289D9B6C00BD6BA4 /* SwiftUIX in Frameworks */,
-				5CEFBD23289DAB8200CD0839 /* CocoaLumberjack in Frameworks */,
 				5C693FC42869EC9300E75B45 /* ApolloWebSocket in Frameworks */,
 				5C693FC22869EC9300E75B45 /* Apollo in Frameworks */,
-				5CEFBD27289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
+				5CAE631C28A51709006B33DF /* Promises in Frameworks */,
+				5C695A0228A58F9200CE8541 /* Collections in Frameworks */,
 				5CEFBD20289DA70B00CD0839 /* Defaults in Frameworks */,
+				5C4DBCBF28A4FE8C007E72D4 /* LiveKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,16 +225,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CEFBD39289DABEE00CD0839 /* SwiftUIX in Frameworks */,
-				5CEFBD33289DABE400CD0839 /* CocoaLumberjack in Frameworks */,
+				5C0C7EA028A54F2F00DC62EF /* OrderedCollections in Frameworks */,
 				5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */,
-				5CEFBD37289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
 				5CEFBD3B289DABEE00CD0839 /* Defaults in Frameworks */,
 				5CD6ECA0286F48480059BEB7 /* Navajo-Swift in Frameworks */,
 				5C31BE722870C40800768DDD /* ApolloSQLite in Frameworks */,
-				5CEFBD35289DABE400CD0839 /* CocoaLumberjackSwift in Frameworks */,
 				5C9C0A4C28697DD50040C53C /* ApolloWebSocket in Frameworks */,
+				5CAE631828A516E4006B33DF /* Promises in Frameworks */,
+				5C0C7E9E28A54F2F00DC62EF /* Collections in Frameworks */,
 				5C9C0A4D28697DD50040C53C /* Apollo in Frameworks */,
+				5C4DBCC328A4FEA4007E72D4 /* LiveKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +244,7 @@
 		5C31BE672870403E00768DDD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5C4DBC8E28A4D630007E72D4 /* Livekit */,
 				5CF2A5C12893B3B50080A8A4 /* User.swift */,
 				5CEE5A9828717673005A259A /* Apollo */,
 			);
@@ -228,6 +263,35 @@
 				5C75827428695DA1001D0C93 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5C4DBC8828A4D55E007E72D4 /* ProctorView */ = {
+			isa = PBXGroup;
+			children = (
+				5C4DBC8028A4D3AC007E72D4 /* ProctorView.swift */,
+				5C4DBC8928A4D572007E72D4 /* ExamRoomView.swift */,
+			);
+			path = ProctorView;
+			sourceTree = "<group>";
+		};
+		5C4DBC8E28A4D630007E72D4 /* Livekit */ = {
+			isa = PBXGroup;
+			children = (
+				5C4DBC8F28A4D645007E72D4 /* Preferences.swift */,
+				5C4DBCA128A4D9C3007E72D4 /* ObservableParticipant.swift */,
+				5C4DBCA528A4DA09007E72D4 /* RoomMessage.swift */,
+				5C4DBCA928A4E382007E72D4 /* ExamObservableRoom.swift */,
+				5C4DBCB628A4EAF4007E72D4 /* RoomContext.swift */,
+			);
+			path = Livekit;
+			sourceTree = "<group>";
+		};
+		5C4DBC9C28A4D98A007E72D4 /* Livekit */ = {
+			isa = PBXGroup;
+			children = (
+				5C4DBCAD28A4E715007E72D4 /* ExamParticipantView.swift */,
+			);
+			path = Livekit;
 			sourceTree = "<group>";
 		};
 		5C75826628695DA1001D0C93 = {
@@ -298,10 +362,13 @@
 		5CF2A5C02893B1AE0080A8A4 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				5C4DBC9C28A4D98A007E72D4 /* Livekit */,
 				5C0A8526289E4DC800914746 /* LogoBanner.swift */,
 				5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */,
 				5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */,
 				5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */,
+				5C4DBC8428A4D403007E72D4 /* ProctorViewSupporting.swift */,
+				5C4DBC9728A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -309,6 +376,7 @@
 		5CF2A5C62893B9BD0080A8A4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5C4DBC8828A4D55E007E72D4 /* ProctorView */,
 				5C0A8516289E4A4400914746 /* SidebarView.swift */,
 				5C0A8522289E4C6200914746 /* MainContentView.swift */,
 				5CADAB8F289ED8B200120268 /* ExamineesView.swift */,
@@ -350,10 +418,8 @@
 				5CD6ECA1286F48540059BEB7 /* Navajo-Swift */,
 				5C31BE732870C41000768DDD /* ApolloSQLite */,
 				5CEFBD28289DAB9A00CD0839 /* Defaults */,
-				5CEFBD2A289DABAA00CD0839 /* CocoaLumberjack */,
-				5CEFBD2C289DABAA00CD0839 /* CocoaLumberjackSwift */,
-				5CEFBD2E289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend */,
-				5CEFBD30289DABB100CD0839 /* SwiftUIX */,
+				5C4DBCC028A4FE98007E72D4 /* LiveKit */,
+				5CAE631928A51700006B33DF /* Promises */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */;
@@ -379,11 +445,11 @@
 				5CE900C5286D657700045E6E /* KeychainAccess */,
 				5CD6EC9D286F47E20059BEB7 /* Navajo-Swift */,
 				5C31BE752870C41B00768DDD /* ApolloSQLite */,
-				5CE3332D289D9B6C00BD6BA4 /* SwiftUIX */,
 				5CEFBD1F289DA70B00CD0839 /* Defaults */,
-				5CEFBD22289DAB8200CD0839 /* CocoaLumberjack */,
-				5CEFBD24289DAB8200CD0839 /* CocoaLumberjackSwift */,
-				5CEFBD26289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend */,
+				5C4DBCBE28A4FE8C007E72D4 /* LiveKit */,
+				5CAE631B28A51709006B33DF /* Promises */,
+				5C695A0128A58F9200CE8541 /* Collections */,
+				5C695A0328A58F9200CE8541 /* OrderedCollections */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C75826F28695DA1001D0C93 /* RemoteProctoring-iPhone.app */;
@@ -409,11 +475,11 @@
 				5CE900C1286D655D00045E6E /* KeychainAccess */,
 				5CD6EC9F286F48480059BEB7 /* Navajo-Swift */,
 				5C31BE712870C40800768DDD /* ApolloSQLite */,
-				5CEFBD32289DABE400CD0839 /* CocoaLumberjack */,
-				5CEFBD34289DABE400CD0839 /* CocoaLumberjackSwift */,
-				5CEFBD36289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend */,
-				5CEFBD38289DABEE00CD0839 /* SwiftUIX */,
 				5CEFBD3A289DABEE00CD0839 /* Defaults */,
+				5C4DBCC228A4FEA4007E72D4 /* LiveKit */,
+				5CAE631728A516E4006B33DF /* Promises */,
+				5C0C7E9D28A54F2F00DC62EF /* Collections */,
+				5C0C7E9F28A54F2F00DC62EF /* OrderedCollections */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C9C0A5628697DD50040C53C /* RemoteProctoring-iPad.app */;
@@ -447,10 +513,10 @@
 				5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				5CE900BE286D655300045E6E /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				5CD6EC9C286F47E10059BEB7 /* XCRemoteSwiftPackageReference "Navajo-Swift" */,
-				5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */,
-				5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 				5C0A8515289E3FBA00914746 /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
+				5C4DBCC428A500B5007E72D4 /* XCRemoteSwiftPackageReference "promises" */,
+				5C0C7E9828A54EE400DC62EF /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 5C75827028695DA1001D0C93 /* Products */;
 			projectDirPath = "";
@@ -572,23 +638,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4DBCAB28A4E382007E72D4 /* ExamObservableRoom.swift in Sources */,
 				5CEE5AA128717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
 				5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C0A8528289E4DC800914746 /* LogoBanner.swift in Sources */,
 				5C0A8518289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5C92893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
+				5C4DBC9928A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift in Sources */,
 				5CADAB91289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
 				5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */,
+				5C4DBC8628A4D403007E72D4 /* ProctorViewSupporting.swift in Sources */,
 				5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */,
+				5C4DBC8228A4D3AC007E72D4 /* ProctorView.swift in Sources */,
 				5CEEC18F28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5CF2A5D12893EDEC0080A8A4 /* API.swift in Sources */,
 				5CEEC18728968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
+				5C4DBCB828A4EAF4007E72D4 /* RoomContext.swift in Sources */,
 				5C0A8524289E4C6200914746 /* MainContentView.swift in Sources */,
 				5CF2A5C32893B3B50080A8A4 /* User.swift in Sources */,
+				5C4DBC9128A4D645007E72D4 /* Preferences.swift in Sources */,
 				5C9C0A612869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BB0286D92BD005CCA92 /* RegisterView.swift in Sources */,
+				5C4DBCA328A4D9C3007E72D4 /* ObservableParticipant.swift in Sources */,
+				5C4DBCA728A4DA09007E72D4 /* RoomMessage.swift in Sources */,
 				5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,23 +671,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4DBCAA28A4E382007E72D4 /* ExamObservableRoom.swift in Sources */,
 				5CEE5AA028717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
 				5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C0A8527289E4DC800914746 /* LogoBanner.swift in Sources */,
+				5C4DBC8A28A4D572007E72D4 /* ExamRoomView.swift in Sources */,
 				5C0A8517289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5C82893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
+				5C4DBC9828A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift in Sources */,
+				5C4DBCAE28A4E715007E72D4 /* ExamParticipantView.swift in Sources */,
 				5CADAB90289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A3E286976160040C53C /* Network.swift in Sources */,
 				5CE95E3D2898066F0041BBCC /* RegisterViewSupporting.swift in Sources */,
+				5C4DBC8528A4D403007E72D4 /* ProctorViewSupporting.swift in Sources */,
 				5CEEC19228968F1B001BD64C /* AuthFormView.swift in Sources */,
+				5C4DBC8128A4D3AC007E72D4 /* ProctorView.swift in Sources */,
 				5CEEC18E28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5CF2A5D02893EDEC0080A8A4 /* API.swift in Sources */,
 				5CEEC18628968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
+				5C4DBCB728A4EAF4007E72D4 /* RoomContext.swift in Sources */,
 				5C0A8523289E4C6200914746 /* MainContentView.swift in Sources */,
 				5CF2A5C22893B3B50080A8A4 /* User.swift in Sources */,
+				5C4DBC9028A4D645007E72D4 /* Preferences.swift in Sources */,
 				5C9C0A602869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BAF286D92BD005CCA92 /* RegisterView.swift in Sources */,
+				5C4DBCA228A4D9C3007E72D4 /* ObservableParticipant.swift in Sources */,
+				5C4DBCA628A4DA09007E72D4 /* RoomMessage.swift in Sources */,
 				5C75827328695DA1001D0C93 /* RemoteProctoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,23 +706,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4DBCAC28A4E382007E72D4 /* ExamObservableRoom.swift in Sources */,
 				5CEE5AA228717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
 				5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C0A8529289E4DC800914746 /* LogoBanner.swift in Sources */,
+				5C4DBC8C28A4D572007E72D4 /* ExamRoomView.swift in Sources */,
 				5C0A8519289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5CA2893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
+				5C4DBC9A28A4D910007E72D4 /* ProctorViewSupporting+ParticipantLayout.swift in Sources */,
+				5C4DBCB028A4E715007E72D4 /* ExamParticipantView.swift in Sources */,
 				5CADAB92289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,
 				5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */,
+				5C4DBC8728A4D403007E72D4 /* ProctorViewSupporting.swift in Sources */,
 				5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */,
+				5C4DBC8328A4D3AC007E72D4 /* ProctorView.swift in Sources */,
 				5CEEC19028968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5CF2A5D22893EDEC0080A8A4 /* API.swift in Sources */,
 				5CEEC18828968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
+				5C4DBCB928A4EAF4007E72D4 /* RoomContext.swift in Sources */,
 				5C0A8525289E4C6200914746 /* MainContentView.swift in Sources */,
 				5CF2A5C42893B3B50080A8A4 /* User.swift in Sources */,
+				5C4DBC9228A4D645007E72D4 /* Preferences.swift in Sources */,
 				5C9C0A622869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BB1286D92BD005CCA92 /* RegisterView.swift in Sources */,
+				5C4DBCA428A4D9C3007E72D4 /* ObservableParticipant.swift in Sources */,
+				5C4DBCA828A4DA09007E72D4 /* RoomMessage.swift in Sources */,
 				5C9C0A4928697DD50040C53C /* RemoteProctoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -947,7 +1041,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited))";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.biit.RemoteProctoring;
+				PRODUCT_BUNDLE_IDENTIFIER = biit.RemoteProctoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
@@ -989,7 +1083,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited))";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.biit.RemoteProctoring;
+				PRODUCT_BUNDLE_IDENTIFIER = biit.RemoteProctoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
@@ -1052,6 +1146,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		5C0C7E9828A54EE400DC62EF /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		5C4DBCC428A500B5007E72D4 /* XCRemoteSwiftPackageReference "promises" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/promises.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
 		5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios";
@@ -1076,14 +1186,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.2;
-			};
-		};
 		5CE900BE286D655300045E6E /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
@@ -1100,17 +1202,19 @@
 				kind = branch;
 			};
 		};
-		5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5C0C7E9D28A54F2F00DC62EF /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0C7E9828A54EE400DC62EF /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		5C0C7E9F28A54F2F00DC62EF /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0C7E9828A54EE400DC62EF /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
 		5C31BE712870C40800768DDD /* ApolloSQLite */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */;
@@ -1125,6 +1229,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloSQLite;
+		};
+		5C4DBCBE28A4FE8C007E72D4 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0A8515289E3FBA00914746 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+		5C4DBCC028A4FE98007E72D4 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0A8515289E3FBA00914746 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+		5C4DBCC228A4FEA4007E72D4 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0A8515289E3FBA00914746 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
 		};
 		5C693FC12869EC9300E75B45 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1146,6 +1265,16 @@
 			package = 5C693FC02869EC9300E75B45 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloWebSocket;
 		};
+		5C695A0128A58F9200CE8541 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0C7E9828A54EE400DC62EF /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		5C695A0328A58F9200CE8541 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C0C7E9828A54EE400DC62EF /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
 		5C9C0A4128697DD50040C53C /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5C9C0A4228697DD50040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */;
@@ -1155,6 +1284,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5C9C0A4228697DD50040C53C /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloWebSocket;
+		};
+		5CAE631728A516E4006B33DF /* Promises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C4DBCC428A500B5007E72D4 /* XCRemoteSwiftPackageReference "promises" */;
+			productName = Promises;
+		};
+		5CAE631928A51700006B33DF /* Promises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C4DBCC428A500B5007E72D4 /* XCRemoteSwiftPackageReference "promises" */;
+			productName = Promises;
+		};
+		5CAE631B28A51709006B33DF /* Promises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C4DBCC428A500B5007E72D4 /* XCRemoteSwiftPackageReference "promises" */;
+			productName = Promises;
 		};
 		5CD6EC9D286F47E20059BEB7 /* Navajo-Swift */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1170,11 +1314,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5CD6EC9C286F47E10059BEB7 /* XCRemoteSwiftPackageReference "Navajo-Swift" */;
 			productName = "Navajo-Swift";
-		};
-		5CE3332D289D9B6C00BD6BA4 /* SwiftUIX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
-			productName = SwiftUIX;
 		};
 		5CE900C1286D655D00045E6E /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1196,65 +1335,10 @@
 			package = 5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */;
 			productName = Defaults;
 		};
-		5CEFBD22289DAB8200CD0839 /* CocoaLumberjack */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjack;
-		};
-		5CEFBD24289DAB8200CD0839 /* CocoaLumberjackSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjackSwift;
-		};
-		5CEFBD26289DAB8200CD0839 /* CocoaLumberjackSwiftLogBackend */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjackSwiftLogBackend;
-		};
 		5CEFBD28289DAB9A00CD0839 /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5CEFBD1E289DA70A00CD0839 /* XCRemoteSwiftPackageReference "Defaults" */;
 			productName = Defaults;
-		};
-		5CEFBD2A289DABAA00CD0839 /* CocoaLumberjack */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjack;
-		};
-		5CEFBD2C289DABAA00CD0839 /* CocoaLumberjackSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjackSwift;
-		};
-		5CEFBD2E289DABAA00CD0839 /* CocoaLumberjackSwiftLogBackend */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjackSwiftLogBackend;
-		};
-		5CEFBD30289DABB100CD0839 /* SwiftUIX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
-			productName = SwiftUIX;
-		};
-		5CEFBD32289DABE400CD0839 /* CocoaLumberjack */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjack;
-		};
-		5CEFBD34289DABE400CD0839 /* CocoaLumberjackSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjackSwift;
-		};
-		5CEFBD36289DABE400CD0839 /* CocoaLumberjackSwiftLogBackend */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CEFBD21289DAB8200CD0839 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
-			productName = CocoaLumberjackSwiftLogBackend;
-		};
-		5CEFBD38289DABEE00CD0839 /* SwiftUIX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5CE3332C289D9B6A00BD6BA4 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
-			productName = SwiftUIX;
 		};
 		5CEFBD3A289DABEE00CD0839 /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;

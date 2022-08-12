@@ -12,7 +12,6 @@ struct SidebarView: View {
         List {
             NavigationLink {
                 MainContentView()
-                    .navigationTitle("Home")
             } label: {
                 Label {
                     Text("Home")
@@ -26,7 +25,6 @@ struct SidebarView: View {
             Section("People") {
                 NavigationLink {
                     ExamineesView()
-                        .navigationTitle("Examinees")
                 } label: {
                     Label {
                         Text("Examinees")
