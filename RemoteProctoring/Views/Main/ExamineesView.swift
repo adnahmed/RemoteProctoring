@@ -17,95 +17,6 @@ struct Examinee: Identifiable, Hashable {
     var lastSeen: Date?
 }
 
-enum ActivityType: String {
-    case LOOK_LEFT = "looked left",
-         LOOK_RIGHT = "looked right",
-         LOOK_UP = "looked up",
-         LOOK_DOWN = "looked down",
-         
-         HEAD_LEFT = "moved head left",
-         HEAD_RIGHT = "moved head right",
-         HEAD_UP = "moved head up",
-         HEAD_DOWN = "moved head down",
-         
-         SPEAK = "spoke"
-    
-    var display: some View {
-        switch self {
-        case .LOOK_LEFT:
-            return HStack {
-                Image(systemName: "arrow.left")
-                Image(systemName: "eye")
-            }
-        case .LOOK_RIGHT:
-            return HStack {
-                Image(systemName: "eye")
-                Image(systemName: "arrow.right")
-            }
-        case .LOOK_UP:
-            return HStack {
-                Image(systemName: "eye")
-                Image(systemName: "arrow.up")
-            }
-        case .LOOK_DOWN:
-            return HStack {
-                Image(systemName: "eye")
-                Image(systemName: "arrow.down")
-            }
-        case .HEAD_LEFT:
-            return HStack {
-                Image(systemName: "arrow.left")
-                Image(systemName: "person")
-            }
-        case .HEAD_RIGHT:
-            return HStack {
-                Image(systemName: "person")
-                Image(systemName: "arrow.right")
-            }
-        case .HEAD_UP:
-            return HStack {
-                Image(systemName: "person")
-                Image(systemName: "arrow.up")
-            }
-        case .HEAD_DOWN:
-            return HStack {
-                Image(systemName: "person")
-                Image(systemName: "arrow.up")
-            }
-        case .SPEAK:
-            return HStack {
-                Image(systemName: "person")
-                Image(systemName: "speaker.wave.2")
-            }
-        }
-    }
-}
-
-struct Activity: Identifiable, Hashable {
-    var id: UUID
-    var type: ActivityType
-    var subject: Examinee
-    var duration: DateInterval
-    var durationHrs: Int {
-        return Int(duration.duration) / 3600
-    }
-    
-    var durationMins: Int {
-        return Int((Int(duration.duration) - durationHrs * 3600)/60)
-    }
-    
-    var durationSecs: Int {
-        return Int(Int(duration.duration) - (durationHrs + durationMins))
-    }
-    
-    static let ONE_DAY: TimeInterval = 3600
-    static let formatter = {
-        let formatter = DateIntervalFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
-        return formatter
-    }()
-}
 
 let examinees: [Examinee] = [
     Examinee(id: UUID(uuidString: "E621E1F8-C36C-495A-93FC-1C247A3E6E5F")!, full_name: "Sulman Ahmed Khan", username:"adnaahm", picture: "pp", isOnline: false, lastSeen: Date(timeIntervalSince1970: 1312413212)),
@@ -116,21 +27,7 @@ let activities: [Activity] = [
     Activity(id: UUID(uuidString: "E521E1F8-C36C-495A-93FC-1C347A3E6E5F")!, type: .SPEAK, subject: examinees[1], duration: DateInterval(start: .now - 32323123, end: .now))
 ]
 #endif
-struct RecentActivityView: View {
-    var body: some View {
-        Text("Activity")
-            .font(.title)
-        List(activities, id: \.self) { activity in
-            ActivityItemView(activity: activity)
-            NavigationLink {
-                Text("Activity View")
-            } label: {
-                Text("See More")
-            }
-            .buttonStyle(.borderedProminent)
-        }
-    }
-}
+
 struct ExamineeListView: View {
     @State private var multiSelection: Set<Examinee> = Set<Examinee>()
     @State private var searchString: String = ""
@@ -138,7 +35,9 @@ struct ExamineeListView: View {
         List(examinees, id: \.self, selection: $multiSelection) { examinee in
             ExamineeItemView(examinee: examinee)
         }
-        
+        #if os(iOS)
+        .navigationBarTitleDisplayMode(.inline)
+        #endif
         .toolbar {
 #if os(iOS)
             EditButton()
@@ -176,7 +75,11 @@ struct SuggestionsView: View {
 struct ExamineesView: View {
     var body: some View {
 #if os(iOS)
-        NavigationSplitView(sidebar: ExamineeListView(), detail: RecentActivityView())
+        NavigationSplitView {
+          ExamineeListView()
+        } detail: {
+          RecentActivityView()
+        }
 #else
         NavigationView {
             ExamineeListView()
@@ -185,8 +88,6 @@ struct ExamineesView: View {
 #endif
         
     }
-    
-    
 }
 
 struct ActivityItemView: View {
@@ -200,7 +101,7 @@ struct ActivityItemView: View {
             Spacer()
             Group {
                 Text(Activity.formatter.string(from: activity.duration.start, to: activity.duration.end))
-                Text("(\(activity.durationHrs != 0 ? "\(activity.durationHrs)hr" : "") \(activity.durationMins != 0 ? "\(activity.durationMins)min" : "") \(activity.durationSecs)sec")
+                Text("(\(activity.durationHrs != 0 ? "\(activity.durationHrs)hr" : "") \(activity.durationMins != 0 ? "\(activity.durationMins)min" : "") \(activity.durationSecs)sec)")
             }
             .font(.monospaced(.caption)())
         }

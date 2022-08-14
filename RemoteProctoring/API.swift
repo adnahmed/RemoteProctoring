@@ -162,7 +162,7 @@ public final class LogInEmailQuery: GraphQLQuery {
 
   public let operationName: String = "LogInEmail"
 
-  public let operationIdentifier: String? = "5d9e56e6aff3ea0d1329d0eb61bc82bc40366556b80bc9f3c54706c900d4d79b"
+  public let operationIdentifier: String? = "fdf3863c5fc0165af53ae7084535f54e089f26403c8d8f5641894b9556d54f18"
 
   public var queryDocument: String {
     var document: String = operationDefinition
@@ -323,6 +323,7 @@ public final class LogInEmailQuery: GraphQLQuery {
           return [
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+            GraphQLField("id", type: .nonNull(.scalar(String.self))),
             GraphQLField("prefix", type: .scalar(String.self)),
             GraphQLField("givenName", type: .nonNull(.scalar(String.self))),
             GraphQLField("middleName", type: .scalar(String.self)),
@@ -337,8 +338,8 @@ public final class LogInEmailQuery: GraphQLQuery {
           self.resultMap = unsafeResultMap
         }
 
-        public init(`prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
-          self.init(unsafeResultMap: ["__typename": "User", "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
+        public init(id: String, `prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
+          self.init(unsafeResultMap: ["__typename": "User", "id": id, "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
         }
 
         public var __typename: String {
@@ -347,6 +348,15 @@ public final class LogInEmailQuery: GraphQLQuery {
           }
           set {
             resultMap.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: String {
+          get {
+            return resultMap["id"]! as! String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "id")
           }
         }
 
@@ -439,7 +449,7 @@ public final class LogInUsernameQuery: GraphQLQuery {
 
   public let operationName: String = "LogInUsername"
 
-  public let operationIdentifier: String? = "080c43d62a934d3ac4cda73e5313fbc563dfde00f0d4b6f0f0cc3a41220ba4cf"
+  public let operationIdentifier: String? = "6f4e3432611f70d2e72c442708f1115f9b4246b118ced9908c502e6a6321841b"
 
   public var queryDocument: String {
     var document: String = operationDefinition
@@ -600,6 +610,7 @@ public final class LogInUsernameQuery: GraphQLQuery {
           return [
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+            GraphQLField("id", type: .nonNull(.scalar(String.self))),
             GraphQLField("prefix", type: .scalar(String.self)),
             GraphQLField("givenName", type: .nonNull(.scalar(String.self))),
             GraphQLField("middleName", type: .scalar(String.self)),
@@ -614,8 +625,8 @@ public final class LogInUsernameQuery: GraphQLQuery {
           self.resultMap = unsafeResultMap
         }
 
-        public init(`prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
-          self.init(unsafeResultMap: ["__typename": "User", "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
+        public init(id: String, `prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
+          self.init(unsafeResultMap: ["__typename": "User", "id": id, "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
         }
 
         public var __typename: String {
@@ -624,6 +635,15 @@ public final class LogInUsernameQuery: GraphQLQuery {
           }
           set {
             resultMap.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: String {
+          get {
+            return resultMap["id"]! as! String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "id")
           }
         }
 
@@ -723,7 +743,7 @@ public final class RegisterMutation: GraphQLMutation {
 
   public let operationName: String = "Register"
 
-  public let operationIdentifier: String? = "bd89ae9b98e2f7a86645290c8aab54bfbc2b50e86d615e8f46daded8aa3cbfcf"
+  public let operationIdentifier: String? = "2fe3c0b648224a42e989862657854716c79a4df1a65bdf02a023105b11bb90d5"
 
   public var queryDocument: String {
     var document: String = operationDefinition
@@ -854,6 +874,7 @@ public final class RegisterMutation: GraphQLMutation {
           return [
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+            GraphQLField("id", type: .nonNull(.scalar(String.self))),
             GraphQLField("prefix", type: .scalar(String.self)),
             GraphQLField("givenName", type: .nonNull(.scalar(String.self))),
             GraphQLField("middleName", type: .scalar(String.self)),
@@ -868,8 +889,8 @@ public final class RegisterMutation: GraphQLMutation {
           self.resultMap = unsafeResultMap
         }
 
-        public init(`prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
-          self.init(unsafeResultMap: ["__typename": "User", "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
+        public init(id: String, `prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
+          self.init(unsafeResultMap: ["__typename": "User", "id": id, "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
         }
 
         public var __typename: String {
@@ -878,6 +899,15 @@ public final class RegisterMutation: GraphQLMutation {
           }
           set {
             resultMap.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: String {
+          get {
+            return resultMap["id"]! as! String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "id")
           }
         }
 
@@ -1057,6 +1087,7 @@ public struct LoginResponse: GraphQLFragment {
       return [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(String.self))),
         GraphQLField("prefix", type: .scalar(String.self)),
         GraphQLField("givenName", type: .nonNull(.scalar(String.self))),
         GraphQLField("middleName", type: .scalar(String.self)),
@@ -1071,8 +1102,8 @@ public struct LoginResponse: GraphQLFragment {
       self.resultMap = unsafeResultMap
     }
 
-    public init(`prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
-      self.init(unsafeResultMap: ["__typename": "User", "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
+    public init(id: String, `prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
+      self.init(unsafeResultMap: ["__typename": "User", "id": id, "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
     }
 
     public var __typename: String {
@@ -1081,6 +1112,15 @@ public struct LoginResponse: GraphQLFragment {
       }
       set {
         resultMap.updateValue(newValue, forKey: "__typename")
+      }
+    }
+
+    public var id: String {
+      get {
+        return resultMap["id"]! as! String
+      }
+      set {
+        resultMap.updateValue(newValue, forKey: "id")
       }
     }
 
@@ -1163,6 +1203,7 @@ public struct UserDetails: GraphQLFragment {
     """
     fragment UserDetails on User {
       __typename
+      id
       prefix
       givenName
       middleName
@@ -1176,6 +1217,7 @@ public struct UserDetails: GraphQLFragment {
   public static var selections: [GraphQLSelection] {
     return [
       GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+      GraphQLField("id", type: .nonNull(.scalar(String.self))),
       GraphQLField("prefix", type: .scalar(String.self)),
       GraphQLField("givenName", type: .nonNull(.scalar(String.self))),
       GraphQLField("middleName", type: .scalar(String.self)),
@@ -1190,8 +1232,8 @@ public struct UserDetails: GraphQLFragment {
     self.resultMap = unsafeResultMap
   }
 
-  public init(`prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
-    self.init(unsafeResultMap: ["__typename": "User", "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
+  public init(id: String, `prefix`: String? = nil, givenName: String, middleName: String? = nil, lastName: String? = nil, role: Role) {
+    self.init(unsafeResultMap: ["__typename": "User", "id": id, "prefix": `prefix`, "givenName": givenName, "middleName": middleName, "lastName": lastName, "role": role])
   }
 
   public var __typename: String {
@@ -1200,6 +1242,15 @@ public struct UserDetails: GraphQLFragment {
     }
     set {
       resultMap.updateValue(newValue, forKey: "__typename")
+    }
+  }
+
+  public var id: String {
+    get {
+      return resultMap["id"]! as! String
+    }
+    set {
+      resultMap.updateValue(newValue, forKey: "id")
     }
   }
 

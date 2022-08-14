@@ -1,14 +1,14 @@
 {
-  "5d9e56e6aff3ea0d1329d0eb61bc82bc40366556b80bc9f3c54706c900d4d79b": {
+  "fdf3863c5fc0165af53ae7084535f54e089f26403c8d8f5641894b9556d54f18": {
     "name": "LogInEmail",
-    "source": "query LogInEmail($email: EmailAddress!, $password: String!) {\n  logInEmail(email: $email, password: $password) {\n    __typename\n    ...LoginResponse\n  }\n}\nfragment LoginResponse on AuthenticationResponse {\n  __typename\n  code\n  token\n  message\n  success\n  user {\n    __typename\n    ...UserDetails\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n}"
+    "source": "query LogInEmail($email: EmailAddress!, $password: String!) {\n  logInEmail(email: $email, password: $password) {\n    __typename\n    ...LoginResponse\n  }\n}\nfragment LoginResponse on AuthenticationResponse {\n  __typename\n  code\n  token\n  message\n  success\n  user {\n    __typename\n    ...UserDetails\n  }\n}\nfragment UserDetails on User {\n  __typename\n  id\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n}"
   },
-  "080c43d62a934d3ac4cda73e5313fbc563dfde00f0d4b6f0f0cc3a41220ba4cf": {
+  "6f4e3432611f70d2e72c442708f1115f9b4246b118ced9908c502e6a6321841b": {
     "name": "LogInUsername",
-    "source": "query LogInUsername($username: String!, $password: String!) {\n  logInUsername(username: $username, password: $password) {\n    __typename\n    ...LoginResponse\n  }\n}\nfragment LoginResponse on AuthenticationResponse {\n  __typename\n  code\n  token\n  message\n  success\n  user {\n    __typename\n    ...UserDetails\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n}"
+    "source": "query LogInUsername($username: String!, $password: String!) {\n  logInUsername(username: $username, password: $password) {\n    __typename\n    ...LoginResponse\n  }\n}\nfragment LoginResponse on AuthenticationResponse {\n  __typename\n  code\n  token\n  message\n  success\n  user {\n    __typename\n    ...UserDetails\n  }\n}\nfragment UserDetails on User {\n  __typename\n  id\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n}"
   },
-  "bd89ae9b98e2f7a86645290c8aab54bfbc2b50e86d615e8f46daded8aa3cbfcf": {
+  "2fe3c0b648224a42e989862657854716c79a4df1a65bdf02a023105b11bb90d5": {
     "name": "Register",
-    "source": "mutation Register($user: UserRegisterationInput!) {\n  register(user: $user) {\n    __typename\n    code\n    token\n    message\n    success\n    user {\n      __typename\n      ...UserDetails\n    }\n  }\n}\nfragment UserDetails on User {\n  __typename\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n}"
+    "source": "mutation Register($user: UserRegisterationInput!) {\n  register(user: $user) {\n    __typename\n    code\n    token\n    message\n    success\n    user {\n      __typename\n      ...UserDetails\n    }\n  }\n}\nfragment UserDetails on User {\n  __typename\n  id\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n}"
   }
 }

@@ -35,6 +35,94 @@ struct SidebarView: View {
                             .symbolRenderingMode(.multicolor)
                     }
                 }
+                NavigationLink {
+                    ExamineesView()
+                        .navigationTitle("Proctors")
+                } label: {
+                    Label {
+                        Text("Proctors")
+                            .allowsTightening(true)
+                    } icon: {
+                        Image(systemName: "person")
+                            .symbolVariant(.fill)
+                            .symbolRenderingMode(.multicolor)
+                    }
+                }
+                
+            }
+            Section("Exam") {
+                NavigationLink {
+                    ExamineesView()
+                        .navigationTitle("Exams")
+                } label: {
+                    Label {
+                        Text("Exams")
+                            .allowsTightening(true)
+                    } icon: {
+                        Image(systemName: "folder")
+                            .symbolVariant(.fill)
+                            .symbolRenderingMode(.multicolor)
+                    }
+                }
+                NavigationLink {
+                    ExamineesView()
+                        .navigationTitle("Exams")
+                } label: {
+                    Label {
+                        Text("Exam Groups")
+                            .allowsTightening(true)
+                    } icon: {
+                        Image(systemName: "folder")
+                            .symbolVariant(.fill)
+                            .symbolRenderingMode(.multicolor)
+                    }
+                }
+            }
+            Spacer()
+            NavigationLink {
+                    ExamineesView()
+                        .navigationTitle("Exams")
+                } label: {
+                    Label {
+                        Text("Chat")
+                            .allowsTightening(true)
+                    } icon: {
+                        Image(systemName: "bolt.horizontal")
+                            .symbolVariant(.circle)
+                            .symbolVariant(.fill)
+                            .symbolRenderingMode(.multicolor)
+                    .imageScale(.large)
+                    .foregroundColor(.blue)
+                    }
+            }
+            NavigationLink {
+                    ExamineesView()
+                        .navigationTitle("Exams")
+                } label: {
+                    Label {
+                        Text("Activity")
+                            .allowsTightening(true)
+                    } icon: {
+                        Image(systemName: "timelapse")
+                            .imageScale(.large)
+                            .foregroundColor(.indigo)
+                            .symbolVariant(.fill)
+                            .symbolRenderingMode(.multicolor)
+                    }
+            }
+            NavigationLink {
+                    ExamineesView()
+                        .navigationTitle("Exams")
+                } label: {
+                    Label {
+                        Text("Settings")
+                            .allowsTightening(true)
+                    } icon: {
+                        Image(systemName: "gear")
+                            .imageScale(.large)
+                            .symbolVariant(.fill)
+                            .symbolRenderingMode(.multicolor)
+                    }
             }
         }
         .listStyle(.sidebar)
