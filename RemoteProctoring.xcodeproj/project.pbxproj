@@ -20,6 +20,15 @@
 		5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */; };
 		5C1A22EC286960D000AA2636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */; };
 		5C1A22ED286960D000AA2636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827628695DA6001D0C93 /* Assets.xcassets */; };
+		5C2545A428A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545A328A7F5AB00BF2FC4 /* RecentActivityView.swift */; };
+		5C2545A528A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545A328A7F5AB00BF2FC4 /* RecentActivityView.swift */; };
+		5C2545A628A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545A328A7F5AB00BF2FC4 /* RecentActivityView.swift */; };
+		5C2545A828A7F7D100BF2FC4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545A728A7F7D100BF2FC4 /* Activity.swift */; };
+		5C2545A928A7F7D100BF2FC4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545A728A7F7D100BF2FC4 /* Activity.swift */; };
+		5C2545AA28A7F7D100BF2FC4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545A728A7F7D100BF2FC4 /* Activity.swift */; };
+		5C2545AC28A7F81D00BF2FC4 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */; };
+		5C2545AD28A7F81D00BF2FC4 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */; };
+		5C2545AE28A7F81D00BF2FC4 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */; };
 		5C31BE722870C40800768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE712870C40800768DDD /* ApolloSQLite */; };
 		5C31BE742870C41000768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE732870C41000768DDD /* ApolloSQLite */; };
 		5C31BE762870C41B00768DDD /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5C31BE752870C41B00768DDD /* ApolloSQLite */; };
@@ -121,6 +130,9 @@
 		5C0A8522289E4C6200914746 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		5C0A8526289E4DC800914746 /* LogoBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoBanner.swift; sourceTree = "<group>"; };
 		5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2545A328A7F5AB00BF2FC4 /* RecentActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivityView.swift; sourceTree = "<group>"; };
+		5C2545A728A7F7D100BF2FC4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
 		5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginEmail.graphql; sourceTree = "<group>"; };
 		5C5DDD62289A921200A98073 /* loginUsername.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginUsername.graphql; sourceTree = "<group>"; };
 		5C5DDD66289A923D00A98073 /* loginResponse.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginResponse.graphql; sourceTree = "<group>"; };
@@ -212,6 +224,8 @@
 			children = (
 				5CF2A5C12893B3B50080A8A4 /* User.swift */,
 				5CEE5A9828717673005A259A /* Apollo */,
+				5C2545A728A7F7D100BF2FC4 /* Activity.swift */,
+				5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +326,7 @@
 				5C0A8516289E4A4400914746 /* SidebarView.swift */,
 				5C0A8522289E4C6200914746 /* MainContentView.swift */,
 				5CADAB8F289ED8B200120268 /* ExamineesView.swift */,
+				5C2545A328A7F5AB00BF2FC4 /* RecentActivityView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -573,14 +588,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CEE5AA128717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
+				5C2545A528A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */,
 				5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C0A8528289E4DC800914746 /* LogoBanner.swift in Sources */,
 				5C0A8518289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5C92893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
+				5C2545AD28A7F81D00BF2FC4 /* ActivityType.swift in Sources */,
 				5CADAB91289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
 				5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */,
+				5C2545A928A7F7D100BF2FC4 /* Activity.swift in Sources */,
 				5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC18F28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5CF2A5D12893EDEC0080A8A4 /* API.swift in Sources */,
@@ -598,14 +616,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CEE5AA028717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
+				5C2545A428A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */,
 				5CEE5A9C287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C0A8527289E4DC800914746 /* LogoBanner.swift in Sources */,
 				5C0A8517289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5C82893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C75827528695DA1001D0C93 /* ContentView.swift in Sources */,
+				5C2545AC28A7F81D00BF2FC4 /* ActivityType.swift in Sources */,
 				5CADAB90289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A3E286976160040C53C /* Network.swift in Sources */,
 				5CE95E3D2898066F0041BBCC /* RegisterViewSupporting.swift in Sources */,
+				5C2545A828A7F7D100BF2FC4 /* Activity.swift in Sources */,
 				5CEEC19228968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC18E28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5CF2A5D02893EDEC0080A8A4 /* API.swift in Sources */,
@@ -623,14 +644,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CEE5AA228717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
+				5C2545A628A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */,
 				5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C0A8529289E4DC800914746 /* LogoBanner.swift in Sources */,
 				5C0A8519289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5CA2893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
+				5C2545AE28A7F81D00BF2FC4 /* ActivityType.swift in Sources */,
 				5CADAB92289ED8B200120268 /* ExamineesView.swift in Sources */,
 				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,
 				5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */,
+				5C2545AA28A7F7D100BF2FC4 /* Activity.swift in Sources */,
 				5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */,
 				5CEEC19028968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
 				5CF2A5D22893EDEC0080A8A4 /* API.swift in Sources */,
