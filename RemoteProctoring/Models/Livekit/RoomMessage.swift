@@ -8,12 +8,10 @@
 import Foundation
 
 struct RoomMessage: Identifiable, Equatable, Hashable, Codable {
-    // Identifiable protocol needs param named id
     var id: String {
         messageId
     }
 
-    // message id
     let messageId: String
 
     let senderSid: String

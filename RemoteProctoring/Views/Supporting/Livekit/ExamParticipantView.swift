@@ -20,18 +20,6 @@ struct ExamParticipantView: View {
     @State private var dimensions: Dimensions?
     @State private var trackStats: TrackStats?
 
-//    func bgView(systemSymbol: SFSymbol, geometry: GeometryProxy) -> some View {
-//        Image(systemSymbol: systemSymbol)
-//            .resizable()
-//            .aspectRatio(contentMode: .fit)
-//            .foregroundColor(Color.lkGray2)
-//            .frame(width: min(geometry.size.width, geometry.size.height) * 0.3)
-//            .frame(
-//                maxWidth: .infinity,
-//                maxHeight: .infinity
-//            )
-//    }
-
     var body: some View {
         GeometryReader { geometry in
 

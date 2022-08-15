@@ -14,8 +14,6 @@ final class RoomContext: ObservableObject {
 
     private let perf: Preferences
 
-    // Used to show connection error dialog
-    // private var didClose: Bool = false
     @Published var shouldShowError: Bool = false
     public var latestError: Error?
 
@@ -25,7 +23,6 @@ final class RoomContext: ObservableObject {
 
     @Published var token: String = ""
 
-    // RoomOptions
     @Published var simulcast: Bool = true
 
     @Published var adaptiveStream: Bool = false
@@ -34,7 +31,6 @@ final class RoomContext: ObservableObject {
 
     @Published var reportStats: Bool = false
 
-    // ConnectOptions
     @Published var autoSubscribe: Bool = true
 
     @Published var publish: Bool = false
@@ -57,12 +53,11 @@ final class RoomContext: ObservableObject {
     func connect() -> Promise<Room> {
 
         let connectOptions = ConnectOptions(
-            autoSubscribe: !publish && autoSubscribe, // don't autosubscribe if publish mode
+            autoSubscribe: !publish && autoSubscribe,
             publishOnlyMode: publish ? "publish_\(UUID().uuidString)" : nil
         )
 
         let roomOptions = RoomOptions (
-            // Pass the simulcast option
             defaultVideoPublishOptions: VideoPublishOptions(
                 simulcast: publish ? false : simulcast
             ),
