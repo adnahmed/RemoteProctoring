@@ -31,7 +31,12 @@ struct AuthenticationErrorView: View {
         .animation(.easeInOut(duration: 3), value: animateWhen)
         .transition(.asymmetric(insertion: .slide, removal: .move(edge: .bottom)))
         .padding(.bottom)
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
     
 }
 

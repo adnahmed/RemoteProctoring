@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct RemoteProctoringApp: App {
     @StateObject var user: User = User()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -34,7 +34,6 @@ struct AuthFormView: View {
                             .focused($focusedField, equals: .usernameOrEmailField)
                             .frame(maxWidth: g.size.width * 0.40)
                             .onChange(of: usernameOrEmail) { usernameOrEmail in
-                                
                                 withAnimation {
                                     errorMessages.removeAll()
                                 }
@@ -105,6 +104,7 @@ struct AuthFormView: View {
             .frame(minHeight: g.size.height)
         }
         .background(.white)
+        .eraseToAnyView()
     }
     
     func handleSignIn<AuthQueryType>(query: AuthQueryType) where AuthQueryType:GraphQLQuery {
@@ -174,9 +174,10 @@ struct AuthFormView: View {
         else {
             errorMessages.append(data.message)
         }
-        
-        
     }
+#if DEBUG
+  @ObservedObject var iO = injectionObserver
+  #endif
 }
 
 

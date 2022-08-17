@@ -8,7 +8,6 @@
 import SwiftUI
 import Navajo_Swift
 
-
 struct RegisterView: View {
     // TODO: Add Beautiful Animation Behind Register Form in ZStack
     let passwordValdator = PasswordValidator(rules: [LengthRule(min: 8, max: 200), RequiredCharacterRule(preset: .lowercaseCharacter),
@@ -49,6 +48,7 @@ struct RegisterView: View {
     }
 #endif
     var body: some View {
+        
         GeometryReader { g in
             VStack {
 #if os(macOS)
@@ -91,8 +91,8 @@ struct RegisterView: View {
                     }
                     ProgressView(value: passwordStrengthProgress, total: 80) {
                         Text("Password Strength")
-                            .font(.caption2)
                             .foregroundStyle(.secondary)
+                            .font(.caption2)
                     }
                     .tint(passwordStrengthColor)
                     VStack {
@@ -141,27 +141,28 @@ struct RegisterView: View {
                         .controlSize(.large)
                         .padding()
                 }
-                Button(action: handleRegisteration) {
-                    Text("Register")
-                }
-                .buttonStyle(.borderedProminent)
-                .controlSize(.large)
                 if recievedError {
                     ForEach(errorMessages, id: \.self) { error in
                         AuthenticationErrorView(message: error, animateWhen: $recievedError)
                     }
                 }
+                Button(action: handleRegisteration) {
+                    Text("Register")
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
             }
-            .background(.white)
             .onAppear {
                 focusedField = .usernameField
             }
+            .padding()
         }
+        .eraseToAnyView()
     }
     
     func validateEmail(_ emailAddress: String) {
         withAnimation {
-            #if os(iOS)
+#if os(iOS)
             if let match = emailAddress.firstMatch(of: emailPattern) {
                 let (wholeMatch, _, _) = match.output
                 self.emailAddress = String(wholeMatch)
@@ -170,7 +171,7 @@ struct RegisterView: View {
             else {
                 self.emailAddressValid = false
             }
-            #else
+#else
             if emailPattern.firstMatch(in: emailAddress, options: [], range: NSRange(location: 0, length: emailAddress.count)) != nil {
                 // TODO: Use matched value from NSTextCheckingResult
                 self.emailAddressValid = true
@@ -178,7 +179,7 @@ struct RegisterView: View {
             else {
                 self.emailAddressValid = false
             }
-            #endif
+#endif
         }
     }
     
@@ -319,6 +320,9 @@ struct RegisterView: View {
             }
         }
     }
+#if DEBUG
+    @ObservedObject var iO = injectionObserver
+#endif
 }
 
 #if DEBUG

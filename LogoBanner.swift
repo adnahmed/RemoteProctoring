@@ -12,7 +12,12 @@ struct LogoBanner: View {
         Image("Banner-Logo")
             .resizable()
             .aspectRatio(contentMode: .fit)
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct LogoBanner_Previews: PreviewProvider {

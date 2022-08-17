@@ -69,7 +69,12 @@ struct ExamineeListView: View {
 struct SuggestionsView: View {
     var body: some View {
         Text("suggestionToDisplay").searchCompletion("completedTo")
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct ExamineesView: View {
@@ -105,7 +110,12 @@ struct ActivityItemView: View {
             }
             .font(.monospaced(.caption)())
         }
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct ExamineeItemView: View {
@@ -147,7 +157,12 @@ struct ExamineeItemView: View {
                 }
             }
         }
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct ExamineesView_Previews: PreviewProvider {

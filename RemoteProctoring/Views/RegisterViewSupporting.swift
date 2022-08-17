@@ -50,7 +50,12 @@ struct macOSBackButtonView: View {
             }
             Spacer()
         }
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct TitleView: View {
@@ -64,7 +69,12 @@ struct TitleView: View {
         Divider()
             .padding(.bottom)
         
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct InfoButtonView: View {
@@ -77,7 +87,12 @@ struct InfoButtonView: View {
                 }
             }
             .symbolRenderingMode(.multicolor)
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 struct TickCross: View {
     @Binding var value: Bool
@@ -119,7 +134,12 @@ struct InfoView: View {
             }
         }
         
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 enum RegisterFormField: Hashable {

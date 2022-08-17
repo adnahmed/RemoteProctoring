@@ -9,8 +9,9 @@ import SwiftUI
 
 // We don't need it but keeping it for future ref.
 struct MessageView : View {
+    var room: ExamObservableRoom
     var message: RoomMessage
-    var body() -> some View {
+    var body: some View {
         let isMe = message.senderSid == room.room.localParticipant?.sid
         
         return HStack {
@@ -27,14 +28,24 @@ struct MessageView : View {
         }
         .padding(.vertical, 5)
         .padding(.horizontal, 10)
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 
 struct ExamRoomViewSupporting: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct ExamRoomViewSupporting_Previews: PreviewProvider {

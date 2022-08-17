@@ -20,7 +20,12 @@ class Network {
         true).first!).appendingPathComponent("apollo_db_sqlite")
     private let urlSessionClient = URLSessionClient()
     
-    private var keychain = Keychain(service: "rps")
+    #if DEBUG
+    private var keychain = Keychain(accessGroup: "com.biit.remoteProctoring")
+    #else
+    // TODO: Set Production Keychain Service
+    private var keychain = Keychain(accessGroup: "production.com.biit.remoteProctoring")
+    #endif
     var token : String? {
         
         set(newToken) {
@@ -43,6 +48,7 @@ class Network {
 #if DEBUG
     private let url = URL(string: "http://localhost:3001/graphql")!
 #else
+    // TODO: Set Production URL
     private let url = URL(string: "<production-url>")!
 #endif
     

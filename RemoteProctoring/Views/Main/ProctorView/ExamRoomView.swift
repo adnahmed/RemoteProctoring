@@ -41,7 +41,7 @@ struct ExamRoomView: View {
                                 room.focusParticipant = nil
                             }
                                                 .font(.system(size: 10))
-                                                .fontWeight(.bold)
+//                                                .fontWeight(.bold)
                                                 .foregroundColor(Color.white)
                                                 .padding(.horizontal, 5)
                                                 .padding(.vertical, 2)
@@ -51,13 +51,7 @@ struct ExamRoomView: View {
                         }
                         
                     } else {
-                        ParticipantLayout(room.allParticipants.values, spacing: 5) { participant in
-                            ExamParticipantView(participant: participant,
-                                                videoViewMode: appCtx.videoViewMode) { participant in
-                                room.focusParticipant = participant
-                                
-                            }
-                        }
+                        
                     }
                 }
                 .frame(

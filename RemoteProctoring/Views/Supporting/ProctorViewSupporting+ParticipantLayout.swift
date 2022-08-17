@@ -13,7 +13,7 @@ struct ParticipantLayout<Content: View>: View {
     let views: [AnyView]
     let spacing: CGFloat
 
-    init<Data: RandomAccessCollection>(
+    init<Data: Collection>(
         _ data: Data,
         id: KeyPath<Data.Element, Data.Element> = \.self,
         spacing: CGFloat,
@@ -66,29 +66,29 @@ struct ParticipantLayout<Content: View>: View {
                         views[2]
                     }
                 }
-                case 5: HorVStack(axis: verticalWhenTall, spacing: spacing) {
-                    views[0]
-                    if geometry.isTall {
-                        HStack(spacing: spacing) {
-                            views[1]
-                            views[2]
-                        }
-                        HStack(spacing: spacing) {
-                            views[3]
-                            views[4]
-
-                        }
-                    } else {
-                        VStack(spacing: spacing) {
-                            views[1]
-                            views[3]
-                        }
-                        VStack(spacing: spacing) {
-                            views[2]
-                            views[4]
-                        }
-                    }
-                }
+//                case 5: HorVStack(axis: verticalWhenTall, spacing: spacing) {
+//                    views[0]
+//                    if geometry.isTall {
+//                        HStack(spacing: spacing) {
+//                            views[1]
+//                            views[2]
+//                        }
+//                        HStack(spacing: spacing) {
+//                            views[3]
+//                            views[4]
+//
+//                        }
+//                    } else {
+//                        VStack(spacing: spacing) {
+//                            views[1]
+//                            views[3]
+//                        }
+//                        VStack(spacing: spacing) {
+//                            views[2]
+//                            views[4]
+//                        }
+//                    }
+//                }
                 //            case 6:
                 //                if geometry.isTall {
                 //                    VStack {
@@ -121,21 +121,26 @@ struct ParticipantLayout<Content: View>: View {
                 //                }
                 default:
                     let c = computeColumn(with: geometry)
-                    VStack(spacing: spacing) {
-                        ForEach(0...(c.y - 1), id: \.self) { y in
-                            HStack(spacing: spacing) {
-                                ForEach(0...(c.x - 1), id: \.self) { x in
-                                    let index = (y * c.x) + x
-                                    if index < views.count {
-                                        views[index]
-                                    }
-                                }
-                            }
-                        }
-                    }
+//                    VStack(spacing: spacing) {
+//                        ForEach(0...(c.y - 1), id: \.self) { y in
+//                            HStack(spacing: spacing) {
+//                                ForEach(0...(c.x - 1), id: \.self) { x in
+//                                    let index = (y * c.x) + x
+//                                    if index < views.count {
+//                                        views[index]
+//                                    }
+//                                }
+//                            }
+//                        }
+//                    }
 
                 }
             }
         }
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }

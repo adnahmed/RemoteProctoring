@@ -36,7 +36,12 @@ struct HorVStack<Content: View>: View {
                 HStack(alignment: verticalAlignment, spacing: spacing, content: content)
             }
         }
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct HorVGrid<Content: View>: View {
@@ -64,7 +69,12 @@ struct HorVGrid<Content: View>: View {
                 LazyHGrid(rows: columns, spacing: spacing, content: content)
             }
         }
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 extension GeometryProxy {

@@ -9,77 +9,78 @@ import SwiftUI
 
 struct SidebarView: View {
     var body: some View {
-        List {
-            NavigationLink {
-                MainContentView()
-            } label: {
-                Label {
-                    Text("Home")
-                        .allowsTightening(true)
-                } icon: {
-                    Image(systemName: "house")
-                        .symbolVariant(.fill)
-                        .symbolRenderingMode(.multicolor)
-                }
-            }
-            Section("People") {
+        Group {
+            List {
                 NavigationLink {
-                    ExamineesView()
+                    MainContentView()
                 } label: {
                     Label {
-                        Text("Examinees")
+                        Text("Home")
                             .allowsTightening(true)
                     } icon: {
-                        Image(systemName: "person")
+                        Image(systemName: "house")
                             .symbolVariant(.fill)
                             .symbolRenderingMode(.multicolor)
                     }
                 }
-                NavigationLink {
-                    ExamineesView()
-                        .navigationTitle("Proctors")
-                } label: {
-                    Label {
-                        Text("Proctors")
-                            .allowsTightening(true)
-                    } icon: {
-                        Image(systemName: "person")
-                            .symbolVariant(.fill)
-                            .symbolRenderingMode(.multicolor)
+                Section("People") {
+                    NavigationLink {
+                        ExamineesView()
+                    } label: {
+                        Label {
+                            Text("Examinees")
+                                .allowsTightening(true)
+                        } icon: {
+                            Image(systemName: "person")
+                                .symbolVariant(.fill)
+                                .symbolRenderingMode(.multicolor)
+                        }
+                    }
+                    NavigationLink {
+                        ExamineesView()
+                            .navigationTitle("Proctors")
+                    } label: {
+                        Label {
+                            Text("Proctors")
+                                .allowsTightening(true)
+                        } icon: {
+                            Image(systemName: "person")
+                                .symbolVariant(.fill)
+                                .symbolRenderingMode(.multicolor)
+                        }
+                    }
+                    
+                }
+                Section("Exam") {
+                    NavigationLink {
+                        ExamineesView()
+                            .navigationTitle("Exams")
+                    } label: {
+                        Label {
+                            Text("Exams")
+                                .allowsTightening(true)
+                        } icon: {
+                            Image(systemName: "folder")
+                                .symbolVariant(.fill)
+                                .symbolRenderingMode(.multicolor)
+                        }
+                    }
+                    NavigationLink {
+                        ExamineesView()
+                            .navigationTitle("Exams")
+                    } label: {
+                        Label {
+                            Text("Exam Groups")
+                                .allowsTightening(true)
+                        } icon: {
+                            Image(systemName: "folder")
+                                .symbolVariant(.fill)
+                                .symbolRenderingMode(.multicolor)
+                        }
                     }
                 }
-                
-            }
-            Section("Exam") {
+                Spacer()
                 NavigationLink {
-                    ExamineesView()
-                        .navigationTitle("Exams")
-                } label: {
-                    Label {
-                        Text("Exams")
-                            .allowsTightening(true)
-                    } icon: {
-                        Image(systemName: "folder")
-                            .symbolVariant(.fill)
-                            .symbolRenderingMode(.multicolor)
-                    }
-                }
-                NavigationLink {
-                    ExamineesView()
-                        .navigationTitle("Exams")
-                } label: {
-                    Label {
-                        Text("Exam Groups")
-                            .allowsTightening(true)
-                    } icon: {
-                        Image(systemName: "folder")
-                            .symbolVariant(.fill)
-                            .symbolRenderingMode(.multicolor)
-                    }
-                }
-            }
-            Spacer()
-            NavigationLink {
                     ExamineesView()
                         .navigationTitle("Exams")
                 } label: {
@@ -91,11 +92,11 @@ struct SidebarView: View {
                             .symbolVariant(.circle)
                             .symbolVariant(.fill)
                             .symbolRenderingMode(.multicolor)
-                    .imageScale(.large)
-                    .foregroundColor(.blue)
+                            .imageScale(.large)
+                            .foregroundColor(.blue)
                     }
-            }
-            NavigationLink {
+                }
+                NavigationLink {
                     ExamineesView()
                         .navigationTitle("Exams")
                 } label: {
@@ -109,8 +110,8 @@ struct SidebarView: View {
                             .symbolVariant(.fill)
                             .symbolRenderingMode(.multicolor)
                     }
-            }
-            NavigationLink {
+                }
+                NavigationLink {
                     ExamineesView()
                         .navigationTitle("Exams")
                 } label: {
@@ -123,12 +124,18 @@ struct SidebarView: View {
                             .symbolVariant(.fill)
                             .symbolRenderingMode(.multicolor)
                     }
+                }
             }
+            .listStyle(.sidebar)
+            .padding([.top, .bottom])
+            Spacer()
         }
-        .listStyle(.sidebar)
-        .padding([.top, .bottom])
-        Spacer()
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 struct SidebarView_Previews: PreviewProvider {

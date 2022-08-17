@@ -18,7 +18,12 @@ struct RegisterButtonModifer: ViewModifier {
             .controlSize(.large)
             .padding(.bottom)
         
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 }
 
 extension View {
