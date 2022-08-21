@@ -11,16 +11,19 @@ struct ContentView: View {
     @EnvironmentObject private var user: User;
     var body: some View {
         if user.isLoggedIn {
-                MainView()
+            MainView()
         }
         else {
-           StartView()
+            StartView()
         }
     }
     
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+}
+
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
+#endif

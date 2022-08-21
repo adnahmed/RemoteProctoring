@@ -25,6 +25,14 @@
 		5C2545AA28A7F7D100BF2FC4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545A728A7F7D100BF2FC4 /* Activity.swift */; };
 		5C2545AD28A7F81D00BF2FC4 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */; };
 		5C2545AE28A7F81D00BF2FC4 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */; };
+		5C523C0928AE835D00A181FB /* ExamineeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0828AE835D00A181FB /* ExamineeItemView.swift */; };
+		5C523C0A28AE835D00A181FB /* ExamineeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0828AE835D00A181FB /* ExamineeItemView.swift */; };
+		5C523C0C28AE8F7900A181FB /* ActivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0B28AE8F7900A181FB /* ActivityItemView.swift */; };
+		5C523C0D28AE8F7900A181FB /* ActivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0B28AE8F7900A181FB /* ActivityItemView.swift */; };
+		5C523C0F28AE914400A181FB /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0E28AE914400A181FB /* SuggestionsView.swift */; };
+		5C523C1028AE914400A181FB /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0E28AE914400A181FB /* SuggestionsView.swift */; };
+		5C523C1228AE916900A181FB /* ExamineeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C1128AE916900A181FB /* ExamineeListView.swift */; };
+		5C523C1328AE916900A181FB /* ExamineeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C1128AE916900A181FB /* ExamineeListView.swift */; };
 		5C5DDD60289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
 		5C5DDD61289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
 		5C5DDD64289A921200A98073 /* loginUsername.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD62289A921200A98073 /* loginUsername.graphql */; };
@@ -134,11 +142,10 @@
 		5C2545A728A7F7D100BF2FC4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
 		5C38DDDF28ACAF260026131A /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
-		5C38DEF728ACB4AF0026131A /* testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testApp.swift; sourceTree = "<group>"; };
-		5C38DEF928ACB4AF0026131A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5C38DEFB28ACB4B40026131A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5C38DEFE28ACB4B40026131A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5C38DF0028ACB4B40026131A /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
+		5C523C0828AE835D00A181FB /* ExamineeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamineeItemView.swift; sourceTree = "<group>"; };
+		5C523C0B28AE8F7900A181FB /* ActivityItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemView.swift; sourceTree = "<group>"; };
+		5C523C0E28AE914400A181FB /* SuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
+		5C523C1128AE916900A181FB /* ExamineeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamineeListView.swift; sourceTree = "<group>"; };
 		5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginEmail.graphql; sourceTree = "<group>"; };
 		5C5DDD62289A921200A98073 /* loginUsername.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginUsername.graphql; sourceTree = "<group>"; };
 		5C5DDD66289A923D00A98073 /* loginResponse.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginResponse.graphql; sourceTree = "<group>"; };
@@ -232,35 +239,13 @@
 		5C31BE682870404B00768DDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5C523C1528AE92C700A181FB /* Auth */,
 				5CF2A5C62893B9BD0080A8A4 /* Main */,
 				5CF2A5C02893B1AE0080A8A4 /* Supporting */,
 				5C9C0A5F2869DED70040C53C /* MainView.swift */,
-				5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */,
-				5CF2A5C72893BAA60080A8A4 /* StartView.swift */,
-				5CEEC19128968F1B001BD64C /* AuthFormView.swift */,
 				5C75827428695DA1001D0C93 /* ContentView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		5C38DEF628ACB4AF0026131A /* test */ = {
-			isa = PBXGroup;
-			children = (
-				5C38DEF728ACB4AF0026131A /* testApp.swift */,
-				5C38DEF928ACB4AF0026131A /* ContentView.swift */,
-				5C38DEFB28ACB4B40026131A /* Assets.xcassets */,
-				5C38DF0028ACB4B40026131A /* test.entitlements */,
-				5C38DEFD28ACB4B40026131A /* Preview Content */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
-		5C38DEFD28ACB4B40026131A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				5C38DEFE28ACB4B40026131A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		5C4DBC8828A4D55E007E72D4 /* ProctorView */ = {
@@ -269,6 +254,7 @@
 				5C9BC29628AAAD1800355D1D /* ExamRoomView.swift */,
 				5C9BC29528AAAD1800355D1D /* ProctorView.swift */,
 				5CE389C428ABCB3B0034ACBE /* SwiftUIView.swift */,
+				5C523C1128AE916900A181FB /* ExamineeListView.swift */,
 			);
 			path = ProctorView;
 			sourceTree = "<group>";
@@ -293,11 +279,38 @@
 			path = Livekit;
 			sourceTree = "<group>";
 		};
+		5C523C1428AE923600A181FB /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				5C523C0828AE835D00A181FB /* ExamineeItemView.swift */,
+				5C523C0B28AE8F7900A181FB /* ActivityItemView.swift */,
+				5C523C0E28AE914400A181FB /* SuggestionsView.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		5C523C1528AE92C700A181FB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5C523C1628AE92DA00A181FB /* Elements */,
+				5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */,
+				5CF2A5C72893BAA60080A8A4 /* StartView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		5C523C1628AE92DA00A181FB /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				5CEEC19128968F1B001BD64C /* AuthFormView.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
 		5C75826628695DA1001D0C93 = {
 			isa = PBXGroup;
 			children = (
 				5C75827128695DA1001D0C93 /* RemoteProctoring */,
-				5C38DEF628ACB4AF0026131A /* test */,
 				5C75827028695DA1001D0C93 /* Products */,
 				5CE2D10528AC43F50022DFFE /* Frameworks */,
 			);
@@ -385,6 +398,7 @@
 		5CF2A5C62893B9BD0080A8A4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5C523C1428AE923600A181FB /* Elements */,
 				5C4DBC8828A4D55E007E72D4 /* ProctorView */,
 				5C0A8516289E4A4400914746 /* SidebarView.swift */,
 				5C0A8522289E4C6200914746 /* MainContentView.swift */,
@@ -575,12 +589,15 @@
 				5C9BC2A328AAAD2100355D1D /* Preferences.swift in Sources */,
 				5CE389C628ABCB3B0034ACBE /* SwiftUIView.swift in Sources */,
 				5C60BEB428AAFE87009A949C /* Injectionlll.swift in Sources */,
+				5C523C1328AE916900A181FB /* ExamineeListView.swift in Sources */,
+				5C523C0A28AE835D00A181FB /* ExamineeItemView.swift in Sources */,
 				5C2545A528A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */,
 				5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C0A8528289E4DC800914746 /* LogoBanner.swift in Sources */,
 				5C0A8518289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5C92893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C9BC2AF28AAAD2200355D1D /* ExamObservableRoom.swift in Sources */,
+				5C523C1028AE914400A181FB /* SuggestionsView.swift in Sources */,
 				5C9BC2BC28AABB7200355D1D /* ProctorViewSupporting+ParticipantLayout.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
 				5C9BC2B328AAAE9A00355D1D /* ExamRoomViewSupporting.swift in Sources */,
@@ -602,6 +619,7 @@
 				5CF2A5C32893B3B50080A8A4 /* User.swift in Sources */,
 				5C9C0A612869DED70040C53C /* MainView.swift in Sources */,
 				5C9BC2A928AAAD2100355D1D /* ObservableParticipant.swift in Sources */,
+				5C523C0D28AE8F7900A181FB /* ActivityItemView.swift in Sources */,
 				5C9BC29B28AAAD1800355D1D /* ExamRoomView.swift in Sources */,
 				5C9C3BB0286D92BD005CCA92 /* RegisterView.swift in Sources */,
 				5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */,
@@ -616,12 +634,15 @@
 				5C2545A628A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */,
 				5C9BC2A428AAAD2100355D1D /* Preferences.swift in Sources */,
 				5C60BEB528AAFE87009A949C /* Injectionlll.swift in Sources */,
+				5C523C1228AE916900A181FB /* ExamineeListView.swift in Sources */,
+				5C523C0928AE835D00A181FB /* ExamineeItemView.swift in Sources */,
 				5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
 				5C0A8529289E4DC800914746 /* LogoBanner.swift in Sources */,
 				5C0A8519289E4A4400914746 /* SidebarView.swift in Sources */,
 				5CF2A5CA2893BAA60080A8A4 /* StartView.swift in Sources */,
 				5C9BC2C028AABB7200355D1D /* ProctorViewSupporting.swift in Sources */,
 				5C9BC2AA28AAAD2100355D1D /* ObservableParticipant.swift in Sources */,
+				5C523C0F28AE914400A181FB /* SuggestionsView.swift in Sources */,
 				5C9BC29C28AAAD1800355D1D /* ExamRoomView.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
 				5C2545AE28A7F81D00BF2FC4 /* ActivityType.swift in Sources */,
@@ -643,6 +664,7 @@
 				5C0A8525289E4C6200914746 /* MainContentView.swift in Sources */,
 				5CF2A5C42893B3B50080A8A4 /* User.swift in Sources */,
 				5C9BC2BD28AABB7200355D1D /* ProctorViewSupporting+ParticipantLayout.swift in Sources */,
+				5C523C0C28AE8F7900A181FB /* ActivityItemView.swift in Sources */,
 				5C9C0A622869DED70040C53C /* MainView.swift in Sources */,
 				5C9C3BB1286D92BD005CCA92 /* RegisterView.swift in Sources */,
 				5C9C0A4928697DD50040C53C /* RemoteProctoringApp.swift in Sources */,
