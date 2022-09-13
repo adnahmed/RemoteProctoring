@@ -13,7 +13,7 @@ struct ActivityItemView: View {
         HStack {
             activity.type.display
             // TODO: Add Navigation to Subject Here
-            Text(activity.subject.full_name)
+            Text(activity.subject.fullName ?? "")
             Text("\(activity.type.rawValue).")
             Spacer()
             Group {

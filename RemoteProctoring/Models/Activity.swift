@@ -10,7 +10,7 @@ import Foundation
 struct Activity: Identifiable, Hashable {
     var id: UUID
     var type: ActivityType
-    var subject: Examinee
+    var subject: UserData
     var duration: DateInterval
     var durationHrs: Int {
         return Int(duration.duration) / 3600

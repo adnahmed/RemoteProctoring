@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject private var user: User;
+    @EnvironmentObject var user: User
     var body: some View {
         if user.isLoggedIn {
             MainView()
         }
         else {
-            StartView()
+            UnauthenticatedView()
+                .frame(minHeight: 800)
         }
     }
     

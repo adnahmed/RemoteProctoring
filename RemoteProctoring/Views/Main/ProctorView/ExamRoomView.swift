@@ -15,51 +15,36 @@ let toolbarPlacement: ToolbarItemPlacement = .bottomBar
 let adaptiveMin = 300.0
 let toolbarPlacement: ToolbarItemPlacement = .primaryAction
 #endif
+
 struct ExamRoomView: View {
     @EnvironmentObject var appCtx: LiveKitContext
     @EnvironmentObject var roomCtx: RoomContext
     @EnvironmentObject var room: ExamObservableRoom
     
     func content(geometry: GeometryProxy) -> some View {
-        
         VStack {
-            
             if case .reconnecting = room.room.connectionState {
                 Text("Re-connecting...")
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
                     .padding()
             }
-            
             HorVStack(axis: geometry.isTall ? .vertical : .horizontal, spacing: 5) {
-                
                 Group {
                     if let focusParticipant = room.focusParticipant {
                         ZStack(alignment: .bottomTrailing) {
-                            ExamParticipantView(participant: focusParticipant,
-                                                videoViewMode: appCtx.videoViewMode) { _ in
-                                room.focusParticipant = nil
-                            }
-                                                .font(.system(size: 10))
-//                                                .fontWeight(.bold)
-                                                .foregroundColor(Color.white)
-                                                .padding(.horizontal, 5)
-                                                .padding(.vertical, 2)
-                                                .cornerRadius(8)
-                                                .padding(.vertical, 35)
-                                                .padding(.horizontal, 10)
+                            ExamParticipantView(participant: focusParticipant)
                         }
-                        
-                    } else {
-                        
+                        .font(.system(size: 10))
+                        .foregroundColor(Color.white)
+                        .padding(.horizontal, 5)
+                        .padding(.vertical, 2)
+                        .cornerRadius(8)
+                        .padding(.vertical, 35)
+                        .padding(.horizontal, 10)
                     }
                 }
-                .frame(
-                    minWidth: 0,
-                    maxWidth: .infinity,
-                    minHeight: 0,
-                    maxHeight: .infinity
-                )
+                .frame(minWidth: 0,maxWidth: .infinity,minHeight: 0,maxHeight: .infinity)
             }
         }
         .padding(5)

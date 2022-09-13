@@ -7,29 +7,8 @@
 
 import SwiftUI
 
-enum AuthFormField: Hashable {
+enum SigninFormField: Hashable {
     case usernameOrEmailField, passwordField
-}
-
-struct RegisterButtonModifer: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .buttonStyle(.borderedProminent)
-            .controlSize(.large)
-            .padding(.bottom)
-        
-        .eraseToAnyView()
-    }
-
-    #if DEBUG
-    @ObservedObject var iO = injectionObserver
-    #endif
-}
-
-extension View {
-    func registerButton() -> some View {
-        modifier(RegisterButtonModifer())
-    }
 }
 
 struct AuthTextFieldModifier: ViewModifier {

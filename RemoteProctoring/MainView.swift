@@ -18,6 +18,13 @@ struct MainView: View {
                 SidebarView()
                 MainContentView()
             }
+            .toolbar {
+                Button {
+                    
+                } label: {
+                    Image(systemName:"sidebar.left")
+                }
+            }
 #else
             NavigationSplitView(columnVisibility: $columnVisibility) {
                 SidebarView()

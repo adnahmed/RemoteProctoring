@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SidebarView: View {
+    @EnvironmentObject var user: User
     var body: some View {
         Group {
             List {
@@ -24,20 +25,23 @@ struct SidebarView: View {
                     }
                 }
                 Section("People") {
-                    NavigationLink {
-                        ExamineesView()
-                    } label: {
-                        Label {
-                            Text("Examinees")
-                                .allowsTightening(true)
-                        } icon: {
-                            Image(systemName: "person")
-                                .symbolVariant(.fill)
-                                .symbolRenderingMode(.multicolor)
+                    if user.data.role == .administrator || user.data.role == .proctor {
+                        NavigationLink {
+                            UsersView()
+                        } label: {
+                            Label {
+                                Text("Examinees")
+                                    .allowsTightening(true)
+                            } icon: {
+                                Image(systemName: "person")
+                                    .symbolVariant(.fill)
+                                    .symbolRenderingMode(.multicolor)
+                            }
                         }
                     }
+                    
                     NavigationLink {
-                        ExamineesView()
+                        UsersView()
                             .navigationTitle("Proctors")
                     } label: {
                         Label {
@@ -53,7 +57,7 @@ struct SidebarView: View {
                 }
                 Section("Exam") {
                     NavigationLink {
-                        ExamineesView()
+                        ExamsView()
                             .navigationTitle("Exams")
                     } label: {
                         Label {
@@ -66,7 +70,7 @@ struct SidebarView: View {
                         }
                     }
                     NavigationLink {
-                        ExamineesView()
+                        UsersView()
                             .navigationTitle("Exams")
                     } label: {
                         Label {
@@ -81,7 +85,7 @@ struct SidebarView: View {
                 }
                 Spacer()
                 NavigationLink {
-                    ExamineesView()
+                    UsersView()
                         .navigationTitle("Exams")
                 } label: {
                     Label {
@@ -97,7 +101,7 @@ struct SidebarView: View {
                     }
                 }
                 NavigationLink {
-                    ExamineesView()
+                    UsersView()
                         .navigationTitle("Exams")
                 } label: {
                     Label {
@@ -112,7 +116,7 @@ struct SidebarView: View {
                     }
                 }
                 NavigationLink {
-                    ExamineesView()
+                    UsersView()
                         .navigationTitle("Exams")
                 } label: {
                     Label {

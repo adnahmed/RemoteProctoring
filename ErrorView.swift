@@ -6,42 +6,32 @@
 //
 
 import SwiftUI
+import Neumorphic
 
-struct AuthenticationErrorView: View {
+struct ErrorView: View {
     var message: String
     @Binding var animateWhen: Bool
     var body: some View {
         Label {
             Text(message)
                 .font(.body)
-                .allowsTightening(true)
-                .minimumScaleFactor(0.7)
-                .foregroundColor(.red)
         } icon: {
             Image(systemName: "exclamationmark.triangle.fill")
                 .symbolRenderingMode(.multicolor)
         }
-        .padding()
-        .overlay {
-            RoundedRectangle(cornerRadius: 40)
-                .stroke(.red, lineWidth: 3)
-                .opacity(0.5)
-            
-        }
-        .animation(.easeInOut(duration: 3), value: animateWhen)
+        .animation(.easeInOut(duration: 2), value: animateWhen)
         .transition(.asymmetric(insertion: .slide, removal: .move(edge: .bottom)))
-        .padding(.bottom)
         .eraseToAnyView()
     }
-
-    #if DEBUG
+    
+#if DEBUG
     @ObservedObject var iO = injectionObserver
-    #endif
+#endif
     
 }
 
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationErrorView(message: "Error Occurred", animateWhen: .constant(true))
+        ErrorView(message: "Error Occurred", animateWhen: .constant(true))
     }
 }

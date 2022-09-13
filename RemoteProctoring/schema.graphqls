@@ -18,14 +18,43 @@ type Query {
   logInUsername(username: String!, password: String!): AuthenticationResponse!
 }
 
+type Exam {
+  id: UUID!
+  name: String!
+  start: DateTime!
+  end: DateTime!
+  subject: Subject!
+}
+
+type Subject {
+  id: UUID!
+  name: String!
+  meta: String
+}
+
+input CreateExamInput {
+  name: String!
+  start: DateTime!
+  end: DateTime!
+  subject: String!
+}
+
+type Mutation {
+  createExam(exam: CreateExamInput): QueryResponse!
+  register(user: UserRegisterationInput!): AuthenticationResponse!
+  unregister(id: UUID!): QueryResponse!
+}
+
 type User {
   id: UUID!
+  username: String!
   prefix: String
   givenName: String!
   middleName: String
   lastName: String
   email: EmailAddress!
   role: Role!
+  pictures: [UUID!]!
 }
 
 enum Role {
@@ -35,9 +64,7 @@ enum Role {
 }
 
 type AuthenticationResponse {
-  code: Int!
-  message: String!
-  success: Boolean!
+  queryResponse: QueryResponse
   token: String
   user: User
 }
@@ -45,7 +72,7 @@ type AuthenticationResponse {
 input UserRegisterationInput {
   username: String!
   password: String!
-  role: String!
+  role: Role!
   prefix: String
   givenName: String!
   middleName: String
@@ -54,8 +81,10 @@ input UserRegisterationInput {
   organization: String!
 }
 
-type Mutation {
-  register(user: UserRegisterationInput!): AuthenticationResponse!
+type QueryResponse {
+  code: Int!
+  message: String!
+  success: Boolean!
 }
 
 """

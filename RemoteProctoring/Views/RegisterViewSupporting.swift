@@ -58,25 +58,6 @@ struct macOSBackButtonView: View {
     #endif
 }
 
-struct TitleView: View {
-    @Binding var label: String
-    var body: some View {
-        Text(label)
-            .fontWeight(.thin)
-            .kerning(2.0)
-            .font(.largeTitle)
-            .padding(.top)
-        Divider()
-            .padding(.bottom)
-        
-        .eraseToAnyView()
-    }
-
-    #if DEBUG
-    @ObservedObject var iO = injectionObserver
-    #endif
-}
-
 struct InfoButtonView: View {
     @Binding var showInfo: Bool
     var body: some View {

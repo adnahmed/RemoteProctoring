@@ -1,0 +1,5 @@
+fragment QueryResponse on QueryResponse {
+	code
+	message
+	success
+}

@@ -25,7 +25,7 @@ struct SwiftScript: ParsableCommand {
             
             // Set up the URL you want to use to download the project
             // TODO: Replace the placeholder with the GraphQL endpoint you're using to download the schema.
-            let endpoint = URL(string: "http://localhost:3001/graphql")!
+            let endpoint = URL(string: "http://localhost:4001/graphql")!
             
             
             // Calculate where you want to create the folder where the schema will be downloaded by the ApolloCodegenLib framework.

@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ExamineeListView: View {
-    @State private var multiSelection: Set<Examinee> = Set<Examinee>()
+struct UsersListView: View {
+    @State private var multiSelection: Set<UserData> = Set<UserData>()
     @State private var searchString: String = ""
     var body: some View {
-        List(examinees, id: \.self, selection: $multiSelection) { examinee in
-            ExamineeItemView(examinee: examinee)
+        List(users, id: \.self, selection: $multiSelection) { user in
+            UserItemView(user: user)
         }
 #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
@@ -45,8 +45,8 @@ struct ExamineeListView: View {
     }
 }
 
-struct ExamineeListView_Previews: PreviewProvider {
+struct UsersListView_Previews: PreviewProvider {
     static var previews: some View {
-        ExamineeListView()
+        UsersListView()
     }
 }

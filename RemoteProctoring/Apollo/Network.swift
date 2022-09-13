@@ -10,6 +10,7 @@ import os
 import Apollo
 import ApolloSQLite
 import KeychainAccess
+import LiveKit
 
 let NetworkLogger = Logger(subsystem: "Procted", category: "Network")
 class Network {
@@ -19,7 +20,7 @@ class Network {
         .userDomainMask,
         true).first!).appendingPathComponent("apollo_db_sqlite")
     private let urlSessionClient = URLSessionClient()
-    
+    public let room: ObservableRoom = ObservableRoom()
     #if DEBUG
     private var keychain = Keychain(accessGroup: "com.biit.remoteProctoring")
     #else
@@ -27,7 +28,6 @@ class Network {
     private var keychain = Keychain(accessGroup: "production.com.biit.remoteProctoring")
     #endif
     var token : String? {
-        
         set(newToken) {
             do {
                 if newToken == nil {
@@ -46,10 +46,12 @@ class Network {
     }
     
 #if DEBUG
-    private let url = URL(string: "http://localhost:3001/graphql")!
+    public let apiEndpoint = URL(string: "http://localhost:4001/graphql")!
+    public let lkEndpoint = "ws://localhost:8880"
 #else
     // TODO: Set Production URL
-    private let url = URL(string: "<production-url>")!
+    public let apiEndpoint = URL(string: "<production-url>")!
+    public let lkEndpoint = "wss://<production-url>"
 #endif
     
     private(set) lazy var client: ApolloClient = {
@@ -57,20 +59,17 @@ class Network {
             let sqliteCache = try SQLiteNormalizedCache(fileURL: sqliteFileURL)
             let store = ApolloStore(cache: sqliteCache)
             let provider = NetworkInterceptorProvider(store: store, client: urlSessionClient)
-            let requestChainTransport = RequestChainNetworkTransport(interceptorProvider: provider, endpointURL: url)
-            
+            let requestChainTransport = RequestChainNetworkTransport(interceptorProvider: provider, endpointURL: apiEndpoint)
             return ApolloClient(networkTransport: requestChainTransport, store: store)
         } catch {
             let memCache = InMemoryNormalizedCache()
             let store = ApolloStore(cache: memCache)
             let provider = NetworkInterceptorProvider(store: store, client: urlSessionClient)
-            let requestChainTransport = RequestChainNetworkTransport(interceptorProvider: provider, endpointURL: url)
+            let requestChainTransport = RequestChainNetworkTransport(interceptorProvider: provider, endpointURL: apiEndpoint)
             
             return ApolloClient(networkTransport: requestChainTransport, store: store)
         }
     }()
-    
-    
     
     struct NetworkInterceptorProvider: InterceptorProvider {
         private let store: ApolloStore

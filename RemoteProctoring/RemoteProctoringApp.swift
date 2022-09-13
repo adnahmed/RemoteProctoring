@@ -9,13 +9,11 @@ import SwiftUI
 
 @main
 struct RemoteProctoringApp: App {
-    @StateObject var user: User = User()
-    
+    @StateObject private var user: User = User()
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(user)
-                .frame(minWidth: 800, maxWidth: .infinity, minHeight: 800, maxHeight: .infinity)
         }
         #if os(macOS)
         .windowStyle(.hiddenTitleBar)

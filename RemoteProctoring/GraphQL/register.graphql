@@ -1,9 +1,9 @@
 mutation Register($user: UserRegisterationInput!) {
   register(user: $user) {
-    code
+	queryResponse {
+		...QueryResponse
+	}
     token
-    message
-    success
     user {
         ...UserDetails
     }

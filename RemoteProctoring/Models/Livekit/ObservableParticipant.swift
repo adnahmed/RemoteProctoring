@@ -9,14 +9,10 @@ import LiveKit
 extension ObservableParticipant {
 
     public var mainVideoPublication: TrackPublication? {
-        firstScreenSharePublication ?? firstCameraPublication
+        firstCameraPublication
     }
 
     public var mainVideoTrack: VideoTrack? {
-        firstScreenShareVideoTrack ?? firstCameraVideoTrack
-    }
-
-    public var subVideoTrack: VideoTrack? {
-        firstScreenShareVideoTrack != nil ? firstCameraVideoTrack : nil
+        firstCameraVideoTrack
     }
 }

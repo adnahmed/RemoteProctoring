@@ -1,8 +1,10 @@
 fragment UserDetails on User {
     id
+	username
     prefix
     givenName
     middleName
     lastName
     role
+	pictures
 }

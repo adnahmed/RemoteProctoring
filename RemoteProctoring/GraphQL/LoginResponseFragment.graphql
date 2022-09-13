@@ -1,9 +1,9 @@
 fragment LoginResponse on AuthenticationResponse {
-    code
-    token
-    message
-    success
-    user {
+	queryResponse {
+		...QueryResponse
+	}
+	token
+	user {
         ...UserDetails
     }
 }

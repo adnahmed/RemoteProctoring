@@ -11,8 +11,6 @@
 		5C0A8519289E4A4400914746 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8516289E4A4400914746 /* SidebarView.swift */; };
 		5C0A8524289E4C6200914746 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8522289E4C6200914746 /* MainContentView.swift */; };
 		5C0A8525289E4C6200914746 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8522289E4C6200914746 /* MainContentView.swift */; };
-		5C0A8528289E4DC800914746 /* LogoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8526289E4DC800914746 /* LogoBanner.swift */; };
-		5C0A8529289E4DC800914746 /* LogoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A8526289E4DC800914746 /* LogoBanner.swift */; };
 		5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827428695DA1001D0C93 /* ContentView.swift */; };
 		5C1A22E9286960D000AA2636 /* RemoteProctoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */; };
 		5C1A22EC286960D000AA2636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */; };
@@ -25,24 +23,20 @@
 		5C2545AA28A7F7D100BF2FC4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545A728A7F7D100BF2FC4 /* Activity.swift */; };
 		5C2545AD28A7F81D00BF2FC4 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */; };
 		5C2545AE28A7F81D00BF2FC4 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */; };
-		5C523C0928AE835D00A181FB /* ExamineeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0828AE835D00A181FB /* ExamineeItemView.swift */; };
-		5C523C0A28AE835D00A181FB /* ExamineeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0828AE835D00A181FB /* ExamineeItemView.swift */; };
+		5C523C0928AE835D00A181FB /* UserItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0828AE835D00A181FB /* UserItemView.swift */; };
+		5C523C0A28AE835D00A181FB /* UserItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0828AE835D00A181FB /* UserItemView.swift */; };
 		5C523C0C28AE8F7900A181FB /* ActivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0B28AE8F7900A181FB /* ActivityItemView.swift */; };
 		5C523C0D28AE8F7900A181FB /* ActivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0B28AE8F7900A181FB /* ActivityItemView.swift */; };
 		5C523C0F28AE914400A181FB /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0E28AE914400A181FB /* SuggestionsView.swift */; };
 		5C523C1028AE914400A181FB /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C0E28AE914400A181FB /* SuggestionsView.swift */; };
-		5C523C1228AE916900A181FB /* ExamineeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C1128AE916900A181FB /* ExamineeListView.swift */; };
-		5C523C1328AE916900A181FB /* ExamineeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C1128AE916900A181FB /* ExamineeListView.swift */; };
+		5C523C1228AE916900A181FB /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C1128AE916900A181FB /* UsersListView.swift */; };
+		5C523C1328AE916900A181FB /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C523C1128AE916900A181FB /* UsersListView.swift */; };
 		5C5DDD60289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
 		5C5DDD61289A91EC00A98073 /* loginEmail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */; };
 		5C5DDD64289A921200A98073 /* loginUsername.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD62289A921200A98073 /* loginUsername.graphql */; };
 		5C5DDD65289A921200A98073 /* loginUsername.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD62289A921200A98073 /* loginUsername.graphql */; };
-		5C5DDD68289A923D00A98073 /* loginResponse.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD66289A923D00A98073 /* loginResponse.graphql */; };
-		5C5DDD69289A923D00A98073 /* loginResponse.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DDD66289A923D00A98073 /* loginResponse.graphql */; };
 		5C60BEB428AAFE87009A949C /* Injectionlll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60BEB228AAFE87009A949C /* Injectionlll.swift */; };
 		5C60BEB528AAFE87009A949C /* Injectionlll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C60BEB228AAFE87009A949C /* Injectionlll.swift */; };
-		5C9BC29828AAAD1800355D1D /* ProctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BC29528AAAD1800355D1D /* ProctorView.swift */; };
-		5C9BC29928AAAD1800355D1D /* ProctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BC29528AAAD1800355D1D /* ProctorView.swift */; };
 		5C9BC29B28AAAD1800355D1D /* ExamRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BC29628AAAD1800355D1D /* ExamRoomView.swift */; };
 		5C9BC29C28AAAD1800355D1D /* ExamRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BC29628AAAD1800355D1D /* ExamRoomView.swift */; };
 		5C9BC2A328AAAD2100355D1D /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BC29D28AAAD2100355D1D /* Preferences.swift */; };
@@ -74,14 +68,18 @@
 		5C9C0A622869DED70040C53C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C0A5F2869DED70040C53C /* MainView.swift */; };
 		5C9C3BB0286D92BD005CCA92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */; };
 		5C9C3BB1286D92BD005CCA92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */; };
+		5C9EF59F28CE86760081B26A /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9EF59E28CE86760081B26A /* Neumorphic */; };
+		5C9EF5A228CE89630081B26A /* AnimatableGradients in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9EF5A128CE89630081B26A /* AnimatableGradients */; };
+		5C9EF5A428CE9F4F0081B26A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EF5A328CE9F4F0081B26A /* ErrorView.swift */; };
+		5C9EF5A528CE9F4F0081B26A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EF5A328CE9F4F0081B26A /* ErrorView.swift */; };
 		5CA65DE628AD6F0D00624780 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA65DE528AD6F0D00624780 /* Apollo */; };
 		5CA65DE828AD6F0D00624780 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA65DE728AD6F0D00624780 /* ApolloSQLite */; };
 		5CA65DEA28AD6F0D00624780 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA65DE928AD6F0D00624780 /* ApolloWebSocket */; };
 		5CA65DEC28AD6F1E00624780 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA65DEB28AD6F1E00624780 /* Apollo */; };
 		5CA65DEE28AD6F1E00624780 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA65DED28AD6F1E00624780 /* ApolloSQLite */; };
 		5CA65DF028AD6F1F00624780 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA65DEF28AD6F1F00624780 /* ApolloWebSocket */; };
-		5CADAB91289ED8B200120268 /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* ExamineesView.swift */; };
-		5CADAB92289ED8B200120268 /* ExamineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* ExamineesView.swift */; };
+		5CADAB91289ED8B200120268 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* UsersView.swift */; };
+		5CADAB92289ED8B200120268 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADAB8F289ED8B200120268 /* UsersView.swift */; };
 		5CAE631828A516E4006B33DF /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 5CAE631728A516E4006B33DF /* Promises */; };
 		5CAE631A28A51700006B33DF /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 5CAE631928A51700006B33DF /* Promises */; };
 		5CD6ECA0286F48480059BEB7 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD6EC9F286F48480059BEB7 /* Navajo-Swift */; };
@@ -89,32 +87,47 @@
 		5CE2D10728AC43F50022DFFE /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE2D10628AC43F50022DFFE /* Collections */; };
 		5CE2D10928AC43F50022DFFE /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE2D10828AC43F50022DFFE /* DequeModule */; };
 		5CE2D10B28AC43F50022DFFE /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE2D10A28AC43F50022DFFE /* OrderedCollections */; };
-		5CE389C628ABCB3B0034ACBE /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE389C428ABCB3B0034ACBE /* SwiftUIView.swift */; };
-		5CE389C728ABCB3B0034ACBE /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE389C428ABCB3B0034ACBE /* SwiftUIView.swift */; };
+		5CE8717C28D08619005DD532 /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE8717B28D08619005DD532 /* Neumorphic */; };
+		5CE8718428D09120005DD532 /* UserFragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CE8718328D09120005DD532 /* UserFragment.graphql */; };
+		5CE8718528D09120005DD532 /* UserFragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CE8718328D09120005DD532 /* UserFragment.graphql */; };
+		5CE8718728D0912F005DD532 /* LoginResponseFragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CE8718628D0912E005DD532 /* LoginResponseFragment.graphql */; };
+		5CE8718828D0912F005DD532 /* LoginResponseFragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CE8718628D0912E005DD532 /* LoginResponseFragment.graphql */; };
+		5CE8718A28D0913B005DD532 /* QueryResponseFragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CE8718928D0913A005DD532 /* QueryResponseFragment.graphql */; };
+		5CE8718B28D0913B005DD532 /* QueryResponseFragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CE8718928D0913A005DD532 /* QueryResponseFragment.graphql */; };
 		5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C1286D655D00045E6E /* KeychainAccess */; };
 		5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE900C3286D656300045E6E /* KeychainAccess */; };
 		5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */; };
 		5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */; };
+		5CEC193C28CDBE5300851ECE /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC193B28CDBE5300851ECE /* EffectView.swift */; };
+		5CEC193D28CDBE5300851ECE /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC193B28CDBE5300851ECE /* EffectView.swift */; };
 		5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 		5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */; };
 		5CEE5AA128717F50005A259A /* RequestLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */; };
 		5CEE5AA228717F50005A259A /* RequestLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */; };
-		5CEEC18728968B0A001BD64C /* AuthenticationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */; };
-		5CEEC18828968B0A001BD64C /* AuthenticationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */; };
 		5CEEC18F28968E7D001BD64C /* AuthFormSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */; };
 		5CEEC19028968E7D001BD64C /* AuthFormSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */; };
-		5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* AuthFormView.swift */; };
-		5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* AuthFormView.swift */; };
-		5CF2526F2895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
-		5CF252702895316C00D03358 /* user.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2526D2895316C00D03358 /* user.graphql */; };
+		5CEEC19328968F1B001BD64C /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* SigninView.swift */; };
+		5CEEC19428968F1B001BD64C /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEC19128968F1B001BD64C /* SigninView.swift */; };
 		5CF2A5C32893B3B50080A8A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C12893B3B50080A8A4 /* User.swift */; };
 		5CF2A5C42893B3B50080A8A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C12893B3B50080A8A4 /* User.swift */; };
-		5CF2A5C92893BAA60080A8A4 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C72893BAA60080A8A4 /* StartView.swift */; };
-		5CF2A5CA2893BAA60080A8A4 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C72893BAA60080A8A4 /* StartView.swift */; };
+		5CF2A5C92893BAA60080A8A4 /* UnauthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C72893BAA60080A8A4 /* UnauthenticatedView.swift */; };
+		5CF2A5CA2893BAA60080A8A4 /* UnauthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5C72893BAA60080A8A4 /* UnauthenticatedView.swift */; };
 		5CF2A5CD2893E42C0080A8A4 /* register.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2A5CB2893E42C0080A8A4 /* register.graphql */; };
 		5CF2A5CE2893E42C0080A8A4 /* register.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2A5CB2893E42C0080A8A4 /* register.graphql */; };
 		5CF2A5D12893EDEC0080A8A4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5CF2893EDEC0080A8A4 /* API.swift */; };
 		5CF2A5D22893EDEC0080A8A4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2A5CF2893EDEC0080A8A4 /* API.swift */; };
+		5CF5017428C48F8C00D521A2 /* UserDetails+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5017328C48F8C00D521A2 /* UserDetails+Hashable.swift */; };
+		5CF5017528C48F8C00D521A2 /* UserDetails+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5017328C48F8C00D521A2 /* UserDetails+Hashable.swift */; };
+		5CF5017E28C4BA1100D521A2 /* ExamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5017D28C4BA1100D521A2 /* ExamsView.swift */; };
+		5CF5017F28C4BA1100D521A2 /* ExamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5017D28C4BA1100D521A2 /* ExamsView.swift */; };
+		5CF5018228C4CF8500D521A2 /* ExamSolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5018128C4CF8500D521A2 /* ExamSolutionView.swift */; };
+		5CF5018328C4CF8500D521A2 /* ExamSolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5018128C4CF8500D521A2 /* ExamSolutionView.swift */; };
+		5CF5018528C4D08E00D521A2 /* MCQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5018428C4D08E00D521A2 /* MCQView.swift */; };
+		5CF5018628C4D08E00D521A2 /* MCQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5018428C4D08E00D521A2 /* MCQView.swift */; };
+		5CF5018828C4D0A600D521A2 /* PDFPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5018728C4D0A600D521A2 /* PDFPaperView.swift */; };
+		5CF5018928C4D0A600D521A2 /* PDFPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5018728C4D0A600D521A2 /* PDFPaperView.swift */; };
+		5CF5018B28C4DDE200D521A2 /* ProctorExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5018A28C4DDE200D521A2 /* ProctorExamView.swift */; };
+		5CF5018C28C4DDE200D521A2 /* ProctorExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5018A28C4DDE200D521A2 /* ProctorExamView.swift */; };
 		5CFF57BC28AAE2EB0060B953 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFF57BB28AAE2EB0060B953 /* Collections */; };
 		5CFF57BE28AAE2EB0060B953 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFF57BD28AAE2EB0060B953 /* DequeModule */; };
 		5CFF57C028AAE2EB0060B953 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFF57BF28AAE2EB0060B953 /* OrderedCollections */; };
@@ -136,26 +149,23 @@
 /* Begin PBXFileReference section */
 		5C0A8516289E4A4400914746 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		5C0A8522289E4C6200914746 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
-		5C0A8526289E4DC800914746 /* LogoBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoBanner.swift; sourceTree = "<group>"; };
 		5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteProctoring-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2545A328A7F5AB00BF2FC4 /* RecentActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivityView.swift; sourceTree = "<group>"; };
 		5C2545A728A7F7D100BF2FC4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
 		5C38DDDF28ACAF260026131A /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
-		5C523C0828AE835D00A181FB /* ExamineeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamineeItemView.swift; sourceTree = "<group>"; };
+		5C523C0828AE835D00A181FB /* UserItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemView.swift; sourceTree = "<group>"; };
 		5C523C0B28AE8F7900A181FB /* ActivityItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemView.swift; sourceTree = "<group>"; };
 		5C523C0E28AE914400A181FB /* SuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
-		5C523C1128AE916900A181FB /* ExamineeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamineeListView.swift; sourceTree = "<group>"; };
+		5C523C1128AE916900A181FB /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginEmail.graphql; sourceTree = "<group>"; };
 		5C5DDD62289A921200A98073 /* loginUsername.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginUsername.graphql; sourceTree = "<group>"; };
-		5C5DDD66289A923D00A98073 /* loginResponse.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginResponse.graphql; sourceTree = "<group>"; };
 		5C60BEB228AAFE87009A949C /* Injectionlll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectionlll.swift; sourceTree = "<group>"; };
 		5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProctoringApp.swift; sourceTree = "<group>"; };
 		5C75827428695DA1001D0C93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C75827628695DA6001D0C93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C75827828695DA6001D0C93 /* RemoteProctoring.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteProctoring.entitlements; sourceTree = "<group>"; };
 		5C75827A28695DA6001D0C93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5C9BC29528AAAD1800355D1D /* ProctorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProctorView.swift; sourceTree = "<group>"; };
 		5C9BC29628AAAD1800355D1D /* ExamRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamRoomView.swift; sourceTree = "<group>"; };
 		5C9BC29D28AAAD2100355D1D /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		5C9BC29E28AAAD2100355D1D /* RoomMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomMessage.swift; sourceTree = "<group>"; };
@@ -171,19 +181,27 @@
 		5C9C0A57286981010040C53C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5C9C0A5F2869DED70040C53C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		5CADAB8F289ED8B200120268 /* ExamineesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamineesView.swift; sourceTree = "<group>"; };
-		5CE389C428ABCB3B0034ACBE /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		5C9EF5A328CE9F4F0081B26A /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		5CADAB8F289ED8B200120268 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		5CE8718328D09120005DD532 /* UserFragment.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserFragment.graphql; sourceTree = "<group>"; };
+		5CE8718628D0912E005DD532 /* LoginResponseFragment.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoginResponseFragment.graphql; sourceTree = "<group>"; };
+		5CE8718928D0913A005DD532 /* QueryResponseFragment.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QueryResponseFragment.graphql; sourceTree = "<group>"; };
 		5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewSupporting.swift; path = RemoteProctoring/Views/RegisterViewSupporting.swift; sourceTree = SOURCE_ROOT; };
+		5CEC193B28CDBE5300851ECE /* EffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
 		5CEE5A9B287176AC005A259A /* UserManagementInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagementInterceptor.swift; sourceTree = "<group>"; };
 		5CEE5A9F28717F50005A259A /* RequestLoggingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoggingInterceptor.swift; sourceTree = "<group>"; };
-		5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationErrorView.swift; sourceTree = SOURCE_ROOT; };
 		5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormSupporting.swift; sourceTree = "<group>"; };
-		5CEEC19128968F1B001BD64C /* AuthFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormView.swift; sourceTree = "<group>"; };
-		5CF2526D2895316C00D03358 /* user.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = user.graphql; sourceTree = "<group>"; };
+		5CEEC19128968F1B001BD64C /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		5CF2A5C12893B3B50080A8A4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		5CF2A5C72893BAA60080A8A4 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		5CF2A5C72893BAA60080A8A4 /* UnauthenticatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthenticatedView.swift; sourceTree = "<group>"; };
 		5CF2A5CB2893E42C0080A8A4 /* register.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = register.graphql; sourceTree = "<group>"; };
 		5CF2A5CF2893EDEC0080A8A4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5CF5017328C48F8C00D521A2 /* UserDetails+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetails+Hashable.swift"; sourceTree = "<group>"; };
+		5CF5017D28C4BA1100D521A2 /* ExamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsView.swift; sourceTree = "<group>"; };
+		5CF5018128C4CF8500D521A2 /* ExamSolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamSolutionView.swift; sourceTree = "<group>"; };
+		5CF5018428C4D08E00D521A2 /* MCQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCQView.swift; sourceTree = "<group>"; };
+		5CF5018728C4D0A600D521A2 /* PDFPaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPaperView.swift; sourceTree = "<group>"; };
+		5CF5018A28C4DDE200D521A2 /* ProctorExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProctorExamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +212,7 @@
 				5CE2D10B28AC43F50022DFFE /* OrderedCollections in Frameworks */,
 				5CE900C4286D656300045E6E /* KeychainAccess in Frameworks */,
 				5CA65DEE28AD6F1E00624780 /* ApolloSQLite in Frameworks */,
+				5CE8717C28D08619005DD532 /* Neumorphic in Frameworks */,
 				5CD6ECA2286F48540059BEB7 /* Navajo-Swift in Frameworks */,
 				5CAE631A28A51700006B33DF /* Promises in Frameworks */,
 				5CE2D10728AC43F50022DFFE /* Collections in Frameworks */,
@@ -211,12 +230,14 @@
 				5CFF57C028AAE2EB0060B953 /* OrderedCollections in Frameworks */,
 				5CE900C2286D655D00045E6E /* KeychainAccess in Frameworks */,
 				5CA65DE828AD6F0D00624780 /* ApolloSQLite in Frameworks */,
+				5C9EF59F28CE86760081B26A /* Neumorphic in Frameworks */,
 				5CD6ECA0286F48480059BEB7 /* Navajo-Swift in Frameworks */,
 				5CAE631828A516E4006B33DF /* Promises in Frameworks */,
 				5CFF57BC28AAE2EB0060B953 /* Collections in Frameworks */,
 				5CA65DE628AD6F0D00624780 /* Apollo in Frameworks */,
 				5CA65DEA28AD6F0D00624780 /* ApolloWebSocket in Frameworks */,
 				5CFF57BE28AAE2EB0060B953 /* DequeModule in Frameworks */,
+				5C9EF5A228CE89630081B26A /* AnimatableGradients in Frameworks */,
 				5C24AE0628AC595E00493E9E /* LiveKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,9 +250,9 @@
 			children = (
 				5C4DBC8E28A4D630007E72D4 /* Livekit */,
 				5CF2A5C12893B3B50080A8A4 /* User.swift */,
-				5CEE5A9828717673005A259A /* Apollo */,
 				5C2545A728A7F7D100BF2FC4 /* Activity.swift */,
 				5C2545AB28A7F81D00BF2FC4 /* ActivityType.swift */,
+				5CF5017328C48F8C00D521A2 /* UserDetails+Hashable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,8 +263,6 @@
 				5C523C1528AE92C700A181FB /* Auth */,
 				5CF2A5C62893B9BD0080A8A4 /* Main */,
 				5CF2A5C02893B1AE0080A8A4 /* Supporting */,
-				5C9C0A5F2869DED70040C53C /* MainView.swift */,
-				5C75827428695DA1001D0C93 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,9 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				5C9BC29628AAAD1800355D1D /* ExamRoomView.swift */,
-				5C9BC29528AAAD1800355D1D /* ProctorView.swift */,
-				5CE389C428ABCB3B0034ACBE /* SwiftUIView.swift */,
-				5C523C1128AE916900A181FB /* ExamineeListView.swift */,
+				5CF5018A28C4DDE200D521A2 /* ProctorExamView.swift */,
 			);
 			path = ProctorView;
 			sourceTree = "<group>";
@@ -282,9 +299,10 @@
 		5C523C1428AE923600A181FB /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				5C523C0828AE835D00A181FB /* ExamineeItemView.swift */,
+				5C523C0828AE835D00A181FB /* UserItemView.swift */,
 				5C523C0B28AE8F7900A181FB /* ActivityItemView.swift */,
 				5C523C0E28AE914400A181FB /* SuggestionsView.swift */,
+				5C523C1128AE916900A181FB /* UsersListView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -294,7 +312,7 @@
 			children = (
 				5C523C1628AE92DA00A181FB /* Elements */,
 				5C9C3BAE286D92BD005CCA92 /* RegisterView.swift */,
-				5CF2A5C72893BAA60080A8A4 /* StartView.swift */,
+				5CF2A5C72893BAA60080A8A4 /* UnauthenticatedView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -302,7 +320,7 @@
 		5C523C1628AE92DA00A181FB /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				5CEEC19128968F1B001BD64C /* AuthFormView.swift */,
+				5CEEC19128968F1B001BD64C /* SigninView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -328,11 +346,14 @@
 		5C75827128695DA1001D0C93 /* RemoteProctoring */ = {
 			isa = PBXGroup;
 			children = (
-				5C31BE682870404B00768DDD /* Views */,
-				5C31BE672870403E00768DDD /* Models */,
 				5CF2A5BB2893B0990080A8A4 /* GraphQL */,
+				5CEE5A9828717673005A259A /* Apollo */,
+				5C31BE672870403E00768DDD /* Models */,
+				5C31BE682870404B00768DDD /* Views */,
 				5C75827228695DA1001D0C93 /* RemoteProctoringApp.swift */,
+				5C9C0A5F2869DED70040C53C /* MainView.swift */,
 				5CF2A5CF2893EDEC0080A8A4 /* API.swift */,
+				5C75827428695DA1001D0C93 /* ContentView.swift */,
 				5C60BEB228AAFE87009A949C /* Injectionlll.swift */,
 				5C9C0A57286981010040C53C /* Launch Screen.storyboard */,
 				5C75827628695DA6001D0C93 /* Assets.xcassets */,
@@ -373,9 +394,10 @@
 			children = (
 				5C5DDD62289A921200A98073 /* loginUsername.graphql */,
 				5CF2A5CB2893E42C0080A8A4 /* register.graphql */,
-				5CF2526D2895316C00D03358 /* user.graphql */,
 				5C5DDD5E289A91EC00A98073 /* loginEmail.graphql */,
-				5C5DDD66289A923D00A98073 /* loginResponse.graphql */,
+				5CE8718328D09120005DD532 /* UserFragment.graphql */,
+				5CE8718628D0912E005DD532 /* LoginResponseFragment.graphql */,
+				5CE8718928D0913A005DD532 /* QueryResponseFragment.graphql */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -386,11 +408,11 @@
 				5C9BC2BA28AABB7100355D1D /* ProctorViewSupporting.swift */,
 				5C9BC2B928AABB7000355D1D /* ProctorViewSupporting+ParticipantLayout.swift */,
 				5C4DBC9C28A4D98A007E72D4 /* Livekit */,
-				5C0A8526289E4DC800914746 /* LogoBanner.swift */,
 				5CE95E3C2898066E0041BBCC /* RegisterViewSupporting.swift */,
 				5CEEC18D28968E7D001BD64C /* AuthFormSupporting.swift */,
-				5CEEC18528968B0A001BD64C /* AuthenticationErrorView.swift */,
+				5C9EF5A328CE9F4F0081B26A /* ErrorView.swift */,
 				5C9BC2B128AAAE9A00355D1D /* ExamRoomViewSupporting.swift */,
+				5CEC193B28CDBE5300851ECE /* EffectView.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -398,14 +420,26 @@
 		5CF2A5C62893B9BD0080A8A4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5CF5018028C4CF5B00D521A2 /* ExamineeView */,
 				5C523C1428AE923600A181FB /* Elements */,
 				5C4DBC8828A4D55E007E72D4 /* ProctorView */,
 				5C0A8516289E4A4400914746 /* SidebarView.swift */,
 				5C0A8522289E4C6200914746 /* MainContentView.swift */,
-				5CADAB8F289ED8B200120268 /* ExamineesView.swift */,
+				5CADAB8F289ED8B200120268 /* UsersView.swift */,
 				5C2545A328A7F5AB00BF2FC4 /* RecentActivityView.swift */,
+				5CF5017D28C4BA1100D521A2 /* ExamsView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		5CF5018028C4CF5B00D521A2 /* ExamineeView */ = {
+			isa = PBXGroup;
+			children = (
+				5CF5018128C4CF8500D521A2 /* ExamSolutionView.swift */,
+				5CF5018428C4D08E00D521A2 /* MCQView.swift */,
+				5CF5018728C4D0A600D521A2 /* PDFPaperView.swift */,
+			);
+			path = ExamineeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +471,7 @@
 				5CA65DEB28AD6F1E00624780 /* Apollo */,
 				5CA65DED28AD6F1E00624780 /* ApolloSQLite */,
 				5CA65DEF28AD6F1F00624780 /* ApolloWebSocket */,
+				5CE8717B28D08619005DD532 /* Neumorphic */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C1A22F1286960D000AA2636 /* RemoteProctoring-macOS.app */;
@@ -467,6 +502,8 @@
 				5CA65DE528AD6F0D00624780 /* Apollo */,
 				5CA65DE728AD6F0D00624780 /* ApolloSQLite */,
 				5CA65DE928AD6F0D00624780 /* ApolloWebSocket */,
+				5C9EF59E28CE86760081B26A /* Neumorphic */,
+				5C9EF5A128CE89630081B26A /* AnimatableGradients */,
 			);
 			productName = RemoteProctoring;
 			productReference = 5C9C0A5628697DD50040C53C /* RemoteProctoring-iPad.app */;
@@ -498,6 +535,16 @@
 				5CFF57BA28AAE2EB0060B953 /* XCRemoteSwiftPackageReference "swift-collections" */,
 				5C24AE0228AC590D00493E9E /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
 				5C92651828AD642900BAEA60 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				5CDD84F628CCB44F00862424 /* XCRemoteSwiftPackageReference "fluentui-apple" */,
+				5CC5F3C428CE753000398B30 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+				5C9EF59D28CE86760081B26A /* XCRemoteSwiftPackageReference "neumorphic" */,
+				5C9EF5A028CE89630081B26A /* XCRemoteSwiftPackageReference "AnimatableGradients" */,
+				5CED70FA28D03A82008ADFCC /* XCRemoteSwiftPackageReference "shiny" */,
+				5CED70FB28D03BDD008ADFCC /* XCRemoteSwiftPackageReference "IrregularGradient" */,
+				5CED70FC28D03C2B008ADFCC /* XCRemoteSwiftPackageReference "Pow" */,
+				5CED70FD28D03C84008ADFCC /* XCRemoteSwiftPackageReference "liquid" */,
+				5CED70FE28D03D4A008ADFCC /* XCRemoteSwiftPackageReference "PartialSheet" */,
+				5C89815328D0445A00EE734D /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 5C75827028695DA1001D0C93 /* Products */;
 			projectDirPath = "";
@@ -514,12 +561,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CF2526F2895316C00D03358 /* user.graphql in Resources */,
 				5C5DDD64289A921200A98073 /* loginUsername.graphql in Resources */,
-				5C5DDD68289A923D00A98073 /* loginResponse.graphql in Resources */,
 				5C5DDD60289A91EC00A98073 /* loginEmail.graphql in Resources */,
 				5CF2A5CD2893E42C0080A8A4 /* register.graphql in Resources */,
+				5CE8718B28D0913B005DD532 /* QueryResponseFragment.graphql in Resources */,
+				5CE8718528D09120005DD532 /* UserFragment.graphql in Resources */,
 				5C1A22EC286960D000AA2636 /* Preview Assets.xcassets in Resources */,
+				5CE8718828D0912F005DD532 /* LoginResponseFragment.graphql in Resources */,
 				5C1A22ED286960D000AA2636 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,13 +576,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5DDD69289A923D00A98073 /* loginResponse.graphql in Resources */,
 				5C5DDD61289A91EC00A98073 /* loginEmail.graphql in Resources */,
+				5CE8718728D0912F005DD532 /* LoginResponseFragment.graphql in Resources */,
 				5C9C0A59286981010040C53C /* Launch Screen.storyboard in Resources */,
 				5C9C0A5028697DD50040C53C /* Preview Assets.xcassets in Resources */,
 				5C5DDD65289A921200A98073 /* loginUsername.graphql in Resources */,
 				5C9C0A5128697DD50040C53C /* Assets.xcassets in Resources */,
-				5CF252702895316C00D03358 /* user.graphql in Resources */,
+				5CE8718428D09120005DD532 /* UserFragment.graphql in Resources */,
+				5CE8718A28D0913B005DD532 /* QueryResponseFragment.graphql in Resources */,
 				5CF2A5CE2893E42C0080A8A4 /* register.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,7 +607,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n# propagate the xcrun call's return code to Xcode\nexit $?\n";
+			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\n#xcrun -sdk macosx swift run ApolloCodegen all\n# propagate the xcrun call's return code to Xcode\nexit $?\n";
 		};
 		5C9C0A682869E7250040C53C /* Apollo */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -576,7 +625,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n# propagate the xcrun call's return code to Xcode\nexit $?\n";
+			shellScript = "if [ \"${ENABLE_PREVIEWS}\" = \"YES\" ]; then\n  echo \"Previews enabled, quitting to prevent 'preview paused'.\"\n  exit 0;\nfi\n\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\ncd \"${SRCROOT}\"/ApolloCodegen\n#xcrun -sdk macosx swift run ApolloCodegen all\n# propagate the xcrun call's return code to Xcode\nexit $?\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -585,39 +634,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF5018628C4D08E00D521A2 /* MCQView.swift in Sources */,
 				5CEE5AA128717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
 				5C9BC2A328AAAD2100355D1D /* Preferences.swift in Sources */,
-				5CE389C628ABCB3B0034ACBE /* SwiftUIView.swift in Sources */,
 				5C60BEB428AAFE87009A949C /* Injectionlll.swift in Sources */,
-				5C523C1328AE916900A181FB /* ExamineeListView.swift in Sources */,
-				5C523C0A28AE835D00A181FB /* ExamineeItemView.swift in Sources */,
+				5CF5018328C4CF8500D521A2 /* ExamSolutionView.swift in Sources */,
+				5C523C1328AE916900A181FB /* UsersListView.swift in Sources */,
+				5C523C0A28AE835D00A181FB /* UserItemView.swift in Sources */,
 				5C2545A528A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */,
 				5CEE5A9D287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
-				5C0A8528289E4DC800914746 /* LogoBanner.swift in Sources */,
+				5CEC193D28CDBE5300851ECE /* EffectView.swift in Sources */,
 				5C0A8518289E4A4400914746 /* SidebarView.swift in Sources */,
-				5CF2A5C92893BAA60080A8A4 /* StartView.swift in Sources */,
+				5CF2A5C92893BAA60080A8A4 /* UnauthenticatedView.swift in Sources */,
 				5C9BC2AF28AAAD2200355D1D /* ExamObservableRoom.swift in Sources */,
 				5C523C1028AE914400A181FB /* SuggestionsView.swift in Sources */,
 				5C9BC2BC28AABB7200355D1D /* ProctorViewSupporting+ParticipantLayout.swift in Sources */,
 				5C1A22E8286960D000AA2636 /* ContentView.swift in Sources */,
 				5C9BC2B328AAAE9A00355D1D /* ExamRoomViewSupporting.swift in Sources */,
+				5CF5018C28C4DDE200D521A2 /* ProctorExamView.swift in Sources */,
 				5C2545AD28A7F81D00BF2FC4 /* ActivityType.swift in Sources */,
 				5C9BC2AC28AAAD2100355D1D /* RoomContext.swift in Sources */,
-				5CADAB91289ED8B200120268 /* ExamineesView.swift in Sources */,
+				5CADAB91289ED8B200120268 /* UsersView.swift in Sources */,
 				5C9BC2BF28AABB7200355D1D /* ProctorViewSupporting.swift in Sources */,
 				5C9BC2A628AAAD2100355D1D /* RoomMessage.swift in Sources */,
 				5C9C0A3F286976160040C53C /* Network.swift in Sources */,
 				5CE95E3E289806700041BBCC /* RegisterViewSupporting.swift in Sources */,
+				5C9EF5A528CE9F4F0081B26A /* ErrorView.swift in Sources */,
 				5C9BC2B728AABB5200355D1D /* ExamParticipantView.swift in Sources */,
+				5CF5018928C4D0A600D521A2 /* PDFPaperView.swift in Sources */,
 				5C2545A928A7F7D100BF2FC4 /* Activity.swift in Sources */,
-				5CEEC19328968F1B001BD64C /* AuthFormView.swift in Sources */,
+				5CEEC19328968F1B001BD64C /* SigninView.swift in Sources */,
 				5CEEC18F28968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
+				5CF5017F28C4BA1100D521A2 /* ExamsView.swift in Sources */,
 				5CF2A5D12893EDEC0080A8A4 /* API.swift in Sources */,
-				5CEEC18728968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
 				5C0A8524289E4C6200914746 /* MainContentView.swift in Sources */,
-				5C9BC29828AAAD1800355D1D /* ProctorView.swift in Sources */,
 				5CF2A5C32893B3B50080A8A4 /* User.swift in Sources */,
 				5C9C0A612869DED70040C53C /* MainView.swift in Sources */,
+				5CF5017528C48F8C00D521A2 /* UserDetails+Hashable.swift in Sources */,
 				5C9BC2A928AAAD2100355D1D /* ObservableParticipant.swift in Sources */,
 				5C523C0D28AE8F7900A181FB /* ActivityItemView.swift in Sources */,
 				5C9BC29B28AAAD1800355D1D /* ExamRoomView.swift in Sources */,
@@ -630,39 +683,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF5018528C4D08E00D521A2 /* MCQView.swift in Sources */,
 				5CEE5AA228717F50005A259A /* RequestLoggingInterceptor.swift in Sources */,
 				5C2545A628A7F5AB00BF2FC4 /* RecentActivityView.swift in Sources */,
 				5C9BC2A428AAAD2100355D1D /* Preferences.swift in Sources */,
 				5C60BEB528AAFE87009A949C /* Injectionlll.swift in Sources */,
-				5C523C1228AE916900A181FB /* ExamineeListView.swift in Sources */,
-				5C523C0928AE835D00A181FB /* ExamineeItemView.swift in Sources */,
+				5CF5018228C4CF8500D521A2 /* ExamSolutionView.swift in Sources */,
+				5C523C1228AE916900A181FB /* UsersListView.swift in Sources */,
+				5C523C0928AE835D00A181FB /* UserItemView.swift in Sources */,
 				5CEE5A9E287176AC005A259A /* UserManagementInterceptor.swift in Sources */,
-				5C0A8529289E4DC800914746 /* LogoBanner.swift in Sources */,
+				5CEC193C28CDBE5300851ECE /* EffectView.swift in Sources */,
 				5C0A8519289E4A4400914746 /* SidebarView.swift in Sources */,
-				5CF2A5CA2893BAA60080A8A4 /* StartView.swift in Sources */,
+				5CF2A5CA2893BAA60080A8A4 /* UnauthenticatedView.swift in Sources */,
 				5C9BC2C028AABB7200355D1D /* ProctorViewSupporting.swift in Sources */,
 				5C9BC2AA28AAAD2100355D1D /* ObservableParticipant.swift in Sources */,
 				5C523C0F28AE914400A181FB /* SuggestionsView.swift in Sources */,
 				5C9BC29C28AAAD1800355D1D /* ExamRoomView.swift in Sources */,
 				5C9C0A4628697DD50040C53C /* ContentView.swift in Sources */,
 				5C2545AE28A7F81D00BF2FC4 /* ActivityType.swift in Sources */,
-				5CADAB92289ED8B200120268 /* ExamineesView.swift in Sources */,
+				5CF5018B28C4DDE200D521A2 /* ProctorExamView.swift in Sources */,
+				5CADAB92289ED8B200120268 /* UsersView.swift in Sources */,
 				5C9BC2B028AAAD2200355D1D /* ExamObservableRoom.swift in Sources */,
-				5CE389C728ABCB3B0034ACBE /* SwiftUIView.swift in Sources */,
 				5C9C0A4828697DD50040C53C /* Network.swift in Sources */,
 				5C9BC2A728AAAD2100355D1D /* RoomMessage.swift in Sources */,
 				5CE95E3F289806710041BBCC /* RegisterViewSupporting.swift in Sources */,
 				5C9BC2B828AABB5200355D1D /* ExamParticipantView.swift in Sources */,
+				5C9EF5A428CE9F4F0081B26A /* ErrorView.swift in Sources */,
 				5C2545AA28A7F7D100BF2FC4 /* Activity.swift in Sources */,
-				5CEEC19428968F1B001BD64C /* AuthFormView.swift in Sources */,
-				5C9BC29928AAAD1800355D1D /* ProctorView.swift in Sources */,
+				5CF5018828C4D0A600D521A2 /* PDFPaperView.swift in Sources */,
+				5CEEC19428968F1B001BD64C /* SigninView.swift in Sources */,
 				5CEEC19028968E7D001BD64C /* AuthFormSupporting.swift in Sources */,
+				5CF5017E28C4BA1100D521A2 /* ExamsView.swift in Sources */,
 				5CF2A5D22893EDEC0080A8A4 /* API.swift in Sources */,
-				5CEEC18828968B0A001BD64C /* AuthenticationErrorView.swift in Sources */,
 				5C9BC2B428AAAE9A00355D1D /* ExamRoomViewSupporting.swift in Sources */,
 				5C9BC2AD28AAAD2100355D1D /* RoomContext.swift in Sources */,
 				5C0A8525289E4C6200914746 /* MainContentView.swift in Sources */,
 				5CF2A5C42893B3B50080A8A4 /* User.swift in Sources */,
+				5CF5017428C48F8C00D521A2 /* UserDetails+Hashable.swift in Sources */,
 				5C9BC2BD28AABB7200355D1D /* ProctorViewSupporting+ParticipantLayout.swift in Sources */,
 				5C523C0C28AE8F7900A181FB /* ActivityItemView.swift in Sources */,
 				5C9C0A622869DED70040C53C /* MainView.swift in Sources */,
@@ -688,7 +745,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RemoteProctoring/Preview Content\"";
-				DEVELOPMENT_TEAM = 9FY49AFFG7;
+				DEVELOPMENT_TEAM = 2SW8DKHR9M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -926,9 +983,6 @@
 				OTHER_LDFLAGS = (
 					"-Xlinker",
 					"-interposable",
-					"-Xlinker",
-					"-undefined",
-					dynamic_lookup,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = biit.RemoteProctoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1035,12 +1089,44 @@
 				minimumVersion = 2.1.0;
 			};
 		};
+		5C89815328D0445A00EE734D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		5C92651828AD642900BAEA60 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.9.5;
+			};
+		};
+		5C9EF59D28CE86760081B26A /* XCRemoteSwiftPackageReference "neumorphic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/costachung/neumorphic/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.5;
+			};
+		};
+		5C9EF5A028CE89630081B26A /* XCRemoteSwiftPackageReference "AnimatableGradients" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CypherPoet/AnimatableGradients";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		5CC5F3C428CE753000398B30 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
 			};
 		};
 		5CD6EC9C286F47E10059BEB7 /* XCRemoteSwiftPackageReference "Navajo-Swift" */ = {
@@ -1051,9 +1137,57 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		5CDD84F628CCB44F00862424 /* XCRemoteSwiftPackageReference "fluentui-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/fluentui-apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
 		5CE900BE286D655300045E6E /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		5CED70FA28D03A82008ADFCC /* XCRemoteSwiftPackageReference "shiny" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/shiny.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		5CED70FB28D03BDD008ADFCC /* XCRemoteSwiftPackageReference "IrregularGradient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joogps/IrregularGradient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5CED70FC28D03C2B008ADFCC /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/movingparts-io/Pow";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5CED70FD28D03C84008ADFCC /* XCRemoteSwiftPackageReference "liquid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/liquid.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		5CED70FE28D03D4A008ADFCC /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.0.0;
@@ -1079,6 +1213,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5C24AE0228AC590D00493E9E /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
 			productName = LiveKit;
+		};
+		5C9EF59E28CE86760081B26A /* Neumorphic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C9EF59D28CE86760081B26A /* XCRemoteSwiftPackageReference "neumorphic" */;
+			productName = Neumorphic;
+		};
+		5C9EF5A128CE89630081B26A /* AnimatableGradients */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C9EF5A028CE89630081B26A /* XCRemoteSwiftPackageReference "AnimatableGradients" */;
+			productName = AnimatableGradients;
 		};
 		5CA65DE528AD6F0D00624780 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1144,6 +1288,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5CFF57BA28AAE2EB0060B953 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = OrderedCollections;
+		};
+		5CE8717B28D08619005DD532 /* Neumorphic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C9EF59D28CE86760081B26A /* XCRemoteSwiftPackageReference "neumorphic" */;
+			productName = Neumorphic;
 		};
 		5CE900C1286D655D00045E6E /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
