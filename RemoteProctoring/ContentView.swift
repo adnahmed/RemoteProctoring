@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var user: User
     var body: some View {
-        if user.isLoggedIn {
+        if SecureStore.shared.token != nil {
             MainView()
         }
         else {

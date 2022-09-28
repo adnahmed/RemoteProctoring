@@ -19,7 +19,7 @@ class UserManagementInterceptor: ApolloInterceptor {
         }
     
     func interceptAsync<Operation>(chain: RequestChain, request: HTTPRequest<Operation>, response: HTTPResponse<Operation>?, completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void) where Operation : GraphQLOperation {
-        guard let token = Network.shared.token else {
+        guard let token = SecureStore.shared.token else {
             // If no token is present, just proceed with the request
             chain.proceedAsync(request: request, response: response, completion: completion)
             return

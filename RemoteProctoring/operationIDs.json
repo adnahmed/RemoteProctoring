@@ -1,4 +1,12 @@
 {
+  "00e37d786337986755985c32bd807cf4ebe5457410d38de25fd3976cb667d6d9": {
+    "name": "GetExam",
+    "source": "query GetExam {\n  getExam {\n    __typename\n    ...Exam\n  }\n}\nfragment Exam on Exam {\n  __typename\n  id\n  name\n  start\n  end\n  subject {\n    __typename\n    ...Subject\n  }\n}\nfragment Subject on Subject {\n  __typename\n  id\n  name\n  description\n  pictures {\n    __typename\n    downloadURL\n  }\n}"
+  },
+  "a1cc478be54d7abef9ff93b3251e74e0c35f706805be1dc15971ac5f1ae806ee": {
+    "name": "GetMCQExam",
+    "source": "query GetMCQExam($exam: UUID!) {\n  getMCQExam(exam: $exam) {\n    __typename\n    queryResponse {\n      __typename\n      ...QueryResponse\n    }\n    mcqExam {\n      __typename\n      ...MCQExam\n    }\n  }\n}\nfragment QueryResponse on QueryResponse {\n  __typename\n  code\n  message\n  success\n}\nfragment MCQExam on MCQExam {\n  __typename\n  id\n  questions {\n    __typename\n    ...MCQuestion\n  }\n}\nfragment MCQuestion on MCQuestion {\n  __typename\n  id\n  question\n  choices {\n    __typename\n    ...MCQChoice\n  }\n}\nfragment MCQChoice on MCQChoice {\n  __typename\n  id\n  statement\n}"
+  },
   "cb4ea5b762c0f7ddd6965431bef04e9b6dd0bddf46ffcf045392f302e439bcf2": {
     "name": "LogInEmail",
     "source": "query LogInEmail($email: EmailAddress!, $password: String!) {\n  logInEmail(email: $email, password: $password) {\n    __typename\n    ...LoginResponse\n  }\n}\nfragment LoginResponse on AuthenticationResponse {\n  __typename\n  queryResponse {\n    __typename\n    ...QueryResponse\n  }\n  token\n  user {\n    __typename\n    ...UserDetails\n  }\n}\nfragment QueryResponse on QueryResponse {\n  __typename\n  code\n  message\n  success\n}\nfragment UserDetails on User {\n  __typename\n  id\n  username\n  prefix\n  givenName\n  middleName\n  lastName\n  role\n  pictures\n}"

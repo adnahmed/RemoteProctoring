@@ -1,0 +1,4 @@
+fragment MCQChoice on MCQChoice {
+    id
+    statement
+}

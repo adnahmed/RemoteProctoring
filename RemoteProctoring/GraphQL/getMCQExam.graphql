@@ -1,0 +1,10 @@
+query GetMCQExam($exam: UUID!) {
+  getMCQExam(exam: $exam) {
+		queryResponse {
+			...QueryResponse
+		}
+        mcqExam {
+			...MCQExam
+        }
+    }
+}

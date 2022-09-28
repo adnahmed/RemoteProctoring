@@ -1,0 +1,9 @@
+fragment Exam on Exam {
+	id
+	name
+	start
+	end
+	subject {
+		...Subject
+	}
+}

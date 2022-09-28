@@ -5,10 +5,10 @@
 //  Created by Adnan Ahmed Khan on 31/07/2022.
 //
 
-import SwiftUI
-import RegexBuilder
 import Apollo
 import Neumorphic
+import RegexBuilder
+import SwiftUI
 
 struct SigninView: View {
     @EnvironmentObject var user: User
@@ -19,7 +19,7 @@ struct SigninView: View {
     @State private var errorMessages: [String] = []
     @FocusState private var focusedField: SigninFormField?
     @State var useEmail: Bool = false
-    
+
     var body: some View {
         VStack {
             Group {
@@ -33,7 +33,7 @@ struct SigninView: View {
                     TextField("Username or Email", text: $usernameOrEmail)
                         .authTextField()
                         .focused($focusedField, equals: .usernameOrEmailField)
-                        .onChange(of: usernameOrEmail) { usernameOrEmail in
+                        .onChange(of: usernameOrEmail) { _ in
                             withAnimation {
                                 errorMessages.removeAll()
                             }
@@ -42,7 +42,7 @@ struct SigninView: View {
                     SecureField("Password", text: $password)
                         .authTextField()
                         .focused($focusedField, equals: .passwordField)
-                        .onChange(of: password) { password in
+                        .onChange(of: password) { _ in
                             withAnimation {
                                 errorMessages.removeAll()
                             }
@@ -54,7 +54,7 @@ struct SigninView: View {
                 Button("Sign In", action: onPressSignIn)
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
-                .background(RoundedRectangle(cornerRadius: 4.0, style: .continuous).fill(Color.Neumorphic.main).softOuterShadow())
+                    .background(RoundedRectangle(cornerRadius: 4.0, style: .continuous).fill(Color.Neumorphic.main).softOuterShadow())
             }
             .frame(minWidth: 350, maxWidth: 550)
             if signInPressed {
@@ -71,15 +71,15 @@ struct SigninView: View {
         }
         .eraseToAnyView()
     }
-    
+
     func onPressSignIn() {
-#if os(iOS)
+        #if os(iOS)
         if let match = usernameOrEmail.firstMatch(of: emailPattern) {
             let (wholeMatch, _, _) = match.output
-            self.usernameOrEmail = String(wholeMatch)
+            usernameOrEmail = String(wholeMatch)
             useEmail = true
         }
-#else
+        #else
         if emailPattern.firstMatch(in: usernameOrEmail, options: [], range: NSRange(location: 0, length: usernameOrEmail.count)) != nil {
             // TODO: Use matched value from NSTextCheckingResult
             useEmail = true
@@ -87,7 +87,7 @@ struct SigninView: View {
         else {
             useEmail = false
         }
-#endif
+        #endif
         if useEmail {
             Task { handleSignIn(query: LogInEmailQuery(email: usernameOrEmail, password: password)) }
         }
@@ -95,7 +95,8 @@ struct SigninView: View {
             Task { handleSignIn(query: LogInUsernameQuery(username: usernameOrEmail, password: password)) }
         }
     }
-    func handleSignIn<AuthQueryType>(query: AuthQueryType) where AuthQueryType:GraphQLQuery {
+
+    func handleSignIn<AuthQueryType>(query: AuthQueryType) where AuthQueryType: GraphQLQuery {
         guard !usernameOrEmail.isEmpty else {
             focusedField = .usernameOrEmailField
             return
@@ -109,11 +110,11 @@ struct SigninView: View {
             recievedError = false
             errorMessages.removeAll()
         }
-        
-        Network.shared.client.fetch(query: query) {  res in
+
+        ApiClient.shared.client.fetch(query: query) { res in
             signInPressed = false
             switch res {
-            case .success (let gqRes):
+            case .success(let gqRes):
                 if let errors = gqRes.errors {
                     errorMessages.append("Error occurred while connecting to server, Please try again.")
                     #if DEBUG
@@ -137,10 +138,7 @@ struct SigninView: View {
                     case let data as LogInUsernameQuery.Data:
                         handleAuthResponseData(data: data.logInUsername.fragments.loginResponse)
                     default:
-                        NetworkLogger.error("Unknown Data Recieved")
-                    }
-                    withAnimation {
-                        recievedError = true
+                        ApiClient.shared.logger.error("Unknown Data Recieved")
                     }
                 }
             case .failure(let error):
@@ -151,35 +149,48 @@ struct SigninView: View {
             }
         }
         func handleAuthResponseData(data: LoginResponse) {
-            if data.queryResponse?.code == 200 {
-                user.data.raw = data.user?.fragments.userDetails
+            guard let queryResponse = data.queryResponse else {
+                #if DEBUG
+                errorMessages.append(contentsOf: data.resultMap.values.compactMap { $0.debugDescription })
+                #endif
+                errorMessages.append("Unknown error occurred, Please try again.")
                 withAnimation {
-                    Network.shared.token = data.token
+                    recievedError = true
                 }
+                return
             }
-            else if data.queryResponse?.code == 403 {
+            switch queryResponse.code {
+            case 200:
+                guard let recievedUser = data.user else {
+                    errorMessages.append("Unknown error occured, Please try again.")
+                    break
+                }
+                user.data.raw = recievedUser.fragments.userDetails
+                withAnimation {
+                    SecureStore.shared.token = data.token
+                }
+                return
+            case 403:
                 errorMessages.append("Invalid Username or Password")
-            }
-            else if data.queryResponse?.code == 400 {
-                errorMessages.append(contentsOf: data.queryResponse!.message.split(separator: "\n").map {substr in return String(substr)} )
-            }
-            else if data.queryResponse!.code == 500 {
+            case 400:
+                errorMessages.append(contentsOf: queryResponse.message.split(separator: "\n").map { substr in String(substr) })
+            case 500:
                 errorMessages.append("Server error occurred. Please try again later.")
                 #if DEBUG
-                errorMessages.append(data.queryResponse!.message)
+                errorMessages.append(queryResponse.message)
                 #endif
-
+            default:
+                errorMessages.append(queryResponse.message)
             }
-            else {
-                errorMessages.append(data.queryResponse!.message)
+            withAnimation {
+                recievedError = true
             }
         }
-#if DEBUG
+        #if DEBUG
         @ObservedObject var iO = injectionObserver
-#endif
+        #endif
     }
 }
-
 
 struct SigninView_Previews: PreviewProvider {
     static var previews: some View {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject private var user: User = User()
 #if os(iOS)
     @State private var columnVisibility: NavigationSplitViewVisibility = .automatic
 #endif
@@ -16,8 +17,9 @@ struct MainView: View {
 #if os(macOS)
             NavigationView {
                 SidebarView()
-                MainContentView()
+                HomeView()
             }
+            .environmentObject(user)
             .toolbar {
                 Button {
                     
@@ -30,7 +32,7 @@ struct MainView: View {
                 SidebarView()
                     .navigationSplitViewColumnWidth(g.size.width * 0.40)
             } detail: {
-                MainContentView()
+                HomeView()
                     .navigationSplitViewColumnWidth(
                         ideal: g.size.width * 0.50)
             }

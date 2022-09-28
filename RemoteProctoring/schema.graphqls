@@ -14,6 +14,8 @@ type NewManagedUsersResponse {
 
 type Query {
   getProctors: GetManagedUsersResponse!
+  getExam: Exam!
+  getMCQExam(exam: UUID!): MCQExamResponse!
   logInEmail(email: EmailAddress!, password: String!): AuthenticationResponse!
   logInUsername(username: String!, password: String!): AuthenticationResponse!
 }
@@ -24,12 +26,26 @@ type Exam {
   start: DateTime!
   end: DateTime!
   subject: Subject!
+  pictures: [ExamPictures!]
+}
+
+interface Picture {
+  downloadURL: URL!
+}
+
+type ExamPictures implements Picture {
+  downloadURL: URL!
+}
+
+type SubjectPictures implements Picture {
+  downloadURL: URL!
 }
 
 type Subject {
   id: UUID!
   name: String!
-  meta: String
+  description: String!
+  pictures: [SubjectPictures!]
 }
 
 input CreateExamInput {
@@ -40,9 +56,30 @@ input CreateExamInput {
 }
 
 type Mutation {
-  createExam(exam: CreateExamInput): QueryResponse!
+  createExam(exam: CreateExamInput!): QueryResponse!
   register(user: UserRegisterationInput!): AuthenticationResponse!
   unregister(id: UUID!): QueryResponse!
+}
+
+type MCQExam {
+  id: UUID!
+  questions: [MCQuestion!]!
+}
+
+type MCQuestion {
+  id: UUID!
+  question: String!
+  choices: [MCQChoice!]!
+}
+
+type MCQChoice {
+  id: UUID!
+  statement: String!
+}
+
+type MCQExamResponse {
+  queryResponse: QueryResponse!
+  mcqExam: MCQExam
 }
 
 type User {

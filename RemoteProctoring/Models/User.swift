@@ -9,7 +9,9 @@ import Foundation
 
 class User: ObservableObject {
     var data: UserData = UserData()
-    @Published var isLoggedIn: Bool = false
+    var isLoggedIn: Bool {
+        return SecureStore.shared.token != nil
+    }
 }
 
 struct UserData: Identifiable, Hashable {
@@ -37,10 +39,6 @@ struct UserData: Identifiable, Hashable {
         set {
             raw?.id = newValue?.uuidString ?? ""
         }
-    }
-    
-    var role: Role? {
-        return raw?.role
     }
     
 }

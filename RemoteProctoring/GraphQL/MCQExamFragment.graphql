@@ -1,0 +1,6 @@
+fragment MCQExam on MCQExam {
+	id
+	questions {
+		...MCQuestion
+	}
+}

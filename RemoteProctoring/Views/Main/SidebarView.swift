@@ -13,7 +13,7 @@ struct SidebarView: View {
         Group {
             List {
                 NavigationLink {
-                    MainContentView()
+                    HomeView()
                 } label: {
                     Label {
                         Text("Home")
@@ -25,7 +25,7 @@ struct SidebarView: View {
                     }
                 }
                 Section("People") {
-                    if user.data.role == .administrator || user.data.role == .proctor {
+                    if user.data.raw?.role == .administrator || user.data.raw?.role == .proctor {
                         NavigationLink {
                             UsersView()
                         } label: {
@@ -57,8 +57,9 @@ struct SidebarView: View {
                 }
                 Section("Exam") {
                     NavigationLink {
-                        ExamsView()
-                            .navigationTitle("Exams")
+//                        ExamsView()
+//                            .navigationTitle("Exams")
+                        ExamRoomView()
                     } label: {
                         Label {
                             Text("Exams")

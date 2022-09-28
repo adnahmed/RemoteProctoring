@@ -21,10 +21,7 @@ struct ExamSolutionView: View {
         }
         .onAppear {
             // TODO: Keep track of proctors in room and set appropriate track permissions
-            Network.shared.room.room.localParticipant?.permissions
-            Network.shared.room.room.localParticipant?.setTrackSubscriptionPermissions(allParticipantsAllowed: false, trackPermissions: [ParticipantTrackPermission(participantSid: "", allTracksAllowed: true)])
-            Network.shared.room.toggleCameraEnabled()
-            Network.shared.room.toggleMicrophoneEnabled()
+             
         }
     }
 }

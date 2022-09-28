@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Neumorphic
+import Pow
 
 struct ErrorView: View {
     var message: String
@@ -37,8 +38,7 @@ struct ErrorMessagesView: View {
         VStack {
             ForEach(errorMessages, id: \.self) { error in
                 ErrorView(message: error)
-                    .animation(.easeInOut(duration: 2), value: recievedError)
-                    .transition(.asymmetric(insertion: .slide, removal: .move(edge: .bottom)))
+                    .transition(.movingParts.anvil)
             }
         }
     }

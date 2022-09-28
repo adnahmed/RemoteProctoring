@@ -1,0 +1,7 @@
+fragment MCQuestion on MCQuestion {
+	id
+	question
+	choices {
+		...MCQChoice
+	}
+}

@@ -14,35 +14,36 @@ struct ExamsView: View {
     }
     
     struct ExamListView: View {
-        @State private var exams: [ExamData] = []
+//        @State private var exams: [ExamData] = []
         var body: some View {
-            ForEach(exams) { exam in
-                ExamItemView(exam: exam)
-            }
-            .onAppear {
-            }
+//            ForEach(exams) { exam in
+//                ExamItemView(exam: exam)
+//            }
+//            .onAppear {
+//            }
+            Text("Exams View")
         }
     }
     
     struct ExamItemView: View {
         @EnvironmentObject var user: User
-        var exam: ExamData
+//        var exam: ExamData
         var body: some View {
             HStack {
-                Text(exam.name)
+//                Text(exam.name)
                 Spacer()
-                if (DateInterval(start: exam.startDate, end: exam.endDate).contains(.now) && user.data.role != .administrator) {
-                    NavigationLink {
-                        if user.data.role == .proctor {
-                            ProctorExamView()
-                        } else {
-                            ExamSolutionView()
-                        }
-                    } label: {
-                        Text(user.data.role == .proctor ? "Start" : "Join")
-                    }
-                    .environmentObject(Exam(data: exam))
-                }
+//                if (DateInterval(start: exam.startDate, end: exam.endDate).contains(.now) && user.data.role != .administrator) {
+//                    NavigationLink {
+//                        if user.data.role == .proctor {
+//                            ProctorExamView()
+//                        } else {
+//                            ExamSolutionView()
+//                        }
+//                    } label: {
+//                        Text(user.data.role == .proctor ? "Start" : "Join")
+//                    }
+//                    .environmentObject(Exam(data: exam))
+//                }
             }
         }
     }
@@ -51,34 +52,33 @@ struct ExamsView: View {
 }
 
 #if DEBUG
-class Exam: ObservableObject  {
-    var data: ExamData
-    @Published var startDate: Date = .now
-    var token: String = ""
-    init(data: ExamData) {
-        self.data = data
-        connect()
-    }
-    private func connect()  {
-        // TODO: Fetch Token with query
-        Network.shared.room.room.connect(Network.shared.lkEndpoint, token)
-    }
-    
-    deinit {
-        // TODO: perform cleanup for exam end queries
-    }
-}
-
-struct ExamData: Identifiable, Hashable {
-    var id: String
-    var name: String
-    var subject: String
-    var startDate: Date, endDate: Date
-}
-
-struct ExamsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExamsView()
-    }
-}
+//class Exam: ObservableObject  {
+//    var data: ExamData
+//    @Published var startDate: Date = .now
+//    var token: String = ""
+//    init(data: ExamData) {
+//        self.data = data
+//        connect()
+//    }
+//    private func connect()  {
+//        // TODO: Fetch Token with query
+//    }
+//    
+//    deinit {
+//        // TODO: perform cleanup for exam end queries
+//    }
+//}
+//
+//struct ExamData: Identifiable, Hashable {
+//    var id: String
+//    var name: String
+//    var subject: String
+//    var startDate: Date, endDate: Date
+//}
+//
+//struct ExamsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ExamsView()
+//    }
+//}
 #endif

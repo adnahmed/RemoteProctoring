@@ -263,7 +263,7 @@ struct RegisterView: View {
             email: emailAddress,
             organization: organization)
         
-        Network.shared.client.perform(
+        ApiClient.shared.client.perform(
             mutation: RegisterMutation(user: inputUser))
         { res in
             registerPressed = false
@@ -286,7 +286,6 @@ struct RegisterView: View {
                     }
                 }
                 if let data = gqRes.data {
-                    Network.shared.token = data.register.token
                     guard let queryResponse = data.register.queryResponse else {
                         #if DEBUG
                         errorMessages.append(contentsOf: data.register.resultMap.values.compactMap {$0.debugDescription})
@@ -299,9 +298,13 @@ struct RegisterView: View {
                     }
                     switch queryResponse.code {
                     case 200:
-                        user.data.raw = data.register.user?.fragments.userDetails
+                        guard let recievedUser = data.register.user else {
+                            errorMessages.append("Uknown error occured, Please try again.")
+                            break
+                        }
+                        user.data.raw = recievedUser.fragments.userDetails
                         withAnimation {
-                            user.isLoggedIn.toggle()
+                            SecureStore.shared.token = data.register.token
                         }
                         return
                     case 400:

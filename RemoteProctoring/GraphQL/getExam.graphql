@@ -1,0 +1,5 @@
+query GetExam {
+	getExam {
+		...Exam
+	}
+}

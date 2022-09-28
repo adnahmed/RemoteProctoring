@@ -1,0 +1,8 @@
+fragment Subject on Subject {
+	id
+	name
+	description
+	pictures {
+		downloadURL
+	}
+}

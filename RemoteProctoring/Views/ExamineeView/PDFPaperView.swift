@@ -19,7 +19,7 @@ struct PDFPaperView: View {
         func makeUIView(context: Context) -> some UIView {
             // TODO: Implement fetch pdf document here
             let pdfView = PDFView()
-            pdfView.document = PDFDocument(url: URL(string: Network.shared.apiEndpoint.absoluteString + "/files/pdf/")!)
+            pdfView.document = PDFDocument(url: URL(string: ApiClient.shared.apiEndpoint.absoluteString + "/files/pdf/")!)
             return pdfView
         }
         func updateUIView(_ uiView: UIViewType, context: Context) {
@@ -31,7 +31,7 @@ struct PDFPaperView: View {
         func makeNSView(context: Context) -> some NSView {
              // TODO: Implement fetch pdf document here
             let pdfView = PDFView()
-            pdfView.document = PDFDocument(url: URL(string: Network.shared.apiEndpoint.absoluteString + "/files/pdf/")!)
+            pdfView.document = PDFDocument(url: URL(string: ApiClient.shared.apiEndpoint.absoluteString + "/files/pdf/")!)
             return pdfView
 
         }

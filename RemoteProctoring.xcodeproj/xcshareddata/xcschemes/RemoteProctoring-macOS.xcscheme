@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5C83374228D23EAE00FF19B2"
+               BuildableName = "RemoteProctoringTests.xctest"
+               BlueprintName = "RemoteProctoringTests"
+               ReferencedContainer = "container:RemoteProctoring.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5C83374F28D23EDB00FF19B2"
+               BuildableName = "RemoteProctoringUITests.xctest"
+               BlueprintName = "RemoteProctoringUITests"
+               ReferencedContainer = "container:RemoteProctoring.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

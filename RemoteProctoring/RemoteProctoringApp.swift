@@ -9,11 +9,9 @@ import SwiftUI
 
 @main
 struct RemoteProctoringApp: App {
-    @StateObject private var user: User = User()
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(user)
         }
         #if os(macOS)
         .windowStyle(.hiddenTitleBar)
@@ -21,5 +19,6 @@ struct RemoteProctoringApp: App {
             SidebarCommands()
         }
         #endif
+        // TODO: Capture NSWindow and work on blurring
     }
 }
