@@ -12,7 +12,7 @@ struct UsersListView: View {
     @State private var searchString: String = ""
     var body: some View {
         List(users, id: \.self, selection: $multiSelection) { user in
-            UserItemView(user: user)
+            UserListItemView(user: user)
         }
 #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)

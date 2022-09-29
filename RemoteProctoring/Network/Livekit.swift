@@ -7,11 +7,3 @@
 
 import Foundation
 
-struct Livekit {
-    public static var shared: Livekit = Livekit()
-#if DEBUG
-    let Endpoint: String = "ws://192.168.1.2:7880"
-#else
-    let Endpoint: String = "ws://<production-url>:7880"
-#endif
-}
